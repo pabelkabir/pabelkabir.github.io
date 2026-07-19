@@ -44,6 +44,8 @@ class A11yParser(HTMLParser):
             return
         if tag == "img" and not data.get("alt"):
             self.images_without_alt.append(data.get("src", "<unknown>"))
+        if tag == "img" and self.link_stack and data.get("alt"):
+            self.link_stack[-1]["label"] += data["alt"].strip()
         if tag == "a":
             self.link_stack.append({"href": data.get("href", ""), "label": data.get("aria-label", "")})
         if tag in {"h1", "h2", "h3", "h4", "h5", "h6"}:

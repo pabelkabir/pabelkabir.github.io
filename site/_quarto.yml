@@ -30,6 +30,9 @@ website:
   favicon: assets/brand/favicon.png
   navbar:
     title: "Kabir Lab"
+    logo: assets/brand/kabir-lab-logo.png
+    logo-alt: "Kabir Lab logo"
+    collapse-below: xl
     left:
       - text: Home
         href: index.qmd

@@ -32,25 +32,156 @@ body {
 }
 
 .navbar {
+  min-height: 104px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(25, 107, 114, 0.28), transparent 34rem),
+    linear-gradient(90deg, #08232d 0%, #10252b 46%, #0b3441 100%);
+  box-shadow: 0 14px 42px rgba(16, 37, 43, 0.18);
+}
+
+.navbar-container {
+  gap: clamp(1.4rem, 3vw, 3rem);
+  padding: 0.9rem clamp(1.25rem, 4vw, 3.1rem);
+}
+
+.navbar-brand-container {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-left: 0 !important;
+  margin-right: clamp(0.35rem, 2vw, 1.8rem) !important;
+}
+
+.navbar-brand-container::after {
+  content: "";
+  width: 1px;
+  height: 58px;
+  margin-left: clamp(1rem, 2.1vw, 1.8rem);
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-right: 0;
+}
+
+.navbar-brand-logo {
+  line-height: 0;
+  margin-right: 0.8rem;
 }
 
 .navbar-brand .navbar-title {
-  line-height: 1.05;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 2.8vw, 3rem);
+  font-weight: 700;
+  line-height: 0.98;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.22);
 }
 
 .navbar-brand .navbar-title::after {
   content: "Savannah State University";
   display: block;
-  margin-top: 0.15rem;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 0.66rem;
-  font-weight: 500;
+  margin-top: 0.28rem;
+  color: rgba(255, 255, 255, 0.76);
+  font-family: $font-family-sans-serif;
+  font-size: clamp(0.8rem, 1vw, 1.02rem);
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  text-shadow: none;
 }
 
-.navbar-brand img {
-  width: 30px;
-  height: 30px;
+.navbar-brand img.navbar-logo {
+  width: clamp(72px, 6vw, 94px);
+  height: clamp(72px, 6vw, 94px);
+  max-height: none;
+  object-fit: contain;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+}
+
+.navbar-nav {
+  align-items: center;
+  gap: clamp(0.35rem, 1vw, 0.9rem);
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.94);
+  font-size: clamp(0.86rem, 1vw, 1.04rem);
+  font-weight: 850;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: #f28f45;
+}
+
+@media (max-width: 1199.98px) {
+  .navbar {
+    min-height: 82px;
+  }
+
+  .navbar-container {
+    gap: 0.9rem;
+    padding: 0.65rem 1rem;
+  }
+
+  .navbar-brand-container::after {
+    display: none;
+  }
+
+  .navbar-brand-logo {
+    margin-right: 0.65rem;
+  }
+
+  .navbar-brand img.navbar-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .navbar-brand .navbar-title {
+    font-size: 1.85rem;
+  }
+
+  .navbar-brand .navbar-title::after {
+    font-size: 0.78rem;
+  }
+
+  .navbar-collapse {
+    padding-top: 0.9rem;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navbar-brand-logo {
+    margin-right: 0.5rem;
+  }
+
+  .navbar-brand img.navbar-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .navbar-brand .navbar-title {
+    font-size: 1.45rem;
+  }
+
+  .navbar-brand .navbar-title::after {
+    font-size: 0.68rem;
+  }
 }
 
 .quarto-title-block {
