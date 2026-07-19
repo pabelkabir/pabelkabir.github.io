@@ -42,7 +42,7 @@ website:
         href: publications/index.qmd
       - text: People
         href: people/index.qmd
-      - text: Software & Resources
+      - text: Resources
         href: software/index.qmd
       - text: Join
         href: join/index.qmd
