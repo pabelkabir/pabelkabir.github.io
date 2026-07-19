@@ -3,4 +3,6 @@ title: "Publications"
 description: "Curated publication list for Dr. Mohammad Pabel Kabir and Kabir Lab."
 ---
 
+# Publications
+
 {{< include ../generated/publications.qmd >}}
