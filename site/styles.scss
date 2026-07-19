@@ -1013,7 +1013,27 @@ a {
   color: #ffffff;
 }
 
-.lab-footer-brand strong {
+.lab-footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(0.75rem, 1.5vw, 1rem);
+  text-align: left;
+}
+
+.lab-footer-brand img {
+  display: block;
+  width: clamp(52px, 4.6vw, 70px);
+  height: clamp(52px, 4.6vw, 70px);
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.lab-footer-brand-copy {
+  display: block;
+  min-width: 0;
+}
+
+.lab-footer-brand-copy strong {
   display: block;
   color: #ffffff;
   font-family: Georgia, "Times New Roman", serif;
@@ -1021,7 +1041,7 @@ a {
   line-height: 1;
 }
 
-.lab-footer-brand span {
+.lab-footer-brand-copy > span {
   display: block;
   margin-top: 0.35rem;
   color: rgba(255, 255, 255, 0.88);
@@ -1180,6 +1200,11 @@ a {
     text-align: center;
   }
 
+  .lab-footer-brand {
+    justify-content: center;
+    text-align: center;
+  }
+
   .lab-footer-contact {
     flex-wrap: wrap;
   }
@@ -1308,6 +1333,25 @@ a {
     padding: 1.4rem 1rem;
   }
 
+  .lab-footer-brand {
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .lab-footer-brand img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .lab-footer-brand-copy strong {
+    font-size: 1.55rem;
+  }
+
+  .lab-footer-brand-copy > span {
+    font-size: 0.76rem;
+    line-height: 1.28;
+  }
+
   .lab-footer-contact p {
     display: grid;
     justify-items: center;
@@ -1318,5 +1362,10 @@ a {
   .lab-footer-contact a,
   .lab-footer-contact p > span:not(.lab-footer-divider) {
     white-space: normal;
+    justify-content: center;
+  }
+
+  .lab-footer-ssu strong {
+    font-size: 2rem;
   }
 }

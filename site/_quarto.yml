@@ -50,10 +50,13 @@ website:
         href: contact/index.qmd
   page-footer:
     left: |
-      <div class="lab-footer-brand">
-        <strong>Kabir Lab</strong>
-        <span>Department of Chemistry and Forensic Science<br>Savannah State University</span>
-      </div>
+      <span class="lab-footer-brand">
+        <img src="/assets/brand/kabir-lab-logo.png" alt="Kabir Lab logo">
+        <span class="lab-footer-brand-copy">
+          <strong>Kabir Lab</strong>
+          <span>Department of Chemistry and Forensic Science<br>Savannah State University</span>
+        </span>
+      </span>
     center: |
       <div class="lab-footer-contact">
         <a href="mailto:kabirm@savannahstate.edu"><i class="bi bi-envelope" aria-hidden="true"></i><span>kabirm@savannahstate.edu</span></a>
