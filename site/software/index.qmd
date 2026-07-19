@@ -3,11 +3,11 @@ title: "Resources"
 description: "Public computational workflows and resources connected to Kabir Lab research."
 ---
 
-# Software & Resources
+# Resources
 
 These resources are public research workflows or related contributions. Repository maturity labels are conservative until the PI confirms current maintenance status.
 
-## Kabir Lab Software And Workflows
+## Workflows
 
 ::: {.software-grid}
 ::: {.software-card}
@@ -46,8 +46,6 @@ These resources are public research workflows or related contributions. Reposito
 [Repository](https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins)
 :::
 :::
-
-## Collaborative Software Contributions
 
 ::: {.software-grid}
 
