@@ -1,5 +1,5 @@
 
-### 2025 {.publication-year}
+## 2025 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">journal-article</span>
@@ -11,7 +11,7 @@
 </article>
 </div>
 
-### 2024 {.publication-year}
+## 2024 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">journal-article</span>
@@ -23,7 +23,7 @@
 </article>
 </div>
 
-### 2023 {.publication-year}
+## 2023 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">journal-article</span>
@@ -35,7 +35,7 @@
 </article>
 </div>
 
-### 2021 {.publication-year}
+## 2021 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">journal-article</span>
@@ -47,7 +47,7 @@
 </article>
 </div>
 
-### 2019 {.publication-year}
+## 2019 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">journal-article</span>
@@ -75,7 +75,7 @@
 </article>
 </div>
 
-### 2018 {.publication-year}
+## 2018 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">journal-article</span>
@@ -87,7 +87,7 @@
 </article>
 </div>
 
-### 2017 {.publication-year}
+## 2017 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">journal-article</span>
@@ -99,7 +99,7 @@
 </article>
 </div>
 
-### 2016 {.publication-year}
+## 2016 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">review</span>
@@ -127,7 +127,7 @@
 </article>
 </div>
 
-### 2014 {.publication-year}
+## 2014 {.publication-year}
 <div class="publication-list">
 <article class="publication-entry">
 <span class="tag">journal-article</span>

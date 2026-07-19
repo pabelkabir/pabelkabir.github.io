@@ -45,9 +45,6 @@ These resources are public research workflows or related contributions. Reposito
 
 [Repository](https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins)
 :::
-:::
-
-::: {.software-grid}
 
 ::: {.software-card}
 ### Workflow For Umbrella Sampling
@@ -74,6 +71,74 @@ These resources are public research workflows or related contributions. Reposito
 [Liu Group project](https://github.com/Liu-group/AutoSolvate)
 :::
 :::
+
+## External Learning Resources
+
+Public documentation, tutorials, lectures, and short books useful for computational chemistry onboarding. Software access can depend on licensing, platform, or institutional availability.
+
+::: {.resource-grid}
+::: {.resource-card}
+### Molecular Simulation and Visualization
+
+- [NAMD download](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD)
+- [NAMD tutorials](http://www.ks.uiuc.edu/Training/Tutorials/namd-index.html)
+- [VMD download](https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD)
+- [VMD tutorials](http://www.ks.uiuc.edu/Training/Tutorials/vmd-index.html)
+:::
+
+::: {.resource-card}
+### Quantum Chemistry Software
+
+- [Q-Chem installation](https://www.q-chem.com/install/)
+- [Q-Chem manual](https://manual.q-chem.com/latest/)
+- [IQmol download](http://iqmol.org/downloads.html)
+- [IQmol user guide](http://iqmol.org/downloads/IQmolUserGuide.pdf)
+- [Gaussian 16](https://gaussian.com/gaussian16/)
+- [GaussView 6](https://gaussian.com/gaussview6/)
+- [ORCA download](https://orcaforum.kofo.mpg.de/app.php/dlext/)
+- [ORCA tutorials](https://www.orcasoftware.de/tutorials_orca/)
+:::
+
+::: {.resource-card}
+### Programming and Foundations
+
+- [MolSSI education resources](http://education.molssi.org/resources.html#programming)
+- [Tcl tutorial](https://www.tcl.tk/man/tcl8.5/tutorial/tcltutorial.html)
+- [Tcl wiki tutorial index](https://wiki.tcl-lang.org/page/Tcl+Tutorial+Index)
+- [Electronic structure lectures by Jack Simons](https://hec.utah.edu/simons-group/estheory/index.php)
+:::
+
+::: {.resource-card}
+### Video Learning
+
+- [Wallace D. Derricotte physical and quantum chemistry lectures](https://www.youtube.com/c/ProfessorDerricotte/about)
+- [StatQuest statistics, machine learning, and data science](https://www.youtube.com/c/joshstarmer)
+- [Chris Cramer computational chemistry and thermodynamics course](https://www.youtube.com/channel/UCQWne9DleuGu0q9TmA70jWQ/featured)
+- [David Sherrill introduction to computational chemistry series](https://www.youtube.com/watch?v=EqUPF6NO348&list=PLFYoDkTAQWKBarFNED2smakjXwK5hkUrP)
+- [BioExcel webinars and lectures](https://www.youtube.com/c/BioExcelCoE/videos)
+- [Q-Chem webinars](https://www.youtube.com/user/QChemSoftware)
+:::
+
+::: {.resource-card}
+### Seminar and Lecture Archives
+
+- [UCLA orbital interaction theory lecture](https://www.youtube.com/watch?v=nGmTlSeGdmo)
+- [Anna Krylov lecture on molecules and light](https://www.youtube.com/watch?v=QNp6vqzYNW8)
+- [Quantum chemistry of electronically excited and open-shell species](https://winterschool.cc/2017/quantum-chemistry-of-electronically-excited-and-open-shell-species)
+- [Biophysical Society lecture videos](https://www.biophysics.org/video-library/category/biophysical-society-lectures)
+- [ACS Kavli lecture series](https://www.acs.org/content/acs/en/meetings/acs-meetings/about/meetings-archive/kavli-lecture-series.html)
+:::
+
+::: {.resource-card}
+### Short Books and Guides
+
+- [Machine Learning in Chemistry](https://pubs.acs.org/doi/book/10.1021/acs.infocus.7e4001)
+- [Machine Learning for Drug Discovery](https://pubs.acs.org/doi/book/10.1021/acsinfocus.7e5017)
+- [Python for Chemists](https://pubs.acs.org/doi/book/10.1021/acsinfocus.7e5030)
+:::
+:::
+
+Source list adapted from the public [Acharya Lab resources page](https://www.acharyalab.com/resources). Syracuse-specific computing links are omitted because they are not generally usable by Savannah State University students.
 
 ## Student Onboarding Resources
 

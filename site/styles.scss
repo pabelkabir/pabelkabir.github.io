@@ -689,24 +689,27 @@ a {
 .grid-3,
 .grid-2,
 .publication-grid,
-.software-grid {
+.software-grid,
+.resource-grid {
   display: grid;
   gap: 1rem;
 }
 
 .grid-3,
-.publication-grid {
+.publication-grid,
+.software-grid,
+.resource-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-2,
-.software-grid {
+.grid-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .card,
 .publication-card,
 .software-card,
+.resource-card,
 .person-card,
 .callout-card {
   border: 1px solid var(--line);
@@ -719,8 +722,23 @@ a {
 .card h2,
 .card h3,
 .publication-card h3,
-.software-card h3 {
+.software-card h3,
+.resource-card h3 {
   margin-top: 0;
+}
+
+.resource-card h3 {
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.resource-card ul {
+  margin: 0;
+  padding-left: 1.05rem;
+}
+
+.resource-card li + li {
+  margin-top: 0.42rem;
 }
 
 .card h2 {
@@ -956,6 +974,7 @@ section.publication-year {
   padding-top: 0.85rem;
 }
 
+h2.publication-year,
 h3.publication-year {
   margin: 0 0 0.45rem;
   border-top: 0;
@@ -1155,6 +1174,7 @@ h3.publication-year {
   .grid-3,
   .publication-grid,
   .software-grid,
+  .resource-grid,
   .people-grid,
   .person-card {
     grid-template-columns: 1fr;

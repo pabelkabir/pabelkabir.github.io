@@ -221,7 +221,7 @@ def make_qmd(entries: list[dict[str, str]], metadata: dict[str, dict[str, object
         if year != current_year:
             if open_list:
                 lines.append("</div>\n")
-            lines.append(f"\n### {year} {{.publication-year}}\n")
+            lines.append(f"\n## {year} {{.publication-year}}\n")
             lines.append("<div class=\"publication-list\">\n")
             open_list = True
             current_year = year
