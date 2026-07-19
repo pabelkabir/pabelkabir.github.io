@@ -1,8 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kabirlab.org/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://kabirlab.org/join/index.html</loc>
+    <lastmod>2026-07-19T02:25:26.092Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/people/index.html</loc>
+    <lastmod>2026-07-19T02:25:21.825Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/research/interactions-materials.html</loc>
+    <lastmod>2026-07-19T02:00:34.236Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/research/photophysics.html</loc>
+    <lastmod>2026-07-19T02:00:34.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/index.html</loc>
+    <lastmod>2026-07-19T02:24:57.343Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/research/index.html</loc>
+    <lastmod>2026-07-19T02:25:42.306Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/research/multiscale-workflows.html</loc>
+    <lastmod>2026-07-19T02:00:34.235Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/publications/index.html</loc>
+    <lastmod>2026-07-19T02:25:02.781Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/software/index.html</loc>
+    <lastmod>2026-07-19T02:11:13.966Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kabirlab.org/contact.html</loc>
+    <lastmod>2026-07-19T02:25:36.912Z</lastmod>
   </url>
 </urlset>

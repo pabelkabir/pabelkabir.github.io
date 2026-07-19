@@ -1,36 +1,54 @@
-# Deployment Migration To Version 2
+# Deployment Notes For Version 2
 
-This branch does not deploy Version 2. It prepares a rendered review build in `docs/` while the current root site remains live.
+Version 2 was merged and deployed for `kabirlab.org` on 2026-07-19.
 
-## Human Switch Steps After Approval
+GitHub Pages is configured for the custom domain `kabirlab.org`. The Quarto source renders to `docs/`, and the rendered output is also mirrored at the repository root because GitHub Pages user-site repositories can serve root output even when the Pages API reports `/docs`.
 
-1. Review the draft pull request and rendered preview.
-2. Confirm the unresolved content items in `CONTENT_NEEDED.md`.
-3. Merge the approved Version 2 branch.
-4. Open GitHub repository settings for `pabelkabir/pabelkabir.github.io`.
-5. Go to `Settings -> Pages`.
-6. Keep the custom domain as:
+## Current Source Layout
 
-```text
-kabirlab.org
+- Quarto source: `site/`
+- Rendered build: `docs/`
+- Live fallback mirror: repository root
+- Custom domain file: `docs/CNAME` and root `CNAME`
+
+## Update Workflow
+
+1. Update source content in `site/`, `data/`, or the supporting scripts.
+2. Rebuild publication pages:
+
+```bash
+python scripts/build_publications.py
 ```
 
-7. Change the publishing source from branch `master`, folder `/root` to branch `master`, folder `/docs`.
-8. Confirm `docs/CNAME` contains only:
+3. Render a clean Quarto build:
 
-```text
-kabirlab.org
+```bash
+rm -rf docs
+cd site
+quarto render
+cd ..
 ```
 
-9. Wait for Pages to build.
-10. Verify:
+4. Run validation:
+
+```bash
+python scripts/validate_content.py
+python scripts/check_rendered_links.py
+python scripts/check_accessibility_static.py
+```
+
+5. Mirror the rendered site to the repository root:
+
+```bash
+rsync -a docs/ ./
+```
+
+6. Commit and push to `master`.
+7. Wait for GitHub Pages to rebuild, then verify:
 
 ```text
 https://kabirlab.org
 https://www.kabirlab.org
 ```
 
-11. Enable `Enforce HTTPS` when GitHub allows it.
-12. Verify the homepage, research pages, publications, people, software, join, contact, sitemap, and 404 page.
-
-Only after Version 2 is live and verified should the old root static files be archived or removed in a separate commit.
+Enable `Enforce HTTPS` in GitHub Pages settings once GitHub has issued the certificate and the checkbox becomes available.

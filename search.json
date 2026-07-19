@@ -1,0 +1,233 @@
+[
+  {
+    "objectID": "join/index.html",
+    "href": "join/index.html",
+    "title": "Join",
+    "section": "",
+    "text": "Kabir Lab welcomes Savannah State students interested in computational chemistry, molecular modeling, scientific programming, and data analysis.\n\n\nStudents who are curious about molecular science, willing to document their work carefully, and interested in learning computational tools are encouraged to prepare a structured inquiry.\n\n\n\n\nLiterature-guided computational chemistry projects.\nMolecular modeling and visualization.\nPython or shell workflow development.\nPublication-data and repository curation.\nSimulation analysis and reproducibility checks.\n\n\n\n\n\nLinux command-line work.\nPython scripting for scientific data.\nMolecular visualization and structure preparation.\nElectronic-structure and molecular-simulation concepts.\nResearch notebooks, version control, and scientific communication.\n\n\n\n\nPrepare one concise email or form response with:\n\nName, major, and year.\nShort statement of research interest.\nRelevant chemistry, mathematics, programming, or physics courses.\nWeekly availability.\nCV or resume.\n\n\nWeekly hours, minimum semester commitment, position type, transcript requirements, and application destination will be posted after the lab confirms current openings.\n\n\n\n\nStudents are expected to keep careful records, communicate progress regularly, respect data integrity, and distinguish tested results from hypotheses or exploratory notes."
+  },
+  {
+    "objectID": "join/index.html#who-should-consider-applying",
+    "href": "join/index.html#who-should-consider-applying",
+    "title": "Join",
+    "section": "",
+    "text": "Students who are curious about molecular science, willing to document their work carefully, and interested in learning computational tools are encouraged to prepare a structured inquiry."
+  },
+  {
+    "objectID": "join/index.html#example-project-types",
+    "href": "join/index.html#example-project-types",
+    "title": "Join",
+    "section": "",
+    "text": "Literature-guided computational chemistry projects.\nMolecular modeling and visualization.\nPython or shell workflow development.\nPublication-data and repository curation.\nSimulation analysis and reproducibility checks."
+  },
+  {
+    "objectID": "join/index.html#skills-students-can-learn",
+    "href": "join/index.html#skills-students-can-learn",
+    "title": "Join",
+    "section": "",
+    "text": "Linux command-line work.\nPython scripting for scientific data.\nMolecular visualization and structure preparation.\nElectronic-structure and molecular-simulation concepts.\nResearch notebooks, version control, and scientific communication."
+  },
+  {
+    "objectID": "join/index.html#application-materials",
+    "href": "join/index.html#application-materials",
+    "title": "Join",
+    "section": "",
+    "text": "Prepare one concise email or form response with:\n\nName, major, and year.\nShort statement of research interest.\nRelevant chemistry, mathematics, programming, or physics courses.\nWeekly availability.\nCV or resume.\n\n\nWeekly hours, minimum semester commitment, position type, transcript requirements, and application destination will be posted after the lab confirms current openings."
+  },
+  {
+    "objectID": "join/index.html#research-expectations",
+    "href": "join/index.html#research-expectations",
+    "title": "Join",
+    "section": "",
+    "text": "Students are expected to keep careful records, communicate progress regularly, respect data integrity, and distinguish tested results from hypotheses or exploratory notes."
+  },
+  {
+    "objectID": "people/index.html",
+    "href": "people/index.html",
+    "title": "People",
+    "section": "",
+    "text": "Assistant Professor\nDepartment of Chemistry and Forensic Science\nSavannah State University\nMohammad Pabel Kabir is an assistant professor at Savannah State University whose research combines electronic-structure theory, molecular simulation, and automated computational workflows. His work has examined flavin spectroscopy and photophysics, QM/MM modeling of flavoproteins, molecular interaction mapping, and functional molecular materials. He emphasizes reproducible computation and research training for undergraduate scientists.\n\nGitHub\n\n\n\n\nCurrent student profiles will be added after names, roles, projects, photos, and publication permissions are confirmed."
+  },
+  {
+    "objectID": "people/index.html#dr.-mohammad-pabel-kabir",
+    "href": "people/index.html#dr.-mohammad-pabel-kabir",
+    "title": "People",
+    "section": "",
+    "text": "Assistant Professor\nDepartment of Chemistry and Forensic Science\nSavannah State University\nMohammad Pabel Kabir is an assistant professor at Savannah State University whose research combines electronic-structure theory, molecular simulation, and automated computational workflows. His work has examined flavin spectroscopy and photophysics, QM/MM modeling of flavoproteins, molecular interaction mapping, and functional molecular materials. He emphasizes reproducible computation and research training for undergraduate scientists.\n\nGitHub"
+  },
+  {
+    "objectID": "people/index.html#student-researchers",
+    "href": "people/index.html#student-researchers",
+    "title": "People",
+    "section": "",
+    "text": "Current student profiles will be added after names, roles, projects, photos, and publication permissions are confirmed."
+  },
+  {
+    "objectID": "research/interactions-materials.html",
+    "href": "research/interactions-materials.html",
+    "title": "Interaction Mapping",
+    "section": "",
+    "text": "Where do molecules preferentially interact, how strong are those associations in a given environment, and how can that information guide molecular or materials design?\n\n\n\nThe research foundation combines Ab-Initio Interaction Maps, explicit-solvent sampling, geometry optimization, umbrella sampling, optical spectroscopy context, and molecular modeling to visualize favorable interaction regions and quantify association pathways.\n\n\n\n\nBODIPY and molecular partner interaction maps.\nCobaltocenium-containing polyelectrolytes and anionic probes.\nFunctional anion-exchange membranes.\nPhotoinduced RAFT polymerization and metallocene-containing polymers.\nInteraction-aware design of photoactive and ionic molecular systems.\n\n\n\n\nThis page distinguishes current Kabir Lab development from earlier collaborative work. Older materials and polymer publications are described as a research foundation unless the PI confirms that they remain active projects at Savannah State.\nView software and data"
+  },
+  {
+    "objectID": "research/interactions-materials.html#core-question",
+    "href": "research/interactions-materials.html#core-question",
+    "title": "Interaction Mapping",
+    "section": "",
+    "text": "Where do molecules preferentially interact, how strong are those associations in a given environment, and how can that information guide molecular or materials design?"
+  },
+  {
+    "objectID": "research/interactions-materials.html#approach",
+    "href": "research/interactions-materials.html#approach",
+    "title": "Interaction Mapping",
+    "section": "",
+    "text": "The research foundation combines Ab-Initio Interaction Maps, explicit-solvent sampling, geometry optimization, umbrella sampling, optical spectroscopy context, and molecular modeling to visualize favorable interaction regions and quantify association pathways."
+  },
+  {
+    "objectID": "research/interactions-materials.html#systems-and-examples",
+    "href": "research/interactions-materials.html#systems-and-examples",
+    "title": "Interaction Mapping",
+    "section": "",
+    "text": "BODIPY and molecular partner interaction maps.\nCobaltocenium-containing polyelectrolytes and anionic probes.\nFunctional anion-exchange membranes.\nPhotoinduced RAFT polymerization and metallocene-containing polymers.\nInteraction-aware design of photoactive and ionic molecular systems."
+  },
+  {
+    "objectID": "research/interactions-materials.html#framing",
+    "href": "research/interactions-materials.html#framing",
+    "title": "Interaction Mapping",
+    "section": "",
+    "text": "This page distinguishes current Kabir Lab development from earlier collaborative work. Older materials and polymer publications are described as a research foundation unless the PI confirms that they remain active projects at Savannah State.\nView software and data"
+  },
+  {
+    "objectID": "research/photophysics.html",
+    "href": "research/photophysics.html",
+    "title": "Molecular Photophysics",
+    "section": "",
+    "text": "How do local electrostatics, hydrogen bonding, redox and protonation state, protein structure, and molecular architecture control absorption, fluorescence, intersystem crossing, and charge-transfer pathways?\n\n\n\nThe lab uses ground- and excited-state electronic-structure calculations, multireference methods, TD-DFT, molecular dynamics, and QM/MM models to connect microscopic environment with observed spectroscopy and photophysics.\n\n\n\n\nFlavins in multiple redox and protonation states.\nFlavin-binding fluorescent proteins and rational spectral tuning.\nFlavin semiquinone radicals in protein environments.\nHydrogen-bond effects on vibrational spectra.\nStimuli-responsive multipathway emission in 9-fluorenone derivatives.\n\n\n\n\n\n2025 ACS Applied Energy Materials paper on 9-fluorenone derivatives.\n2024 JPC B electronic-structure benchmark.\n2023 JPC B iLOV spectral-tuning paper.\n2021 Spectrochimica Acta A hydrogen-bonding paper.\n2019 PCCP flavin redox/protonation spectra.\n2019 ChemBioChem semiquinone fluorescence.\n\nView publications"
+  },
+  {
+    "objectID": "research/photophysics.html#core-question",
+    "href": "research/photophysics.html#core-question",
+    "title": "Molecular Photophysics",
+    "section": "",
+    "text": "How do local electrostatics, hydrogen bonding, redox and protonation state, protein structure, and molecular architecture control absorption, fluorescence, intersystem crossing, and charge-transfer pathways?"
+  },
+  {
+    "objectID": "research/photophysics.html#approach",
+    "href": "research/photophysics.html#approach",
+    "title": "Molecular Photophysics",
+    "section": "",
+    "text": "The lab uses ground- and excited-state electronic-structure calculations, multireference methods, TD-DFT, molecular dynamics, and QM/MM models to connect microscopic environment with observed spectroscopy and photophysics."
+  },
+  {
+    "objectID": "research/photophysics.html#systems-and-examples",
+    "href": "research/photophysics.html#systems-and-examples",
+    "title": "Molecular Photophysics",
+    "section": "",
+    "text": "Flavins in multiple redox and protonation states.\nFlavin-binding fluorescent proteins and rational spectral tuning.\nFlavin semiquinone radicals in protein environments.\nHydrogen-bond effects on vibrational spectra.\nStimuli-responsive multipathway emission in 9-fluorenone derivatives."
+  },
+  {
+    "objectID": "research/photophysics.html#representative-outputs",
+    "href": "research/photophysics.html#representative-outputs",
+    "title": "Molecular Photophysics",
+    "section": "",
+    "text": "2025 ACS Applied Energy Materials paper on 9-fluorenone derivatives.\n2024 JPC B electronic-structure benchmark.\n2023 JPC B iLOV spectral-tuning paper.\n2021 Spectrochimica Acta A hydrogen-bonding paper.\n2019 PCCP flavin redox/protonation spectra.\n2019 ChemBioChem semiquinone fluorescence.\n\nView publications"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Kabir Lab",
+    "section": "",
+    "text": "Skip to content\n\n\n  \n    Kabir Computational Molecular Science Lab\n    Kabir Lab\n    We combine quantum chemistry, molecular dynamics, QM/MM, and automated workflows to study how molecular environments control light, reactivity, and recognition.\n    Department of Chemistry and Forensic ScienceSavannah State University\n    \n      Explore Research\n      View Publications\n      Join the Lab\n    \n    \n      Excited-state electronic structure\n      Molecular dynamics and QM/MM\n      Automated interaction analysis\n    \n  \n  \n    \n  \n\n\n\n  Research identity\n  Molecular behavior is shaped by environment.\n  Our work asks how electrostatics, hydrogen bonding, solvation, conformational sampling, and molecular architecture reshape excited states and intermolecular interactions. We develop reproducible computational workflows and apply them to flavins and fluorescent proteins, photoactive molecules, molecular association, and functional ionic materials.\n\n\n\n  Research pillars\n  Three evidence-backed directions\n  \n    \n      \n      \n        Photophysics\n        Molecular photophysics in complex environments\n        How do local electrostatics, hydrogen bonding, redox and protonation state, protein structure, and molecular architecture control absorption, fluorescence, intersystem crossing, and charge-transfer pathways?\n        Read about photophysics\n      \n    \n    \n      \n      \n        Workflows\n        Multiscale simulation and reliable workflows\n        How can electronic structure, molecular dynamics, QM/MM, conformational sampling, explicit solvent, and analysis become reproducible enough for systematic comparison?\n        Read about workflows\n      \n    \n    \n      \n      \n        Interactions\n        Interaction mapping and functional molecular design\n        Where do molecules preferentially interact, how strong are those associations in a given environment, and how can that information guide molecular or materials design?\n        Read about interactions\n      \n    \n  \n\n\n\n  Featured publications\n  Representative outputs\n  \n    \n      2025\n      Stimulus-driven multipathway emission in 9-fluorenone derivatives\n      ACS Applied Energy Materials\n      Explains how molecular structure and environment redistribute fluorescence, charge-transfer emission, phosphorescence, and delayed fluorescence pathways.\n      DOI\n    \n    \n      2024\n      Electronic-structure methods for flavin spectroscopy and photophysics\n      The Journal of Physical Chemistry B\n      Benchmarks multiple electronic-structure methods for flavin excited states and spectroscopic properties.\n      DOI\n    \n    \n      2023\n      Alternative strategy for spectral tuning of flavin-binding fluorescent proteins\n      The Journal of Physical Chemistry B\n      Combines maps, simulations, QM/MM calculations, mutagenesis, and spectroscopy to test rational color tuning.\n      DOI\n    \n  \n  \n    Full publication list\n  \n\n\n\n  Open research\n  Reusable workflows and public resources\n  \n    \n      Ab-Initio Interaction Map\n      Workflow for generating three-dimensional interaction maps between molecular partners from structural inputs.\n      Repository\n    \n    \n      Electrostatic Spectral Tuning Maps\n      Protocol for mapping how electrostatic environments tune molecular spectral features.\n      Repository\n    \n    \n      QM/MM Protocol for Flavoproteins\n      Research workflow for APEC-style QM/MM modeling of flavoprotein environments.\n      Repository\n    \n    \n      AutoSolvate contribution\n      Fork of a Liu Group project for explicit-solvent quantum chemistry setup, shown here as a related contribution rather than a sole Kabir Lab product.\n      Repository\n    \n  \n\n\n\n  Students\n  Research training through computation and evidence.\n  The lab welcomes Savannah State students interested in computational chemistry, molecular modeling, scientific programming, and data analysis. Additional project availability and application details will be posted as they are confirmed.\n  \n    Read the Join page\n    Meet the PI"
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "The Kabir Lab studies how molecular environment controls electronic structure, photophysics, and intermolecular association. We combine quantum chemistry, molecular dynamics, QM/MM, sampling, and automated analysis to connect microscopic interactions with measurable molecular behavior.\n\n\n\n\n\nMolecules do not absorb, emit, or react in isolation. Their behavior changes with electrostatics, hydrogen bonding, solvation, conformation, redox state, protonation, and the surrounding protein or material.\nPhotophysics page\n\n\n\nComplex simulations are useful only when their assumptions, inputs, sampling, and analysis are traceable. The lab develops and documents workflows that connect electronic structure with molecular simulation.\nWorkflows page\n\n\n\nThe lab investigates where molecules prefer to associate, how environment changes those interactions, and how interaction patterns can guide molecular or materials design.\nInteraction mapping page\n\n\n\nEmerging directions such as PFAS, environmental contaminant projects, machine-learning-assisted molecular prioritization, and data-driven photoredox screening can be added when public project details, collaborators, datasets, and current status are ready."
+  },
+  {
+    "objectID": "research/index.html#current-pillars",
+    "href": "research/index.html#current-pillars",
+    "title": "Research",
+    "section": "",
+    "text": "Molecules do not absorb, emit, or react in isolation. Their behavior changes with electrostatics, hydrogen bonding, solvation, conformation, redox state, protonation, and the surrounding protein or material.\nPhotophysics page\n\n\n\nComplex simulations are useful only when their assumptions, inputs, sampling, and analysis are traceable. The lab develops and documents workflows that connect electronic structure with molecular simulation.\nWorkflows page\n\n\n\nThe lab investigates where molecules prefer to associate, how environment changes those interactions, and how interaction patterns can guide molecular or materials design.\nInteraction mapping page\n\n\n\nEmerging directions such as PFAS, environmental contaminant projects, machine-learning-assisted molecular prioritization, and data-driven photoredox screening can be added when public project details, collaborators, datasets, and current status are ready."
+  },
+  {
+    "objectID": "research/multiscale-workflows.html",
+    "href": "research/multiscale-workflows.html",
+    "title": "Multiscale Workflows",
+    "section": "",
+    "text": "How can complex molecular simulations be made reproducible, comparable, and practical for systematic studies rather than one-off calculations?\n\n\n\nKabir Lab connects electronic structure, molecular dynamics, QM/MM, conformational sampling, explicit-solvent setup, and analysis through documented Python and shell workflows. The goal is reproducible scientific comparison, not automation as a substitute for scientific judgment.\n\n\n\n\nQM/MM APEC protocol for flavoproteins.\nElectrostatic Spectral Tuning Maps workflow.\nAutoSolvate contribution and explicit-solvent setup.\nUmbrella-sampling workflow for potential-of-mean-force calculations.\nMethod benchmarking for flavin excited states.\n\n\n\n\nSome public workflows depend on legacy research environments such as Python 2, cluster-specific scripts, or specialized chemistry packages. They are presented as research workflows or legacy protocols unless the PI later confirms active maintenance status.\nView software and data"
+  },
+  {
+    "objectID": "research/multiscale-workflows.html#core-question",
+    "href": "research/multiscale-workflows.html#core-question",
+    "title": "Multiscale Workflows",
+    "section": "",
+    "text": "How can complex molecular simulations be made reproducible, comparable, and practical for systematic studies rather than one-off calculations?"
+  },
+  {
+    "objectID": "research/multiscale-workflows.html#approach",
+    "href": "research/multiscale-workflows.html#approach",
+    "title": "Multiscale Workflows",
+    "section": "",
+    "text": "Kabir Lab connects electronic structure, molecular dynamics, QM/MM, conformational sampling, explicit-solvent setup, and analysis through documented Python and shell workflows. The goal is reproducible scientific comparison, not automation as a substitute for scientific judgment."
+  },
+  {
+    "objectID": "research/multiscale-workflows.html#public-resources-and-examples",
+    "href": "research/multiscale-workflows.html#public-resources-and-examples",
+    "title": "Multiscale Workflows",
+    "section": "",
+    "text": "QM/MM APEC protocol for flavoproteins.\nElectrostatic Spectral Tuning Maps workflow.\nAutoSolvate contribution and explicit-solvent setup.\nUmbrella-sampling workflow for potential-of-mean-force calculations.\nMethod benchmarking for flavin excited states."
+  },
+  {
+    "objectID": "research/multiscale-workflows.html#notes-on-maturity",
+    "href": "research/multiscale-workflows.html#notes-on-maturity",
+    "title": "Multiscale Workflows",
+    "section": "",
+    "text": "Some public workflows depend on legacy research environments such as Python 2, cluster-specific scripts, or specialized chemistry packages. They are presented as research workflows or legacy protocols unless the PI later confirms active maintenance status.\nView software and data"
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Selected and complete publications are grouped by year. Citation counts are intentionally omitted because they change frequently.\n\n\n\n\n\n\nDatta, Saptarshi; Kabir, Mohammad Pabel; Maliha, Sunjida Reza; Liu, Fang; Xu, Jinjia\n\n\nACS Applied Energy Materials, 2025\n\nCombines molecular design, spectroscopy, and excited-state calculations to explain how 9-fluorenone derivatives access fluorescence, charge-transfer emission, phosphorescence, and delayed fluorescence under different molecular and environmental conditions. DOI\n\n\n\n\nKabir, Mohammad Pabel; Ghosh, Paulami; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B, 2024\n\nBenchmarks multireference, TD-DFT, coupled-cluster-related, and other wave-function methods for flavin excited states, clarifying which computational choices are reliable for different spectroscopic and photophysical questions. DOI | Preprint\n\n\n\n\nKabir, Mohammad Pabel; Ouedraogo, Daniel; Orozco-Gonzalez, Yoelvis; Gadda, Giovanni; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B, 2023\n\nUses electrostatic spectral-tuning maps, molecular dynamics, QM/MM calculations, mutagenesis, and spectroscopy to test a rational strategy for shifting the fluorescence of a flavin-binding fluorescent protein. DOI | Code | Preprint\n\n\n\n\n\n\n\n\n\njournal-article\n\n\nDatta, Saptarshi; Kabir, Mohammad Pabel; Maliha, Sunjida Reza; Liu, Fang; Xu, Jinjia\n\n\nACS Applied Energy Materials\n\n\nCombines molecular design, spectroscopy, and excited-state calculations to explain how 9-fluorenone derivatives access fluorescence, charge-transfer emission, phosphorescence, and delayed fluorescence under different molecular and environmental conditions.\n\n\nDOI\n\n\n\n\n\n\n\n\njournal-article\n\n\nKabir, Mohammad Pabel; Ghosh, Paulami; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B\n\n\nBenchmarks multireference, TD-DFT, coupled-cluster-related, and other wave-function methods for flavin excited states, clarifying which computational choices are reliable for different spectroscopic and photophysical questions.\n\n\nDOI | Preprint\n\n\n\n\n\n\n\n\njournal-article\n\n\nKabir, Mohammad Pabel; Ouedraogo, Daniel; Orozco-Gonzalez, Yoelvis; Gadda, Giovanni; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B\n\n\nUses electrostatic spectral-tuning maps, molecular dynamics, QM/MM calculations, mutagenesis, and spectroscopy to test a rational strategy for shifting the fluorescence of a flavin-binding fluorescent protein.\n\n\nDOI | Code | Preprint\n\n\n\n\n\n\n\n\njournal-article\n\n\nKabir, Mohammad Pabel; Orozco-Gonzalez, Yoelvis; Hastings, Gary; Gozem, Samer\n\n\nSpectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy\n\n\nConnects hydrogen-bonding environments with changes in flavin infrared absorption and vibrational assignments.\n\n\nDOI\n\n\n\n\n\n\n\n\njournal-article\n\n\nSu, Dan; Kabir, Mohammad Pabel; Orozco-Gonzalez, Yoelvis; Gozem, Samer; Gadda, Giovanni\n\n\nChemBioChem\n\n\nCombines spectroscopy and electronic-structure calculations to explain unusual fluorescence behavior of a flavin semiquinone radical stabilized in a protein.\n\n\nDOI\n\n\n\njournal-article\n\n\nOrozco-Gonzalez, Yoelvis; Kabir, Mohammad Pabel; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B\n\n\nIntroduces three-dimensional maps that visualize how nearby charges tune the excitation energies of biological chromophores.\n\n\nDOI | Code\n\n\n\njournal-article\n\n\nKabir, Mohammad Pabel; Orozco-Gonzalez, Yoelvis; Gozem, Samer\n\n\nPhysical Chemistry Chemical Physics\n\n\nComputes and interprets flavin spectra across redox and protonation states while mapping how surrounding electrostatics can shift observable transitions.\n\n\nDOI | Code\n\n\n\n\n\n\n\n\njournal-article\n\n\nZhu, Tianyu; Xu, Shichao; Rahman, Md. Anisur; Dogdibegovic, Emir; Yang, Peng; Pageni, Parasmani; Kabir, Mohammad Pabel; Zhou, Xiao-dong; Tang, Chuanbing\n\n\nAngewandte Chemie International Edition\n\n\nReports cobaltocenium-based polyelectrolytes designed for chemically and mechanically robust alkaline anion-exchange membranes.\n\n\nDOI\n\n\n\n\n\n\n\n\njournal-article\n\n\nPageni, Parasmani; Kabir, Mohammad Pabel; Yang, Peng; Tang, Chuanbing\n\n\nJournal of Inorganic and Organometallic Polymers and Materials\n\n\nExamines how charge and aromatic interactions influence binding between cobaltocenium-containing polyelectrolytes and anionic molecular or polymeric probes.\n\n\nDOI\n\n\n\n\n\n\n\n\nreview\n\n\nYan, Yi; Pageni, Parasmani; Kabir, Mohammad Pabel; Tang, Chuanbing\n\n\nSynlett\n\n\nReviews metallocenium chemistry and its development as a platform for functional macromolecular and polyelectrolyte materials.\n\n\nDOI\n\n\n\njournal-article\n\n\nYang, Peng; Pageni, Parasmani; Kabir, Mohammad Pabel; Zhu, Tianyu; Tang, Chuanbing\n\n\nACS Macro Letters\n\n\nDemonstrates light-controlled RAFT polymerization of metallocene-containing monomers and the preparation of heterobimetallic block copolymers.\n\n\nDOI\n\n\n\nthesis\n\n\nKabir, Mohammad Pabel\n\n\nUniversity of South Carolina\n\n\nInvestigates cobaltocenium-containing polymers, their interactions with organic anions, and their potential use in alkaline anion-exchange membranes.\n\n\nLink\n\n\n\n\n\n\n\n\njournal-article\n\n\nKabir, Md Pabel; Islam, Md Manuarul; Masum, Shah Md; Hossain, Md Mufazzal\n\n\nBangladesh Journal of Scientific and Industrial Research\n\n\nStudies the equilibrium, kinetics, and thermodynamics of dye adsorption onto chitosan from aqueous solution.\n\n\nDOI"
+  },
+  {
+    "objectID": "publications/index.html#featured-publications",
+    "href": "publications/index.html#featured-publications",
+    "title": "Publications",
+    "section": "",
+    "text": "Datta, Saptarshi; Kabir, Mohammad Pabel; Maliha, Sunjida Reza; Liu, Fang; Xu, Jinjia\n\n\nACS Applied Energy Materials, 2025\n\nCombines molecular design, spectroscopy, and excited-state calculations to explain how 9-fluorenone derivatives access fluorescence, charge-transfer emission, phosphorescence, and delayed fluorescence under different molecular and environmental conditions. DOI\n\n\n\n\nKabir, Mohammad Pabel; Ghosh, Paulami; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B, 2024\n\nBenchmarks multireference, TD-DFT, coupled-cluster-related, and other wave-function methods for flavin excited states, clarifying which computational choices are reliable for different spectroscopic and photophysical questions. DOI | Preprint\n\n\n\n\nKabir, Mohammad Pabel; Ouedraogo, Daniel; Orozco-Gonzalez, Yoelvis; Gadda, Giovanni; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B, 2023\n\nUses electrostatic spectral-tuning maps, molecular dynamics, QM/MM calculations, mutagenesis, and spectroscopy to test a rational strategy for shifting the fluorescence of a flavin-binding fluorescent protein. DOI | Code | Preprint"
+  },
+  {
+    "objectID": "publications/index.html#all-publications",
+    "href": "publications/index.html#all-publications",
+    "title": "Publications",
+    "section": "",
+    "text": "journal-article\n\n\nDatta, Saptarshi; Kabir, Mohammad Pabel; Maliha, Sunjida Reza; Liu, Fang; Xu, Jinjia\n\n\nACS Applied Energy Materials\n\n\nCombines molecular design, spectroscopy, and excited-state calculations to explain how 9-fluorenone derivatives access fluorescence, charge-transfer emission, phosphorescence, and delayed fluorescence under different molecular and environmental conditions.\n\n\nDOI\n\n\n\n\n\n\n\n\njournal-article\n\n\nKabir, Mohammad Pabel; Ghosh, Paulami; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B\n\n\nBenchmarks multireference, TD-DFT, coupled-cluster-related, and other wave-function methods for flavin excited states, clarifying which computational choices are reliable for different spectroscopic and photophysical questions.\n\n\nDOI | Preprint\n\n\n\n\n\n\n\n\njournal-article\n\n\nKabir, Mohammad Pabel; Ouedraogo, Daniel; Orozco-Gonzalez, Yoelvis; Gadda, Giovanni; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B\n\n\nUses electrostatic spectral-tuning maps, molecular dynamics, QM/MM calculations, mutagenesis, and spectroscopy to test a rational strategy for shifting the fluorescence of a flavin-binding fluorescent protein.\n\n\nDOI | Code | Preprint\n\n\n\n\n\n\n\n\njournal-article\n\n\nKabir, Mohammad Pabel; Orozco-Gonzalez, Yoelvis; Hastings, Gary; Gozem, Samer\n\n\nSpectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy\n\n\nConnects hydrogen-bonding environments with changes in flavin infrared absorption and vibrational assignments.\n\n\nDOI\n\n\n\n\n\n\n\n\njournal-article\n\n\nSu, Dan; Kabir, Mohammad Pabel; Orozco-Gonzalez, Yoelvis; Gozem, Samer; Gadda, Giovanni\n\n\nChemBioChem\n\n\nCombines spectroscopy and electronic-structure calculations to explain unusual fluorescence behavior of a flavin semiquinone radical stabilized in a protein.\n\n\nDOI\n\n\n\njournal-article\n\n\nOrozco-Gonzalez, Yoelvis; Kabir, Mohammad Pabel; Gozem, Samer\n\n\nThe Journal of Physical Chemistry B\n\n\nIntroduces three-dimensional maps that visualize how nearby charges tune the excitation energies of biological chromophores.\n\n\nDOI | Code\n\n\n\njournal-article\n\n\nKabir, Mohammad Pabel; Orozco-Gonzalez, Yoelvis; Gozem, Samer\n\n\nPhysical Chemistry Chemical Physics\n\n\nComputes and interprets flavin spectra across redox and protonation states while mapping how surrounding electrostatics can shift observable transitions.\n\n\nDOI | Code\n\n\n\n\n\n\n\n\njournal-article\n\n\nZhu, Tianyu; Xu, Shichao; Rahman, Md. Anisur; Dogdibegovic, Emir; Yang, Peng; Pageni, Parasmani; Kabir, Mohammad Pabel; Zhou, Xiao-dong; Tang, Chuanbing\n\n\nAngewandte Chemie International Edition\n\n\nReports cobaltocenium-based polyelectrolytes designed for chemically and mechanically robust alkaline anion-exchange membranes.\n\n\nDOI\n\n\n\n\n\n\n\n\njournal-article\n\n\nPageni, Parasmani; Kabir, Mohammad Pabel; Yang, Peng; Tang, Chuanbing\n\n\nJournal of Inorganic and Organometallic Polymers and Materials\n\n\nExamines how charge and aromatic interactions influence binding between cobaltocenium-containing polyelectrolytes and anionic molecular or polymeric probes.\n\n\nDOI\n\n\n\n\n\n\n\n\nreview\n\n\nYan, Yi; Pageni, Parasmani; Kabir, Mohammad Pabel; Tang, Chuanbing\n\n\nSynlett\n\n\nReviews metallocenium chemistry and its development as a platform for functional macromolecular and polyelectrolyte materials.\n\n\nDOI\n\n\n\njournal-article\n\n\nYang, Peng; Pageni, Parasmani; Kabir, Mohammad Pabel; Zhu, Tianyu; Tang, Chuanbing\n\n\nACS Macro Letters\n\n\nDemonstrates light-controlled RAFT polymerization of metallocene-containing monomers and the preparation of heterobimetallic block copolymers.\n\n\nDOI\n\n\n\nthesis\n\n\nKabir, Mohammad Pabel\n\n\nUniversity of South Carolina\n\n\nInvestigates cobaltocenium-containing polymers, their interactions with organic anions, and their potential use in alkaline anion-exchange membranes.\n\n\nLink\n\n\n\n\n\n\n\n\njournal-article\n\n\nKabir, Md Pabel; Islam, Md Manuarul; Masum, Shah Md; Hossain, Md Mufazzal\n\n\nBangladesh Journal of Scientific and Industrial Research\n\n\nStudies the equilibrium, kinetics, and thermodynamics of dye adsorption onto chitosan from aqueous solution.\n\n\nDOI"
+  },
+  {
+    "objectID": "software/index.html",
+    "href": "software/index.html",
+    "title": "Software & Data",
+    "section": "",
+    "text": "These resources are public research workflows or related contributions. Repository maturity labels are conservative until the PI confirms current maintenance status.\n\n\n\n\n\nPurpose: Automated protocol for generating three-dimensional interaction maps between molecular partners from structural inputs.\nMaturity: research workflow / fork of Liu Group repository\nConstraints: AMBER16 or newer, Packmol, Python 2.7-era dependencies, pyvdwsurface\nLicense: MIT\nRepository\n\n\n\nPurpose: Workflow for computing van der Waals surface points and electrostatic spectral tuning maps from molecular coordinates.\nMaturity: research workflow / legacy protocol\nConstraints: Python 2.7, NumPy, Matplotlib, Cython, pyvdwsurface, Gaussian workflow scripts\nLicense: MIT\nRepository\n\n\n\nPurpose: APEC-style QM/MM protocol for modeling flavoprotein environments and chromophore electronic states.\nMaturity: research workflow / legacy protocol\nConstraints: Dowser, Modeller, SCWRL4, Molcas 7.8, Tinker 5, VMD, Gromacs, cluster-specific scripts\nLicense: not declared in repository metadata at review time\nRepository\n\n\n\nPurpose: Protocol for umbrella sampling simulations and PMF generation as a function of center-of-mass distance between molecules.\nMaturity: research workflow / fork of Liu Group repository\nConstraints: AMBER16 or newer, AutoSolvate, Packmol, WHAM\nLicense: MIT\nRepository\n\n\n\nPurpose: Automated workflow for setting up explicit-solvent quantum chemistry calculations for molecules.\nMaturity: related contribution / fork of Liu Group project\nConstraints: Use Liu Group documentation for canonical installation and usage.\nLicense: BSD 3-Clause\nKabir fork\nLiu Group project"
+  },
+  {
+    "objectID": "software/index.html#public-repositories",
+    "href": "software/index.html#public-repositories",
+    "title": "Software & Data",
+    "section": "",
+    "text": "Purpose: Automated protocol for generating three-dimensional interaction maps between molecular partners from structural inputs.\nMaturity: research workflow / fork of Liu Group repository\nConstraints: AMBER16 or newer, Packmol, Python 2.7-era dependencies, pyvdwsurface\nLicense: MIT\nRepository\n\n\n\nPurpose: Workflow for computing van der Waals surface points and electrostatic spectral tuning maps from molecular coordinates.\nMaturity: research workflow / legacy protocol\nConstraints: Python 2.7, NumPy, Matplotlib, Cython, pyvdwsurface, Gaussian workflow scripts\nLicense: MIT\nRepository\n\n\n\nPurpose: APEC-style QM/MM protocol for modeling flavoprotein environments and chromophore electronic states.\nMaturity: research workflow / legacy protocol\nConstraints: Dowser, Modeller, SCWRL4, Molcas 7.8, Tinker 5, VMD, Gromacs, cluster-specific scripts\nLicense: not declared in repository metadata at review time\nRepository\n\n\n\nPurpose: Protocol for umbrella sampling simulations and PMF generation as a function of center-of-mass distance between molecules.\nMaturity: research workflow / fork of Liu Group repository\nConstraints: AMBER16 or newer, AutoSolvate, Packmol, WHAM\nLicense: MIT\nRepository\n\n\n\nPurpose: Automated workflow for setting up explicit-solvent quantum chemistry calculations for molecules.\nMaturity: related contribution / fork of Liu Group project\nConstraints: Use Liu Group documentation for canonical installation and usage.\nLicense: BSD 3-Clause\nKabir fork\nLiu Group project"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\n\nPublic email, room, and telephone details will be posted after the lab confirms the preferred contact method.\n\n\n\nDepartment\n\nDepartment of Chemistry and Forensic Science\n\nInstitution\n\nSavannah State University\n\nLocation\n\nSavannah, Georgia\n\nPublic GitHub\n\npabelkabir\n\n\n\nFor collaboration inquiries, student research questions, or computational workflow discussion, use the public GitHub profile or Savannah State departmental channels until a dedicated lab contact method is confirmed."
+  }
+]
