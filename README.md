@@ -2,9 +2,9 @@
 
 This repository hosts the Kabir Lab website for `kabirlab.org`.
 
-## Review Branch Status
+## Production Status
 
-This branch stages a Quarto review build in `docs/` and intentionally preserves the current root-level production files. Do not deploy, merge, mirror `docs/` to root, change GitHub Pages settings, or modify DNS from this branch.
+The design-reference V2 review build is live for `kabirlab.org` as of 2026-07-19 so the site owner can review it and suggest changes. The Quarto source renders to `docs/`, and the rendered output is mirrored at the repository root for GitHub Pages user-site compatibility.
 
 ## Source Layout
 
@@ -38,4 +38,4 @@ See `PUBLICATIONS_WORKFLOW.md`. The safe update path is to export corrected Goog
 
 ## Deployment
 
-See `DEPLOYMENT_MIGRATION.md`. Deployment is a separate human approval step and is not part of this review branch.
+See `DEPLOYMENT_MIGRATION.md`. Future content changes should be made in `site/`, rendered into `docs/`, mirrored to root, validated, committed, and pushed.

@@ -1,56 +1,60 @@
-# Deployment Migration Notes
+# Deployment Notes
 
-This branch is a review branch. It must not be deployed, merged, or used to change DNS or GitHub Pages settings until the site owner approves the staged build.
+The design-reference V2 review build was brought live for owner review on 2026-07-19. No DNS changes were made.
 
-## What This Branch Does
+## Current Layout
 
-- Builds the Quarto review site into `docs/`.
-- Preserves the current root-level production site.
-- Preserves the root `CNAME` value:
+- Quarto source: `site/`
+- Rendered build: `docs/`
+- Live root mirror: repository root
+- GitHub Pages custom domain: `kabirlab.org`
+- Root `CNAME` and `docs/CNAME` contain:
 
 ```text
 kabirlab.org
 ```
-
-- Keeps all deployment steps as human review instructions only.
 
 ## Review Steps
 
-1. Review the draft pull request.
-2. Inspect the rendered `docs/` site locally or through a branch preview.
+1. Inspect the live site at `kabirlab.org`.
+2. Review the rendered `docs/` site and screenshots if local comparison is needed.
 3. Review `CONTENT_NEEDED.md` for unresolved identity, people, opportunities, and publication-link items.
 4. Confirm that no unverified News, Gallery, Alumni, Collaborators, domain email, office room, phone number, or private repository content is rendered.
-5. Confirm desktop and mobile screenshots in `review-screenshots/`.
+5. Send suggested changes before considering the review complete.
 
-## Human Deployment Steps After Approval
+## Update Workflow
 
-Do not perform these steps from Codex unless the owner explicitly asks for deployment later.
+1. Update source content in `site/`, `data/`, or supporting scripts.
+2. Rebuild publication pages:
 
-1. Merge the approved review pull request.
-2. Open GitHub repository settings for `pabelkabir/pabelkabir.github.io`.
-3. Go to `Settings -> Pages`.
-4. Confirm the custom domain remains:
-
-```text
-kabirlab.org
+```bash
+python scripts/build_publications.py
 ```
 
-5. Confirm the publishing source matches the approved rendered folder.
-6. Confirm `docs/CNAME` contains only:
+3. Render a clean Quarto build:
 
-```text
-kabirlab.org
+```bash
+rm -rf docs
+cd site
+quarto render
+cd ..
 ```
 
-7. Wait for Pages to build.
-8. Verify:
+4. Run validation:
 
-```text
-https://kabirlab.org
-https://www.kabirlab.org
+```bash
+python scripts/validate_content.py
+python scripts/check_rendered_links.py
+python scripts/check_accessibility_static.py
 ```
 
-9. Enable `Enforce HTTPS` only when GitHub has issued the certificate and the checkbox is available.
-10. Verify the homepage, research pages, publications, people, software/resources, join, contact, sitemap, and 404 page.
+5. Mirror the rendered site to root:
 
-Move or remove old root-level production files only in a later, separate commit after the approved `docs/` site is live and verified.
+```bash
+rsync -a docs/ ./
+```
+
+6. Commit and push to `master`.
+7. Wait for Pages to rebuild, then verify the homepage, research pages, publications, people, software/resources, join, contact, sitemap, and 404 page.
+
+Enable `Enforce HTTPS` only when GitHub has issued the certificate and the checkbox is available.

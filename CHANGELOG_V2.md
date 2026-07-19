@@ -1,5 +1,10 @@
 # Version 2 Changelog
 
+## Live Preview
+
+- The design-reference V2 review build was brought live for owner review on 2026-07-19.
+- Rendered `docs/` output is mirrored at the repository root for GitHub Pages user-site compatibility.
+
 ## Added
 
 - Design-reference review pass for the staged Quarto site in `docs/`.
