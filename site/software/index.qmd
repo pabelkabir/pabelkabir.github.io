@@ -7,36 +7,6 @@ description: "Public computational workflows and resources connected to Kabir La
 
 These resources are public research workflows or related contributions. Repository maturity labels are conservative until the PI confirms current maintenance status.
 
-## Logo
-
-Official Kabir Lab logo files for approved website, presentation, poster, and research communication use.
-
-::: {.software-grid .logo-resource-grid}
-::: {.software-card .logo-resource-card}
-### Refined Logo
-
-<div class="logo-resource-preview logo-resource-preview-light">
-  <img src="../assets/brand/kabir_lab_logo_refined.svg" alt="Kabir Lab refined logo on white background">
-</div>
-
-White-background SVG with full Kabir Lab wordmark and computational molecular science tagline.
-
-<a class="btn-lab secondary resource-download" href="../assets/brand/kabir_lab_logo_refined.svg" download>Download SVG</a>
-:::
-
-::: {.software-card .logo-resource-card}
-### Refined Logo, Dark
-
-<div class="logo-resource-preview">
-  <img src="../assets/brand/kabir_lab_logo_refined1.svg" alt="Kabir Lab refined logo on dark background">
-</div>
-
-Dark-background SVG with full Kabir Lab wordmark and computational molecular science tagline.
-
-<a class="btn-lab secondary resource-download" href="../assets/brand/kabir_lab_logo_refined1.svg" download>Download SVG</a>
-:::
-:::
-
 ## Kabir Lab Software And Workflows
 
 ::: {.software-grid}
@@ -110,3 +80,14 @@ Dark-background SVG with full Kabir Lab wordmark and computational molecular sci
 ## Student Onboarding Resources
 
 Students joining computational projects typically begin with Linux command-line work, Python scripting, molecular visualization, version control, and careful research notebooks. Public training materials will be added here after they are approved for reuse.
+
+## Logo
+
+Official Kabir Lab logo files for approved website, presentation, poster, and research communication use.
+
+```{=html}
+<div class="button-row">
+  <a class="btn-lab secondary" href="../assets/brand/kabir_lab_logo_refined.svg" download>Download Refined Logo SVG</a>
+  <a class="btn-lab secondary" href="../assets/brand/kabir_lab_logo_refined1.svg" download>Download Refined Dark Logo SVG</a>
+</div>
+```
