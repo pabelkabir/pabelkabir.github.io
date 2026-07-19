@@ -35,40 +35,15 @@ These resources are public research workflows or related contributions. Reposito
 :::
 
 ::: {.software-card}
-### QM/MM Protocol For Flavoproteins
-
-**Purpose:** APEC-style QM/MM protocol for modeling flavoprotein environments and chromophore electronic states.
-
-**Maturity:** research workflow / legacy protocol  
-**Constraints:** Dowser, Modeller, SCWRL4, Molcas 7.8, Tinker 5, VMD, Gromacs, cluster-specific scripts  
-**License:** not declared in repository metadata at review time
-
-[Repository](https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins)
-:::
-
-::: {.software-card}
 ### Workflow For Umbrella Sampling
 
 **Purpose:** Protocol for umbrella sampling simulations and PMF generation as a function of center-of-mass distance between molecules.
 
 **Maturity:** research workflow / fork of Liu Group repository  
-**Constraints:** AMBER16 or newer, AutoSolvate, Packmol, WHAM  
+**Constraints:** AMBER16 or newer, Packmol, WHAM  
 **License:** MIT
 
 [Repository](https://github.com/pabelkabir/Workflow-for-Umbrella-Sampling)
-:::
-
-::: {.software-card}
-### AutoSolvate
-
-**Purpose:** Automated workflow for setting up explicit-solvent quantum chemistry calculations for molecules.
-
-**Maturity:** related contribution / fork of Liu Group project  
-**Constraints:** Use Liu Group documentation for canonical installation and usage.  
-**License:** BSD 3-Clause
-
-[Kabir fork](https://github.com/pabelkabir/AutoSolvate)  
-[Liu Group project](https://github.com/Liu-group/AutoSolvate)
 :::
 :::
 
