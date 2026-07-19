@@ -7,8 +7,6 @@ description: "Research pillars for the Kabir Computational Molecular Science Lab
 
 The Kabir Lab studies how molecular environment controls electronic structure, photophysics, and intermolecular association. We combine quantum chemistry, molecular dynamics, QM/MM, sampling, and automated analysis to connect microscopic interactions with measurable molecular behavior.
 
-## Evidence-Backed Pillars
-
 ::: {.grid-3}
 ::: {.card}
 <div class="pillar-visual photophysics-visual" role="img" aria-label="Diagram of chromophore energy levels surrounded by electrostatic field contours."></div>
