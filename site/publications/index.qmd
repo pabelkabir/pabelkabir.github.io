@@ -5,8 +5,4 @@ description: "Curated publication list for Dr. Mohammad Pabel Kabir and Kabir La
 
 # Publications
 
-Complete publications are generated from structured BibTeX and YAML metadata, then grouped by year in reverse chronological order. Citation counts are intentionally omitted because they change frequently.
-
-Publication entries use DOI links as canonical article links where available. Code, data, preprint, and protocol links are shown only when they are part of the curated metadata.
-
 {{< include ../generated/publications.qmd >}}
