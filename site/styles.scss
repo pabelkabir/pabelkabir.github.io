@@ -502,6 +502,7 @@ a {
 .home-hero-figure img {
   display: block;
   width: 100%;
+  height: auto;
   max-height: 560px;
   object-fit: contain;
 }
@@ -1141,7 +1142,7 @@ a {
   }
 
   .home-hero-figure img {
-    max-height: 320px;
+    max-height: 420px;
   }
 
   .home-research-card + .home-research-card,
@@ -1266,7 +1267,7 @@ a {
   }
 
   .home-hero-figure img {
-    max-height: 240px;
+    max-height: 340px;
   }
 
   .home-card-heading {
