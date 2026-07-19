@@ -1,5 +1,5 @@
 ---
-title: "Software & Resources"
+title: "Resources"
 description: "Public computational workflows and resources connected to Kabir Lab research."
 ---
 
