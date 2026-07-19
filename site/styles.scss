@@ -209,13 +209,13 @@ h3 {
 }
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   line-height: 1;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2.05rem;
   line-height: 1.05;
   margin-top: 0;
 }
@@ -259,7 +259,7 @@ a {
 }
 
 .hero-v2 h1 {
-  font-size: clamp(2.55rem, 3.2vw, 3.55rem);
+  font-size: clamp(2.35rem, 2.95vw, 3.25rem);
   line-height: 1.08;
 }
 
@@ -451,7 +451,7 @@ a {
   margin: 0.55rem 0 1rem;
   color: #0b2b5c;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.75rem, 4.8vw, 5rem);
+  font-size: clamp(2.5rem, 4.35vw, 4.55rem);
   line-height: 0.98;
   letter-spacing: 0;
 }
@@ -558,7 +558,7 @@ a {
   margin: 0;
   color: #0b2b5c;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.08rem, 1.35vw, 1.32rem);
+  font-size: clamp(1.02rem, 1.22vw, 1.22rem);
   line-height: 1.12;
 }
 
@@ -614,7 +614,7 @@ a {
   margin: 0 0 0.75rem;
   color: #0b2b5c;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.12rem, 1.45vw, 1.38rem);
+  font-size: clamp(1.06rem, 1.32vw, 1.28rem);
   line-height: 1.15;
 }
 
@@ -1158,11 +1158,11 @@ h3.publication-year {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 3.00rem;
+    font-size: 2.65rem;
   }
 
   h2 {
-    font-size: 2.35rem;
+    font-size: 2.1rem;
   }
 
   .hero-v2,
@@ -1195,7 +1195,7 @@ h3.publication-year {
   }
 
   .home-hero-copy h1 {
-    font-size: clamp(2.7rem, 9vw, 4.2rem);
+    font-size: clamp(2.4rem, 8.2vw, 3.75rem);
   }
 
   .home-hero-figure img {
@@ -1265,11 +1265,11 @@ h3.publication-year {
 
 @media (max-width: 520px) {
   h1 {
-    font-size: 2.65rem;
+    font-size: 2.3rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .lead-copy {
@@ -1293,7 +1293,7 @@ h3.publication-year {
   }
 
   .home-hero-copy h1 {
-    font-size: clamp(2.25rem, 12vw, 3.05rem);
+    font-size: clamp(2.05rem, 10.5vw, 2.72rem);
   }
 
   .hero-v2 .hero-actions {
