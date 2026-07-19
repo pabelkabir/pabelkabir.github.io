@@ -410,6 +410,51 @@ a {
   margin-top: 0;
 }
 
+.logo-resource-grid {
+  margin: 1.2rem 0 2.6rem;
+}
+
+.logo-resource-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.logo-resource-preview {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 18% 20%, rgba(15, 163, 171, 0.22), transparent 16rem),
+    linear-gradient(135deg, #08232d, #10252b 48%, #0b3441);
+  overflow: hidden;
+}
+
+.logo-resource-preview-light {
+  background: #f6f8f7;
+  border-color: var(--line);
+}
+
+.logo-resource-preview img {
+  width: min(78%, 310px);
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.logo-resource-preview p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.resource-download {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
 .pillar-card {
   display: flex;
   flex-direction: column;

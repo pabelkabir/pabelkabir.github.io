@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1200 1200" style="enable-background:new 0 0 1200 1200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#425F7C;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:24;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:6;stroke-linecap:round;}
+	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-linecap:round;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:8.0003;stroke-miterlimit:4.0001;}
+	.st5{fill:#0FA3AB;stroke:#FFFFFF;stroke-width:8;}
+	.st6{fill:#F36C13;stroke:#FFFFFF;stroke-width:8;}
+	.st7{fill:#FFFFFF;}
+	.st8{font-family:'Didot-Bold';}
+	.st9{font-size:400px;}
+	.st10{fill:#557C7C;stroke:#FFFFFF;stroke-width:8;}
+	.st11{font-size:145px;}
+	.st12{letter-spacing:7;}
+	.st13{fill:none;stroke:#0FA3AB;stroke-width:5;}
+	.st14{font-family:'AvenirNext-DemiBold';}
+	.st15{font-size:26px;}
+	.st16{letter-spacing:2;}
+	.st17{fill:none;stroke:#F36C13;stroke-width:5;}
+</style>
+<rect y="2" class="st0" width="1200" height="1200"/>
+<polygon id="outer-hexagon" class="st1" points="600,160 845,302 845,626 600,768 355,626 355,302 "/>
+<g id="molecule">
+	<path class="st2" d="M425,541l-40,36 M425,541l33,42 M425,541l-15-54 M425,541l49-4"/>
+	<circle class="st3" cx="425" cy="541" r="17"/>
+	<circle class="st3" cx="385" cy="577" r="10"/>
+	<circle class="st3" cx="458" cy="583" r="10"/>
+	<circle class="st3" cx="410" cy="487" r="10"/>
+	<circle class="st3" cx="474" cy="537" r="8"/>
+</g>
+<ellipse id="molecular-orbit" transform="matrix(0.9903 -0.1392 0.1392 0.9903 -58.8314 88.6039)" class="st4" cx="604" cy="464.9" rx="286" ry="78"/>
+<circle id="teal-orbit-dot" class="st5" cx="377" cy="451" r="23"/>
+<circle id="orange-orbit-dot" class="st6" cx="822" cy="389.8" r="23"/>
+<text id="central-K" transform="matrix(1 0 0 1 459.0002 605.9998)" class="st7 st8 st9">K</text>
+<circle id="teal-orbit-dot_00000083083159169116433450000001163841488340131766_" class="st10" cx="643.8" cy="540" r="23"/>
+<g id="Kabir-Lab-Type">
+	<text id="main-name" transform="matrix(1 0 0 1 214.3329 928)" class="st7 st8 st11 st12">Kabir Lab</text>
+	<line class="st13" x1="208" y1="971" x2="276" y2="971"/>
+	<text id="tagline" transform="matrix(1 0 0 1 284.5411 981)" class="st7 st14 st15 st16">COMPUTATIONAL MOLECULAR SCIENCE</text>
+	<line class="st17" x1="944" y1="971" x2="1014" y2="971"/>
+</g>
+<path class="st7" d="M774.6,293.9c-2.3-1.1-4.6-2.1-6.8-3.2c-54.3-27.5-108.5-55.1-162.5-83.1c-3.5-1.8-6.1-1.9-9.6-0.1
+	c-41.8,21.5-83.7,42.7-125.5,64.1c-10.7,5.4-21.3,10.8-32,16.2c-1.2,0.6-2.4,1.6-4.9,1.3c56-31,111.3-61.6,167.2-91.9
+	c58.5,31.3,116.1,64.3,174.4,95.9C774.7,293.3,774.6,293.6,774.6,293.9z"/>
+<path class="st7" d="M425.3,635.9c2.3,1.1,4.6,2.1,6.8,3.2c54.3,27.5,108.5,55.1,162.5,83.1c3.5,1.8,6.1,1.9,9.6,0.1
+	c41.8-21.5,83.7-42.7,125.5-64.1c10.7-5.4,21.3-10.8,32-16.2c1.2-0.6,2.4-1.6,4.9-1.3c-56,31-111.3,61.6-167.2,91.9
+	c-58.5-31.3-116.1-64.3-174.4-95.9C425.1,636.5,425.2,636.2,425.3,635.9z"/>
+</svg>
