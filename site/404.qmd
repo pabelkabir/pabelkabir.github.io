@@ -1,0 +1,10 @@
+---
+title: "Page Not Found"
+description: "Kabir Lab page not found."
+---
+
+# Page Not Found
+
+The requested Kabir Lab page is not available.
+
+<a class="btn-lab" href="/">Return Home</a>

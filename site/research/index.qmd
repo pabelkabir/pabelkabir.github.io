@@ -1,0 +1,40 @@
+---
+title: "Research"
+description: "Research pillars for the Kabir Computational Molecular Science Lab."
+---
+
+# Research
+
+The Kabir Lab studies how molecular environment controls electronic structure, photophysics, and intermolecular association. We combine quantum chemistry, molecular dynamics, QM/MM, sampling, and automated analysis to connect microscopic interactions with measurable molecular behavior.
+
+## Current Pillars
+
+::: {.grid-3}
+::: {.card}
+### Molecular photophysics in complex environments
+
+Molecules do not absorb, emit, or react in isolation. Their behavior changes with electrostatics, hydrogen bonding, solvation, conformation, redox state, protonation, and the surrounding protein or material.
+
+[Photophysics page](photophysics.qmd)
+:::
+
+::: {.card}
+### Multiscale simulation and reliable computational workflows
+
+Complex simulations are useful only when their assumptions, inputs, sampling, and analysis are traceable. The lab develops and documents workflows that connect electronic structure with molecular simulation.
+
+[Workflows page](multiscale-workflows.qmd)
+:::
+
+::: {.card}
+### Interaction mapping and functional molecular design
+
+The lab investigates where molecules prefer to associate, how environment changes those interactions, and how interaction patterns can guide molecular or materials design.
+
+[Interaction mapping page](interactions-materials.qmd)
+:::
+:::
+
+::: {.warning-note}
+Emerging directions such as PFAS, environmental contaminant projects, machine-learning-assisted molecular prioritization, and data-driven photoredox screening can be added when public project details, collaborators, datasets, and current status are ready.
+:::

@@ -1,0 +1,46 @@
+---
+title: "Join"
+description: "Student research opportunities and expectations in the Kabir Lab."
+---
+
+# Join The Lab
+
+Kabir Lab welcomes Savannah State students interested in computational chemistry, molecular modeling, scientific programming, and data analysis.
+
+## Who Should Consider Applying
+
+Students who are curious about molecular science, willing to document their work carefully, and interested in learning computational tools are encouraged to prepare a structured inquiry.
+
+## Example Project Types
+
+- Literature-guided computational chemistry projects.
+- Molecular modeling and visualization.
+- Python or shell workflow development.
+- Publication-data and repository curation.
+- Simulation analysis and reproducibility checks.
+
+## Skills Students Can Learn
+
+- Linux command-line work.
+- Python scripting for scientific data.
+- Molecular visualization and structure preparation.
+- Electronic-structure and molecular-simulation concepts.
+- Research notebooks, version control, and scientific communication.
+
+## Application Materials
+
+Prepare one concise email or form response with:
+
+1. Name, major, and year.
+2. Short statement of research interest.
+3. Relevant chemistry, mathematics, programming, or physics courses.
+4. Weekly availability.
+5. CV or resume.
+
+::: {.warning-note}
+Weekly hours, minimum semester commitment, position type, transcript requirements, and application destination will be posted after the lab confirms current openings.
+:::
+
+## Research Expectations
+
+Students are expected to keep careful records, communicate progress regularly, respect data integrity, and distinguish tested results from hypotheses or exploratory notes.

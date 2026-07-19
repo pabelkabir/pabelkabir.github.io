@@ -1,0 +1,10 @@
+---
+title: "Publications"
+description: "Curated publication list for Dr. Mohammad Pabel Kabir and Kabir Lab."
+---
+
+# Publications
+
+Selected and complete publications are grouped by year. Citation counts are intentionally omitted because they change frequently.
+
+{{< include ../generated/publications.qmd >}}

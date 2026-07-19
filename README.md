@@ -1,22 +1,39 @@
 # Kabir Lab Website
 
-Static GitHub Pages site for `kabirlab.org`.
+This repository hosts the live Kabir Lab site at `kabirlab.org`.
 
-## Files
+## Production Status
 
-- `index.html` - one-page lab website with the full navigation structure.
-- `styles.css` - responsive styling.
-- `script.js` - mobile navigation and active-section highlighting.
-- `assets/hero-molecular-map.png` - original hero image asset.
-- `CNAME` - GitHub Pages custom-domain file for `kabirlab.org`.
-- `.nojekyll` - tells GitHub Pages to serve files as plain static assets.
-- `robots.txt` and `sitemap.xml` - basic search-engine files.
-- `404.html` - custom not-found page.
+The current production site is still served from the repository root. Version 2 is staged as Quarto source and a rendered preview in `docs/` on the `codex/site-v2` branch. Do not switch GitHub Pages from `/root` to `/docs` until the review checklist is complete.
 
-## Edit Before Launch
+## Version 2 Source
 
-Customize the PI profile, lab members, publications, real GitHub repositories, and social or academic profiles. The domain and site title are already set for `kabirlab.org`.
+- `site/_quarto.yml` configures the Quarto website and renders to root-level `docs/`.
+- `site/index.qmd`, `site/research/`, `site/publications/`, `site/people/`, `site/software/`, `site/join/`, and `site/contact.qmd` are the public pages.
+- `data/publications.bib` and `data/publications.yml` are the canonical publication seed and curation layer.
+- `scripts/build_publications.py` generates `site/generated/publications.qmd` and `site/generated/publications.json`.
+- `scripts/validate_content.py` checks rendered public files for placeholders, unverified contact content, missing image alt text, duplicate DOI values, and deployment safety.
+- `CONTENT_NEEDED.md` tracks PI-supplied details needed before final public launch.
 
 ## Local Preview
 
-Open `index.html` in a browser. No build step is required.
+Install Quarto, then run:
+
+```bash
+python scripts/build_publications.py
+rm -rf docs
+cd site
+quarto render
+cd ..
+python scripts/validate_content.py
+```
+
+Open `docs/index.html` to preview the rendered site.
+
+## Publication Updates
+
+See `PUBLICATIONS_WORKFLOW.md`. The safe update path is to export corrected Google Scholar entries as BibTeX into `data/google-scholar-export.bib`, run the publication generator, and review the generated diff before publishing.
+
+## Deployment
+
+See `DEPLOYMENT_MIGRATION.md`. The short version is: review the V2 branch, merge only after content is verified, then manually change GitHub Pages from `/root` to `/docs`.
