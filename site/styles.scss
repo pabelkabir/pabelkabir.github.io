@@ -35,6 +35,28 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
+.navbar-brand .navbar-title {
+  line-height: 1.05;
+}
+
+.navbar-brand .navbar-title::after {
+  content: "Savannah State University";
+  display: block;
+  margin-top: 0.15rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.66rem;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link[href$="join/"],
+.navbar-nav .nav-link[href$="join/index.html"] {
+  color: #ffffff;
+  background: rgba(242, 143, 69, 0.18);
+  border: 1px solid rgba(242, 143, 69, 0.38);
+  border-radius: 999px;
+  padding-inline: 0.85rem;
+}
+
 .navbar-brand img {
   width: 30px;
   height: 30px;
@@ -119,6 +141,14 @@ a {
   color: #314548;
 }
 
+.tagline {
+  margin-bottom: 0.7rem;
+  color: var(--ink);
+  font-size: 1.45rem;
+  line-height: 1.25;
+  font-weight: 750;
+}
+
 .hero-actions,
 .button-row {
   display: flex;
@@ -161,6 +191,13 @@ a {
   object-fit: cover;
 }
 
+.hero-visual figcaption {
+  margin: 0;
+  padding: 0.75rem 0.9rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.86rem;
+}
+
 .capability-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -198,6 +235,20 @@ a {
 .band.dark p,
 .band.dark li {
   color: #f7fbfb;
+}
+
+.band.dark .publication-card h3,
+.band.dark .publication-card p,
+.band.dark .publication-card li {
+  color: var(--ink-soft);
+}
+
+.band.dark .publication-card h3 {
+  color: var(--ink);
+}
+
+.band.dark .publication-card .pub-meta {
+  color: var(--ink-soft);
 }
 
 .grid-3,
@@ -243,7 +294,8 @@ a {
   min-height: 360px;
 }
 
-.pillar-visual {
+.pillar-visual,
+.research-diagram {
   min-height: 132px;
   border-radius: var(--radius);
   border: 1px solid var(--line);
@@ -256,7 +308,9 @@ a {
 }
 
 .pillar-visual::before,
-.pillar-visual::after {
+.pillar-visual::after,
+.research-diagram::before,
+.research-diagram::after {
   content: "";
   position: absolute;
   inset: 22% 12%;
@@ -264,10 +318,47 @@ a {
   transform: rotate(-8deg);
 }
 
-.pillar-visual::after {
+.pillar-visual::after,
+.research-diagram::after {
   inset: 40% 18%;
   border-color: rgba(242, 143, 69, 0.5);
   transform: rotate(14deg);
+}
+
+.workflow-visual {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 0 8%, transparent 8% 21%, rgba(242, 143, 69, 0.22) 21% 28%, transparent 28% 43%, rgba(25, 107, 114, 0.3) 43% 52%, transparent 52% 70%, rgba(255, 255, 255, 0.14) 70% 78%, transparent 78%),
+    linear-gradient(135deg, rgba(16, 37, 43, 0.95), rgba(25, 107, 114, 0.86));
+}
+
+.interaction-visual {
+  background:
+    radial-gradient(circle at 32% 40%, rgba(242, 143, 69, 0.42) 0 10%, transparent 11%),
+    radial-gradient(circle at 63% 55%, rgba(255, 255, 255, 0.24) 0 12%, transparent 13%),
+    radial-gradient(circle at 48% 30%, rgba(25, 107, 114, 0.42) 0 18%, transparent 19%),
+    linear-gradient(135deg, rgba(16, 37, 43, 0.96), rgba(53, 83, 74, 0.9));
+}
+
+.research-question {
+  border-left: 4px solid var(--orange);
+  padding: 1rem 1.15rem;
+  background: #fff6ef;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.research-figure {
+  margin: 1.5rem 0 2rem;
+}
+
+.research-diagram {
+  min-height: 240px;
+}
+
+.research-figure figcaption {
+  margin-top: 0.7rem;
+  color: var(--ink-soft);
+  font-size: 0.94rem;
 }
 
 .mini-label {
@@ -281,7 +372,8 @@ a {
 }
 
 .pub-meta,
-.repo-meta {
+.repo-meta,
+.evidence-links {
   color: var(--ink-soft);
   font-size: 0.92rem;
 }
@@ -294,6 +386,7 @@ a {
 }
 
 .tag {
+  display: inline-block;
   border-radius: 999px;
   background: rgba(25, 107, 114, 0.1);
   color: var(--teal);
@@ -314,6 +407,13 @@ a {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1rem;
+}
+
+.profile-links p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
 }
 
 .person-card {

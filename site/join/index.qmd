@@ -5,11 +5,17 @@ description: "Student research opportunities and expectations in the Kabir Lab."
 
 # Join The Lab
 
-Kabir Lab welcomes Savannah State students interested in computational chemistry, molecular modeling, scientific programming, and data analysis.
+Kabir Lab welcomes structured inquiries from Savannah State students interested in computational chemistry, molecular modeling, scientific programming, and data analysis. Project placement depends on preparation, time availability, and current mentoring capacity.
 
-## Who Should Consider Applying
+## Savannah State Undergraduate Students
 
-Students who are curious about molecular science, willing to document their work carefully, and interested in learning computational tools are encouraged to prepare a structured inquiry.
+**Status:** inquiries are welcome. A project is confirmed only after a conversation about background, schedule, training needs, and available mentoring capacity.
+
+**Expected background:** curiosity about molecular science, willingness to document work carefully, and interest in chemistry, mathematics, programming, physics, or data analysis.
+
+**Likely training outcomes:** Linux command-line work, Python scripting, molecular visualization, electronic-structure and molecular-simulation concepts, version control, research notebooks, and scientific communication.
+
+**Application subject line:** `Kabir Lab undergraduate research inquiry`
 
 ## Example Project Types
 
@@ -19,17 +25,21 @@ Students who are curious about molecular science, willing to document their work
 - Publication-data and repository curation.
 - Simulation analysis and reproducibility checks.
 
-## Skills Students Can Learn
+## External Undergraduate Collaborators
 
-- Linux command-line work.
-- Python scripting for scientific data.
-- Molecular visualization and structure preparation.
-- Electronic-structure and molecular-simulation concepts.
-- Research notebooks, version control, and scientific communication.
+External undergraduate collaborations are considered only when a clear mentoring arrangement, project scope, and communication plan are in place.
+
+## Graduate Students And Postdoctoral Candidates
+
+No public graduate-student or postdoctoral openings are advertised at this time. Any future opening will be posted with eligibility, funding status, expected background, and application instructions.
+
+## Research Collaborators
+
+Researchers interested in computational photophysics, flavoprotein modeling, interaction maps, or reproducible molecular simulation workflows may contact the lab with a concise project description and relevant public links.
 
 ## Application Materials
 
-Prepare one concise email or form response with:
+Prepare one concise email to [kabirm@savannahstate.edu](mailto:kabirm@savannahstate.edu) with:
 
 1. Name, major, and year.
 2. Short statement of research interest.
@@ -37,9 +47,7 @@ Prepare one concise email or form response with:
 4. Weekly availability.
 5. CV or resume.
 
-::: {.warning-note}
-Weekly hours, minimum semester commitment, position type, transcript requirements, and application destination will be posted after the lab confirms current openings.
-:::
+Weekly time commitment, minimum semester commitment, compensation or course-credit status, and transcript requirements are discussed before a project is confirmed.
 
 ## Research Expectations
 

@@ -1,0 +1,47 @@
+---
+title: "Multiscale Workflows"
+description: "Reproducible multiscale simulation and computational workflow development."
+---
+
+# Multiscale Simulation And Reliable Computational Workflows
+
+::: {.research-question}
+**Research question:** How can complex molecular simulations be made reproducible, comparable, and practical for systematic studies rather than one-off calculations?
+:::
+
+<figure class="research-figure">
+  <div class="research-diagram workflow-visual" role="img" aria-label="Diagram connecting quantum chemistry, explicit solvent setup, molecular dynamics, QM/MM, and analysis checkpoints."></div>
+  <figcaption>Reliable computational workflows document inputs, assumptions, sampling, and analysis so related molecular systems can be compared rather than treated as isolated calculations.</figcaption>
+</figure>
+
+## Overview
+
+Complex simulations are useful only when their assumptions, inputs, sampling, and analysis are traceable. Kabir Lab develops and documents workflows that connect electronic structure with molecular dynamics, explicit solvent, QM/MM modeling, conformational sampling, and free-energy analysis. The goal is reproducible scientific comparison, not automation for its own sake. That means method choices, structural preparation, charge models, sampling decisions, and post-processing steps must be visible enough for students and collaborators to inspect and repeat.
+
+This research direction supports studies of flavoprotein photophysics, chromophore spectral tuning, explicit-solvent quantum chemistry setup, and association free energies. It also creates a training path for undergraduate researchers: students can learn Linux, Python, molecular visualization, simulation setup, version control, and evidence-focused documentation while contributing to scientific workflows.
+
+## Why It Matters
+
+Computational chemistry can become fragile when scripts, parameters, or system-preparation decisions are hidden. Reproducible workflows make it easier to compare systems, teach new researchers, revisit assumptions, and identify where uncertainty enters a mechanistic conclusion.
+
+## How We Study It
+
+Kabir Lab connects electronic structure, molecular dynamics, QM/MM, conformational sampling, explicit-solvent setup, and analysis through documented Python and shell workflows. The goal is reproducible scientific comparison, not automation as a substitute for scientific judgment.
+
+## Public Resources And Examples
+
+- [QM/MM APEC protocol for flavoproteins](https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins).
+- [Electrostatic Spectral Tuning Maps workflow](https://github.com/pabelkabir/Electrostatic-Spectral-Tuning-Maps).
+- [AutoSolvate contribution and explicit-solvent setup](https://github.com/pabelkabir/AutoSolvate).
+- [Umbrella-sampling workflow for potential-of-mean-force calculations](https://github.com/pabelkabir/Workflow-for-Umbrella-Sampling).
+- [Method benchmarking for flavin excited states](https://doi.org/10.1021/acs.jpcb.4c03748).
+
+## Notes On Maturity
+
+Some public workflows depend on legacy research environments such as Python 2, cluster-specific scripts, or specialized chemistry packages. They are presented as research workflows or legacy protocols unless the PI later confirms active maintenance status.
+
+## Student Involvement
+
+Students can contribute by testing setup instructions, documenting assumptions, improving analysis notebooks, comparing outputs across molecular systems, and turning one-off calculations into reproducible research records.
+
+[View software and resources](../../software/)

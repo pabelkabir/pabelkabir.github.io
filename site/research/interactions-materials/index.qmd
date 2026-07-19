@@ -1,0 +1,51 @@
+---
+title: "Interaction Mapping"
+description: "Interaction mapping and molecular design research foundations."
+---
+
+# Interaction Mapping And Functional Molecular Design
+
+::: {.research-question}
+**Research question:** Where do molecules preferentially interact, how strong are those associations in a given environment, and how can that information guide molecular or materials design?
+:::
+
+<figure class="research-figure">
+  <div class="research-diagram interaction-visual" role="img" aria-label="Diagram of molecular interaction hot spots, association pathways, and free-energy sampling windows."></div>
+  <figcaption>Interaction mapping identifies favorable association regions and connects those maps with molecular geometry, solvent, and free-energy sampling.</figcaption>
+</figure>
+
+## Overview
+
+Molecular recognition and materials behavior often depend on where molecules prefer to approach one another, how strong those associations are, and how solvent or geometry reshapes the interaction. Kabir Lab's research foundation includes Ab-Initio Interaction Maps, explicit-solvent molecular dynamics, geometry optimization, umbrella sampling, optical-spectroscopy context, and electronic-structure calculations. Together, these tools can visualize favorable interaction regions and quantify association pathways.
+
+This area connects molecular interaction analysis with functional molecular design. Representative systems include BODIPY and molecular partner interaction maps, cobaltocenium-containing polyelectrolytes and anionic probes, alkaline anion-exchange membrane materials, metallocene-containing polymers, and photoactive molecular systems. Older materials and polymer publications are described as part of the research foundation unless the PI confirms that they remain active Savannah State projects.
+
+## Why It Matters
+
+Interaction maps and free-energy profiles help turn qualitative ideas about association into testable molecular hypotheses. They can guide which molecular features to compare, which binding regions deserve closer sampling, and how molecular architecture influences material or photophysical function.
+
+## How We Study It
+
+The research foundation combines Ab-Initio Interaction Maps, explicit-solvent sampling, geometry optimization, umbrella sampling, optical spectroscopy context, and molecular modeling to visualize favorable interaction regions and quantify association pathways.
+
+## Systems And Examples
+
+- BODIPY and molecular partner interaction maps.
+- Cobaltocenium-containing polyelectrolytes and anionic probes.
+- Functional anion-exchange membranes.
+- Photoinduced RAFT polymerization and metallocene-containing polymers.
+- Interaction-aware design of photoactive and ionic molecular systems.
+
+## Framing
+
+This page distinguishes current Kabir Lab development from earlier collaborative work. Older materials and polymer publications are described as a research foundation unless the PI confirms that they remain active projects at Savannah State.
+
+## Representative Outputs
+
+- [Ab-Initio Interaction Map repository](https://github.com/pabelkabir/Ab-Initio-Interaction-Map).
+- [Workflow for Umbrella Sampling repository](https://github.com/pabelkabir/Workflow-for-Umbrella-Sampling).
+- [2017 binding study of cobaltocenium-containing polyelectrolytes](https://doi.org/10.1007/s10904-017-0561-5).
+- [2018 alkaline anion-exchange membrane materials paper](https://doi.org/10.1002/anie.201712387).
+- [2016 metallocene-containing polymer review](https://doi.org/10.1055/s-0035-1561504).
+
+[View software and resources](../../software/)

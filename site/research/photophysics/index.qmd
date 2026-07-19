@@ -1,0 +1,53 @@
+---
+title: "Molecular Photophysics"
+description: "Excited-state electronic structure and molecular photophysics in complex environments."
+---
+
+# Molecular Photophysics In Complex Environments
+
+::: {.research-question}
+**Research question:** How do local electrostatics, hydrogen bonding, redox and protonation state, protein structure, and molecular architecture control absorption, fluorescence, intersystem crossing, and charge-transfer pathways?
+:::
+
+<figure class="research-figure">
+  <div class="research-diagram photophysics-visual" role="img" aria-label="Diagram of chromophore energy levels, charge-transfer pathways, and electrostatic field contours."></div>
+  <figcaption>Computational photophysics links chromophore electronic states with the local fields, hydrogen bonds, conformations, and protein or solvent environments that reshape spectra.</figcaption>
+</figure>
+
+## Overview
+
+Molecules do not absorb, emit, or react in isolation. Their behavior changes with electrostatics, hydrogen bonding, solvation, conformation, redox state, protonation, and the surrounding protein or material. Kabir Lab uses excited-state electronic-structure calculations and multiscale simulation to determine how local environments reshape spectra, charge-transfer pathways, fluorescence, intersystem crossing, and photochemical outcomes. This work is grounded in systems where calculation can be compared with spectroscopy or experiment, including flavins in multiple redox states, flavin-binding fluorescent proteins, flavin semiquinone radicals, hydrogen-bonded model systems, and 9-fluorenone derivatives with competing emission pathways.
+
+The scientific aim is not only to reproduce a spectrum. The aim is to identify which environmental interactions matter, which electronic-structure methods are reliable for a given observable, and how molecular structure or protein environment can be used to tune photophysical behavior.
+
+## Why It Matters
+
+Photophysical molecules are central to fluorescent proteins, photoactive materials, enzyme cofactors, sensors, and light-driven chemistry. Understanding how local environment controls their spectra helps researchers interpret experiments and design molecules or mutations with more predictable optical behavior.
+
+## How We Study It
+
+The lab uses ground- and excited-state electronic-structure calculations, multireference methods, TD-DFT, molecular dynamics, and QM/MM models to connect microscopic environment with observed spectroscopy and photophysics.
+
+## Systems And Examples
+
+- Flavins in multiple redox and protonation states.
+- Flavin-binding fluorescent proteins and rational spectral tuning.
+- Flavin semiquinone radicals in protein environments.
+- Hydrogen-bond effects on vibrational spectra.
+- Stimuli-responsive multipathway emission in 9-fluorenone derivatives.
+
+## Representative Outputs
+
+- [2025 ACS Applied Energy Materials paper on 9-fluorenone derivatives](https://doi.org/10.1021/acsaem.5c00577).
+- [2024 JPC B electronic-structure benchmark](https://doi.org/10.1021/acs.jpcb.4c03748).
+- [2023 JPC B iLOV spectral-tuning paper](https://doi.org/10.1021/acs.jpcb.2c06475).
+- [2021 Spectrochimica Acta A hydrogen-bonding paper](https://doi.org/10.1016/j.saa.2021.120110).
+- [2019 PCCP flavin redox/protonation spectra](https://doi.org/10.1039/c9cp02230a).
+- [2019 ChemBioChem semiquinone fluorescence](https://doi.org/10.1002/cbic.201900016).
+
+## Related Workflows
+
+- [Electrostatic Spectral Tuning Maps](https://github.com/pabelkabir/Electrostatic-Spectral-Tuning-Maps)
+- [QM/MM Protocol for Flavoproteins](https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins)
+
+[View publications](../../publications/)

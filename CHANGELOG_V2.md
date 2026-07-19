@@ -2,16 +2,17 @@
 
 ## Added
 
-- Quarto website source with output directed to `docs/`.
-- Evidence-led homepage and seven-item navigation.
-- Three research pillar pages.
+- Design-reference review pass for the staged Quarto site in `docs/`.
+- Stable directory URLs for research topic pages and contact.
+- Evidence-led homepage with research before publications, resources, and recruitment.
+- Three richer research pillar pages with questions, overview prose, methods, evidence, and related workflows.
 - Publications pipeline from curated BibTeX and metadata.
-- People page with PI-only review profile.
-- Software & Data page with conservative repository maturity labels.
-- Join page with structured application expectations.
-- Contact page that hides unverified email, phone, and office details.
+- People page with portrait, verified email, GitHub link, PI profile, and recruitment focus.
+- Software & Resources page with conservative repository maturity labels.
+- Join page with category-specific guidance and a structured inquiry process.
+- Contact page with verified institutional email and no unverified domain mailbox, phone, or office details.
 - Content validation script and publication-generation script.
-- Deployment migration checklist for switching GitHub Pages from `/root` to `/docs`.
+- Deployment migration checklist for human review after approval.
 
 ## Removed Or Hidden From Version 2 Preview
 
@@ -24,4 +25,4 @@
 
 - Root production site files.
 - Root `CNAME` with `kabirlab.org`.
-- Current GitHub Pages serving path until human approval.
+- GitHub Pages, DNS, and HTTPS settings.
