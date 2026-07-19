@@ -963,21 +963,21 @@ a {
   margin-top: 0;
   border-top: 0;
   background:
-    radial-gradient(circle at 8% 0%, rgba(25, 107, 114, 0.28), transparent 24rem),
-    linear-gradient(90deg, #082a58 0%, #08306d 44%, #062657 100%);
+    radial-gradient(circle at 10% 10%, rgba(47, 137, 143, 0.22), transparent 24rem),
+    linear-gradient(90deg, #12323a 0%, #193f48 48%, #134b58 100%);
   color: #ffffff;
-  box-shadow: 0 -14px 42px rgba(16, 37, 43, 0.12);
+  box-shadow: 0 -10px 30px rgba(16, 37, 43, 0.1);
 }
 
 .footer .nav-footer {
   display: grid;
-  grid-template-columns: minmax(230px, 0.95fr) minmax(360px, 1.25fr) minmax(170px, 0.55fr);
-  gap: clamp(1rem, 3vw, 2.6rem);
+  grid-template-columns: minmax(220px, 0.9fr) minmax(340px, 1.15fr) minmax(150px, 0.48fr);
+  gap: clamp(0.9rem, 2.2vw, 2rem);
   align-items: center;
-  width: min(100%, 1360px);
+  width: min(100%, 1120px);
   margin: 0 auto;
-  padding: 1.35rem clamp(1.25rem, 4vw, 3.1rem);
-  min-height: 104px;
+  padding: 1rem clamp(1.1rem, 3vw, 2rem);
+  min-height: 88px;
 }
 
 .footer .nav-footer-left,
