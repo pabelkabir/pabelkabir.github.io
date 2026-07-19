@@ -1,28 +1,3 @@
-## Featured Publications
-::: {.publication-grid}
-::: {.publication-card}
-### Stimulus-Driven Tuning of Multipathway Emission in 9-Fluorenone Derivatives: Elucidating Charge Transfer Dynamics in Higher Excited Singlet and Triplet States
-<p class="pub-meta">Datta, Saptarshi; <strong>Kabir, Mohammad Pabel</strong>; Maliha, Sunjida Reza; Liu, Fang; Xu, Jinjia</p>
-<p class="pub-meta">ACS Applied Energy Materials, 2025</p>
-Combines molecular design, spectroscopy, and excited-state calculations to explain how 9-fluorenone derivatives access fluorescence, charge-transfer emission, phosphorescence, and delayed fluorescence under different molecular and environmental conditions.
-<a href="https://doi.org/10.1021/acsaem.5c00577">DOI</a>
-:::
-::: {.publication-card}
-### Electronic Structure Methods for Simulating Flavin's Spectroscopy and Photophysics: Comparison of Multi-reference, TD-DFT, and Single-Reference Wave Function Methods
-<p class="pub-meta"><strong>Kabir, Mohammad Pabel</strong>; Ghosh, Paulami; Gozem, Samer</p>
-<p class="pub-meta">The Journal of Physical Chemistry B, 2024</p>
-Benchmarks multireference, TD-DFT, coupled-cluster-related, and other wave-function methods for flavin excited states, clarifying which computational choices are reliable for different spectroscopic and photophysical questions.
-<a href="https://doi.org/10.1021/acs.jpcb.4c03748">DOI</a> | <a href="https://doi.org/10.26434/chemrxiv-2024-57gzq">Preprint</a>
-:::
-::: {.publication-card}
-### Alternative Strategy for Spectral Tuning of Flavin-Binding Fluorescent Proteins
-<p class="pub-meta"><strong>Kabir, Mohammad Pabel</strong>; Ouedraogo, Daniel; Orozco-Gonzalez, Yoelvis; Gadda, Giovanni; Gozem, Samer</p>
-<p class="pub-meta">The Journal of Physical Chemistry B, 2023</p>
-Uses electrostatic spectral-tuning maps, molecular dynamics, QM/MM calculations, mutagenesis, and spectroscopy to test a rational strategy for shifting the fluorescence of a flavin-binding fluorescent protein.
-<a href="https://doi.org/10.1021/acs.jpcb.2c06475">DOI</a> | <a href="https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins">Code</a> | <a href="https://doi.org/10.26434/chemrxiv-2022-kqmfc">Preprint</a>
-:::
-:::
-
 ## All Publications
 
 ### 2025 {.publication-year}

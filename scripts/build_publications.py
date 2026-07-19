@@ -212,24 +212,8 @@ def link_line(entry: dict[str, str], meta: dict[str, object]) -> str:
 
 def make_qmd(entries: list[dict[str, str]], metadata: dict[str, dict[str, object]]) -> str:
     entries = sorted(entries, key=lambda e: (int(e.get("year", 0)), e.get("title", "")), reverse=True)
-    featured = [e for e in entries if metadata.get(e.get("citekey", ""), {}).get("featured")]
     lines: list[str] = []
-    lines.append("## Featured Publications\n")
-    lines.append("::: {.publication-grid}\n")
-    for entry in featured:
-        meta = metadata.get(entry.get("citekey", ""), {})
-        lines.append("::: {.publication-card}\n")
-        lines.append(f"### {entry.get('title')}\n")
-        lines.append(f"<p class=\"pub-meta\">{format_authors(entry.get('author', ''))}</p>\n")
-        lines.append(f"<p class=\"pub-meta\">{entry.get('journal', entry.get('school', ''))}, {entry.get('year')}</p>\n")
-        if meta.get("summary"):
-            lines.append(f"{meta['summary']}\n")
-        links = link_line(entry, meta)
-        if links:
-            lines.append(f"{links}\n")
-        lines.append(":::\n")
-    lines.append(":::\n")
-    lines.append("\n## All Publications\n")
+    lines.append("## All Publications\n")
     current_year = None
     open_list = False
     for entry in entries:
