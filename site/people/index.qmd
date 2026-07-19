@@ -40,7 +40,7 @@ Mohammad Pabel Kabir is an assistant professor at Savannah State University whos
 ::: {.student-card}
 <img src="../assets/people/summer-coleman.jpg" alt="Portrait of Summer Coleman" class="student-photo">
 
-### Summer Coleman
+### Janiyah Bryant
 
 Undergraduate Researcher
 :::
@@ -48,7 +48,7 @@ Undergraduate Researcher
 ::: {.student-card}
 <img src="../assets/people/janiyah-bryant.jpg" alt="Portrait of Janiyah Bryant" class="student-photo">
 
-### Janiyah Bryant
+### Summer Coleman
 
 Undergraduate Researcher
 :::

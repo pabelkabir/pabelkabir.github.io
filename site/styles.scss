@@ -209,13 +209,13 @@ h3 {
 }
 
 h1 {
-  font-size: 3.15rem;
+  font-size: 2.75rem;
   line-height: 1;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   line-height: 1.05;
   margin-top: 0;
 }
@@ -451,7 +451,7 @@ a {
   margin: 0.55rem 0 1rem;
   color: #0b2b5c;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.1rem, 4.8vw, 5rem);
+  font-size: clamp(2.75rem, 4.8vw, 5rem);
   line-height: 0.98;
   letter-spacing: 0;
 }
@@ -1139,7 +1139,7 @@ h3.publication-year {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 3.25rem;
+    font-size: 3.00rem;
   }
 
   h2 {
