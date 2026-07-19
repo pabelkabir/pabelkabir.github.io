@@ -20,6 +20,9 @@ Location
 
 Public GitHub
 : [pabelkabir](https://github.com/pabelkabir)
+
+LinkedIn
+: [Pabel Kabir, Ph.D.](https://www.linkedin.com/in/pabel-kabir-ph-d-68213691/)
 :::
 
 For collaboration inquiries, student research questions, or computational workflow discussion, email [kabirm@savannahstate.edu](mailto:kabirm@savannahstate.edu).
