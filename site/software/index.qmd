@@ -114,7 +114,7 @@ Public documentation, tutorials, lectures, and short books useful for computatio
 - [Wallace D. Derricotte physical and quantum chemistry lectures](https://www.youtube.com/c/ProfessorDerricotte/about)
 - [StatQuest statistics, machine learning, and data science](https://www.youtube.com/c/joshstarmer)
 - [Chris Cramer computational chemistry and thermodynamics course](https://www.youtube.com/channel/UCQWne9DleuGu0q9TmA70jWQ/featured)
-- [David Sherrill introduction to computational chemistry series](https://www.youtube.com/watch?v=EqUPF6NO348&list=PLFYoDkTAQWKBarFNED2smakjXwK5hkUrP)
+- [**David Sherrill** Lectures](https://vergil.chemistry.gatech.edu/resources#Introductory-Quantum-Chemistry)
 - [BioExcel webinars and lectures](https://www.youtube.com/c/BioExcelCoE/videos)
 - [Q-Chem webinars](https://www.youtube.com/user/QChemSoftware)
 :::
