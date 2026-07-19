@@ -1,0 +1,66 @@
+project:
+  type: website
+  output-dir: ../docs
+  render:
+    - index.qmd
+    - research/index.qmd
+    - research/photophysics.qmd
+    - research/multiscale-workflows.qmd
+    - research/interactions-materials.qmd
+    - publications/index.qmd
+    - people/index.qmd
+    - software/index.qmd
+    - join/index.qmd
+    - contact.qmd
+    - 404.qmd
+  resources:
+    - CNAME
+    - .nojekyll
+    - assets/**
+    - generated/publications.json
+
+website:
+  title: "Kabir Lab"
+  site-url: "https://kabirlab.org"
+  description: "Kabir Computational Molecular Science Lab at Savannah State University."
+  favicon: assets/brand/favicon.png
+  navbar:
+    title: "Kabir Lab"
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research/index.qmd
+      - text: Publications
+        href: publications/index.qmd
+      - text: People
+        href: people/index.qmd
+      - text: Software & Data
+        href: software/index.qmd
+      - text: Join
+        href: join/index.qmd
+      - text: Contact
+        href: contact.qmd
+  page-footer:
+    left: "Kabir Computational Molecular Science Lab"
+    right:
+      - text: GitHub
+        href: https://github.com/pabelkabir
+      - text: Savannah State University
+        href: https://www.savannahstate.edu/
+  search: false
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: false
+    anchor-sections: true
+    smooth-scroll: true
+    include-in-header:
+      text: |
+        <meta property="og:image" content="https://kabirlab.org/assets/hero-molecular-map.png">
+        <meta name="twitter:card" content="summary_large_image">
+execute:
+  freeze: auto

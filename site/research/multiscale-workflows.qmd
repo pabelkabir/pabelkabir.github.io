@@ -1,0 +1,28 @@
+---
+title: "Multiscale Workflows"
+description: "Reproducible multiscale simulation and computational workflow development."
+---
+
+# Multiscale Simulation And Reliable Computational Workflows
+
+## Core Question
+
+How can complex molecular simulations be made reproducible, comparable, and practical for systematic studies rather than one-off calculations?
+
+## Approach
+
+Kabir Lab connects electronic structure, molecular dynamics, QM/MM, conformational sampling, explicit-solvent setup, and analysis through documented Python and shell workflows. The goal is reproducible scientific comparison, not automation as a substitute for scientific judgment.
+
+## Public Resources And Examples
+
+- QM/MM APEC protocol for flavoproteins.
+- Electrostatic Spectral Tuning Maps workflow.
+- AutoSolvate contribution and explicit-solvent setup.
+- Umbrella-sampling workflow for potential-of-mean-force calculations.
+- Method benchmarking for flavin excited states.
+
+## Notes On Maturity
+
+Some public workflows depend on legacy research environments such as Python 2, cluster-specific scripts, or specialized chemistry packages. They are presented as research workflows or legacy protocols unless the PI later confirms active maintenance status.
+
+[View software and data](../software/)

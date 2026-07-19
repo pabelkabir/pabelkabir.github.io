@@ -1,0 +1,116 @@
+# Curated fields supplementing publications_seed.bib.
+# Codex should merge by citekey and never overwrite these fields silently.
+
+- citekey: datta2025stimulus
+  type: journal-article
+  featured: true
+  research_area: photophysics
+  summary: >-
+    Combines molecular design, spectroscopy, and excited-state calculations to explain how
+    9-fluorenone derivatives access fluorescence, charge-transfer emission, phosphorescence,
+    and delayed fluorescence under different molecular and environmental conditions.
+
+- citekey: kabir2024electronic
+  type: journal-article
+  featured: true
+  research_area: photophysics
+  open_access: true
+  preprint: https://doi.org/10.26434/chemrxiv-2024-57gzq
+  summary: >-
+    Benchmarks multireference, TD-DFT, coupled-cluster-related, and other wave-function methods
+    for flavin excited states, clarifying which computational choices are reliable for different
+    spectroscopic and photophysical questions.
+
+- citekey: kabir2023alternative
+  type: journal-article
+  featured: true
+  research_area: photophysics
+  open_access: true
+  preprint: https://doi.org/10.26434/chemrxiv-2022-kqmfc
+  code: https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins
+  summary: >-
+    Uses electrostatic spectral-tuning maps, molecular dynamics, QM/MM calculations, mutagenesis,
+    and spectroscopy to test a rational strategy for shifting the fluorescence of a flavin-binding
+    fluorescent protein.
+
+- citekey: kabir2021hydrogen
+  type: journal-article
+  featured: false
+  research_area: photophysics
+  summary: >-
+    Connects hydrogen-bonding environments with changes in flavin infrared absorption and
+    vibrational assignments.
+
+- citekey: kabir2019electronic
+  type: journal-article
+  featured: false
+  research_area: photophysics
+  code: https://github.com/pabelkabir/Electrostatic-Spectral-Tuning-Maps
+  summary: >-
+    Computes and interprets flavin spectra across redox and protonation states while mapping how
+    surrounding electrostatics can shift observable transitions.
+
+- citekey: orozco2019electrostatic
+  type: journal-article
+  featured: false
+  research_area: workflows
+  code: https://github.com/pabelkabir/Electrostatic-Spectral-Tuning-Maps
+  summary: >-
+    Introduces three-dimensional maps that visualize how nearby charges tune the excitation
+    energies of biological chromophores.
+
+- citekey: su2019fluorescence
+  type: journal-article
+  featured: false
+  research_area: photophysics
+  summary: >-
+    Combines spectroscopy and electronic-structure calculations to explain unusual fluorescence
+    behavior of a flavin semiquinone radical stabilized in a protein.
+
+- citekey: zhu2018cationic
+  type: journal-article
+  featured: false
+  research_area: interactions-materials
+  summary: >-
+    Reports cobaltocenium-based polyelectrolytes designed for chemically and mechanically robust
+    alkaline anion-exchange membranes.
+
+- citekey: pageni2017binding
+  type: journal-article
+  featured: false
+  research_area: interactions-materials
+  summary: >-
+    Examines how charge and aromatic interactions influence binding between cobaltocenium-containing
+    polyelectrolytes and anionic molecular or polymeric probes.
+
+- citekey: yang2016metallocene
+  type: journal-article
+  featured: false
+  research_area: interactions-materials
+  summary: >-
+    Demonstrates light-controlled RAFT polymerization of metallocene-containing monomers and the
+    preparation of heterobimetallic block copolymers.
+
+- citekey: yan2016metallocenium
+  type: review
+  featured: false
+  research_area: interactions-materials
+  summary: >-
+    Reviews metallocenium chemistry and its development as a platform for functional macromolecular
+    and polyelectrolyte materials.
+
+- citekey: kabir2014adsorption
+  type: journal-article
+  featured: false
+  research_area: interactions-materials
+  summary: >-
+    Studies the equilibrium, kinetics, and thermodynamics of dye adsorption onto chitosan from
+    aqueous solution.
+
+- citekey: kabir2016thesis
+  type: thesis
+  featured: false
+  research_area: interactions-materials
+  summary: >-
+    Investigates cobaltocenium-containing polymers, their interactions with organic anions, and
+    their potential use in alkaline anion-exchange membranes.

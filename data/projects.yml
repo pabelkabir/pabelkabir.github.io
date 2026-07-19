@@ -1,0 +1,16 @@
+projects:
+  - title: "Molecular photophysics in complex environments"
+    status: "active direction pending PI confirmation"
+    page: "research/photophysics.qmd"
+  - title: "Multiscale simulation and reliable computational workflows"
+    status: "active direction pending PI confirmation"
+    page: "research/multiscale-workflows.qmd"
+  - title: "Interaction mapping and functional molecular design"
+    status: "research foundation pending current-status confirmation"
+    page: "research/interactions-materials.qmd"
+  - title: "Emerging directions"
+    status: "hidden until evidence is supplied"
+    notes:
+      - "PFAS or environmental contaminant projects"
+      - "machine learning or explainable AI as an independent program"
+      - "data-driven photoredox screening"
