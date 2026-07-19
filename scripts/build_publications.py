@@ -213,7 +213,7 @@ def link_line(entry: dict[str, str], meta: dict[str, object]) -> str:
 def make_qmd(entries: list[dict[str, str]], metadata: dict[str, dict[str, object]]) -> str:
     entries = sorted(entries, key=lambda e: (int(e.get("year", 0)), e.get("title", "")), reverse=True)
     lines: list[str] = []
-    lines.append("## All Publications\n")
+#    lines.append("## All Publications\n")
     current_year = None
     open_list = False
     for entry in entries:
