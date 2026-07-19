@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2432cc9d993c86f44299ca2108494c94.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-beed52cffa329d2bbb207fe8f5e79073.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -152,49 +152,85 @@ ul.task-list li input[type="checkbox"] {
 
 <a class="skip-link" href="#main-content">Skip to content</a>
 
-<section class="hero-v2" id="main-content">
-  <div>
+<section class="home-hero-panel" id="main-content">
+  <div class="home-hero-copy">
     <p class="eyebrow">Kabir Computational Molecular Science Lab</p>
     <h1>Computing how molecular environments control light, reactivity, and recognition.</h1>
-    <p class="lead-copy">We combine quantum chemistry, molecular dynamics, QM/MM, and automated workflows to understand molecular behavior in proteins, solvents, and functional materials.</p>
-    <p>Department of Chemistry and Forensic Science<br>Savannah State University</p>
+    <p class="lead-copy">We combine quantum chemistry, molecular dynamics, QM/MM, photophysics, and automated workflows to understand how complex environments shape molecular behavior from proteins and cofactors to functional materials.</p>
     <div class="hero-actions">
-      <a class="btn-lab" href="research/">Explore Research <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
-      <a class="btn-lab secondary" href="join/">Join the Lab <i class="bi bi-people" aria-hidden="true"></i></a>
+      <a class="btn-lab" href="research/">Explore Our Research</a>
+      <a class="btn-lab secondary" href="publications/">View Publications</a>
     </div>
-    <a class="hero-text-link" href="publications/">View publications <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+    <p class="home-location">
+      <i class="bi bi-bank" aria-hidden="true"></i>
+      <span>Department of Chemistry and Forensic Science<br>Savannah State University • Savannah, Georgia, USA</span>
+    </p>
   </div>
-  <figure class="hero-visual figure">
-    <img src="assets/hero-molecular-map.png" alt="Computational molecular visualization showing a flavin-like chromophore with electrostatic interaction fields." class="figure-img">
-    <figcaption>Electrostatic environment and interaction hot spots around a flavin chromophore from QM/MM modeling.</figcaption>
+  <figure class="home-hero-figure figure">
+    <img src="assets/home/hero-aiim-hotspot.jpg" alt="AIIM hotspot density map and flavin-binding interaction diagram." class="figure-img">
+    <figcaption>AIIM hotspot density map for a flavin-binding site showing the local environment that tunes photophysics and reactivity.</figcaption>
   </figure>
 </section>
 
-<section class="home-research-strip" aria-label="Research directions">
-  <a class="home-research-tile" href="research/photophysics/">
-    <span class="home-tile-icon"><i class="bi bi-brightness-high" aria-hidden="true"></i></span>
-    <span>
-      <strong>Excited-State and Redox Chemistry</strong>
-      <small>Electronic structure and spectroscopy of photoactive and redox-active molecules in complex environments.</small>
-      <i class="bi bi-arrow-right tile-arrow" aria-hidden="true"></i>
-    </span>
-  </a>
-  <a class="home-research-tile" href="research/multiscale-workflows/">
-    <span class="home-tile-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
-    <span>
-      <strong>Molecular Dynamics and QM/MM</strong>
-      <small>Multiscale simulations connecting quantum chemistry with molecular dynamics to model real systems.</small>
-      <i class="bi bi-arrow-right tile-arrow" aria-hidden="true"></i>
-    </span>
-  </a>
-  <a class="home-research-tile" href="research/interactions-materials/">
-    <span class="home-tile-icon"><i class="bi bi-fingerprint" aria-hidden="true"></i></span>
-    <span>
-      <strong>Interaction Maps and Automated Workflows</strong>
-      <small>Automated protocols for interaction mapping, free-energy calculations, and reproducible computational science.</small>
-      <i class="bi bi-arrow-right tile-arrow" aria-hidden="true"></i>
-    </span>
-  </a>
+<section class="home-research-cards" aria-label="Research directions">
+  <article class="home-research-card">
+    <div class="home-card-heading">
+      <span class="home-section-number">1</span>
+      <h2 class="anchored">Molecular Photophysics in Complex Environments</h2>
+    </div>
+    <img class="home-card-figure" src="assets/home/photophysics-redshift.jpg" alt="Charge redistribution and protein environment diagram for flavin photophysics.">
+    <p>We investigate electronically excited states, charge redistribution, and environment-induced shifts in flavin and related chromophores within proteins and solvents.</p>
+    <a href="research/photophysics/">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </article>
+  <article class="home-research-card">
+    <div class="home-card-heading">
+      <span class="home-section-number">2</span>
+      <h2 class="anchored">Multiscale Simulation and Reproducible Workflows</h2>
+    </div>
+    <img class="home-card-figure" src="assets/home/workflow-replicas.jpg" alt="Workflow diagram for molecular preparation, solvated replicas, MD sampling, and QM/MM branching.">
+    <p>We integrate molecular dynamics, QM/MM, and automated workflows to enable reproducible, high-throughput studies of complex systems with open, transparent methods.</p>
+    <a href="research/multiscale-workflows/">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </article>
+  <article class="home-research-card">
+    <div class="home-card-heading">
+      <span class="home-section-number">3</span>
+      <h2 class="anchored">Molecular Interactions and Functional Design</h2>
+    </div>
+    <img class="home-card-figure" src="assets/home/polar-map.jpg" alt="Polar interaction density map for pyridine and methylammonium.">
+    <p>We quantify noncovalent interactions and design ligands and cofactors through polar maps, hotspot analysis, and structure-function relationships.</p>
+    <a href="research/interactions-materials/">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </article>
+</section>
+
+<section class="home-info-grid" aria-label="Lab highlights">
+  <article class="home-info-panel">
+    <h2 class="anchored"><i class="bi bi-journal-text" aria-hidden="true"></i>Selected Publications</h2>
+    <ul class="compact-list">
+      <li><strong>ACS Appl. Energy Mater.</strong> 2025: multipathway emission in 9-fluorenone derivatives.</li>
+      <li><strong>J. Phys. Chem. B</strong> 2024: electronic-structure methods for flavin spectroscopy.</li>
+      <li><strong>J. Phys. Chem. B</strong> 2023: spectral tuning of flavin-binding fluorescent proteins.</li>
+    </ul>
+    <a href="publications/">View all publications <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </article>
+  <article class="home-info-panel">
+    <h2 class="anchored"><i class="bi bi-code-slash" aria-hidden="true"></i>Open Workflows</h2>
+    <ul class="compact-list">
+      <li>Ab-Initio Interaction Map for noncovalent interaction analysis.</li>
+      <li>QM/MM protocol resources for flavoprotein spectral tuning.</li>
+      <li>Electrostatic spectral-tuning maps and sampling workflows.</li>
+    </ul>
+    <a href="software/">Explore resources <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </article>
+  <article class="home-info-panel">
+    <h2 class="anchored"><i class="bi bi-people-fill" aria-hidden="true"></i>Join the Lab</h2>
+    <ul class="check-list">
+      <li>Undergraduate research opportunities in computational chemistry.</li>
+      <li>Training in molecular modeling, coding, and reproducible workflows.</li>
+      <li>Collaborative mentoring for motivated student researchers.</li>
+    </ul>
+    <p>To apply or learn more, contact <a href="mailto:kabirm@savannahstate.edu">kabirm@savannahstate.edu</a>.</p>
+    <a href="join/">Research opportunities <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </article>
 </section>
 
 
