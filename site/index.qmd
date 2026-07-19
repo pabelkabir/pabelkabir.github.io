@@ -9,7 +9,7 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
 <section class="home-hero-panel" id="main-content">
   <div class="home-hero-copy">
     <p class="eyebrow">Kabir Computational Molecular Science Lab</p>
-    <h1>Computing how molecular environments control light, reactivity, and recognition.</h1>
+    <h2>Computing how molecular environments control light, reactivity, and recognition.</h1>
     <p class="lead-copy">We combine quantum chemistry, molecular dynamics, QM/MM, photophysics, and automated workflows to understand how complex environments shape molecular behavior from proteins and cofactors to functional materials.</p>
     <div class="hero-actions">
       <a class="btn-lab" href="research/">Explore Our Research</a>
@@ -21,7 +21,7 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
     </p>
   </div>
   <figure class="home-hero-figure">
-    <img src="assets/home/hero-aiim-hotspot.jpg" alt="AIIM hotspot density map and flavin-binding interaction diagram.">
+    <img src="assets/home/hero-aiim-hotspot-transparent.png" alt="AIIM hotspot density map and flavin-binding interaction diagram.">
     <figcaption>Ab Initio Interaction Maps highlight favorable interaction regions and molecular-recognition geometry around functional chromophores.</figcaption>
   </figure>
 </section>
