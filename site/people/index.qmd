@@ -32,10 +32,30 @@ Mohammad Pabel Kabir is an assistant professor at Savannah State University whos
 :::
 :::
 
+## Undergraduate Researchers
+
+::: {.people-grid}
+::: {.student-card}
+<img src="../assets/people/summer-coleman.jpg" alt="Portrait of Summer Coleman" class="student-photo">
+
+### Summer Coleman
+
+Undergraduate Researcher
+:::
+
+::: {.student-card}
+<img src="../assets/people/janiyah-bryant.jpg" alt="Portrait of Janiyah Bryant" class="student-photo">
+
+### Janiyah Bryant
+
+Undergraduate Researcher
+:::
+:::
+
 ::: {.callout-card}
 ## Student Research Opportunities
 
-Kabir Lab welcomes structured inquiries from Savannah State students interested in computational chemistry and research computing. Student names, photographs, alumni, and collaborators will be added only after roles, projects, and publication permissions are confirmed.
+Kabir Lab welcomes structured inquiries from Savannah State students interested in computational chemistry and research computing. Additional student projects, alumni, and collaborators will be added after roles, project details, and publication permissions are confirmed.
 
 [Read the Join page](../join/)
 :::
