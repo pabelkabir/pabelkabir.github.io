@@ -978,6 +978,8 @@ a {
   margin: 0 auto;
   padding: 1rem clamp(1.1rem, 3vw, 2rem);
   min-height: 88px;
+  background: transparent;
+  background-color: transparent;
 }
 
 .footer .nav-footer-left,
