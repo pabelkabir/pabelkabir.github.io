@@ -443,6 +443,10 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
+.home-hero-copy {
+  transform: translateX(clamp(1rem, 2vw, 1.75rem));
+}
+
 .home-hero-copy h1 {
   margin: 0.55rem 0 1rem;
   color: #0b2b5c;
@@ -711,10 +715,16 @@ a {
   padding: 1.35rem;
 }
 
+.card h2,
 .card h3,
 .publication-card h3,
 .software-card h3 {
   margin-top: 0;
+}
+
+.card h2 {
+  font-size: 1.18rem;
+  line-height: 1.2;
 }
 
 .pillar-card {
@@ -1120,6 +1130,10 @@ a {
   .home-hero-panel {
     gap: 1.65rem;
     padding: 2.1rem 0 1.4rem;
+  }
+
+  .home-hero-copy {
+    transform: none;
   }
 
   .home-hero-copy h1 {

@@ -203,6 +203,27 @@
     "text": "The Kabir Lab studies how molecular environment controls electronic structure, photophysics, and intermolecular association. We combine quantum chemistry, molecular dynamics, QM/MM, sampling, and automated analysis to connect microscopic interactions with measurable molecular behavior.\n\n\n\n\n\n\n\nMolecules do not absorb, emit, or react in isolation. Their behavior changes with electrostatics, hydrogen bonding, solvation, conformation, redox state, protonation, and the surrounding protein or material.\nPhotophysics page\n\n\n\n\n\n\n\n\nComplex simulations are useful only when their assumptions, inputs, sampling, and analysis are traceable. The lab develops and documents workflows that connect electronic structure with molecular simulation.\nWorkflows page\n\n\n\n\n\n\n\n\nThe lab investigates where molecules prefer to associate, how environment changes those interactions, and how interaction patterns can guide molecular or materials design.\nInteraction mapping page\n\n\n\n\n\nThese three areas are intentionally narrower than a broad list of computational chemistry methods. Each page connects a scientific question to representative publications or public workflows, while unverified future directions remain hidden until concrete public evidence is supplied."
   },
   {
+    "objectID": "research/index.html#how-do-environments-tune-molecular-light",
+    "href": "research/index.html#how-do-environments-tune-molecular-light",
+    "title": "Research",
+    "section": "",
+    "text": "Molecules do not absorb, emit, or react in isolation. Their behavior changes with electrostatics, hydrogen bonding, solvation, conformation, redox state, protonation, and the surrounding protein or material.\nPhotophysics page"
+  },
+  {
+    "objectID": "research/index.html#how-can-simulations-become-reproducible-evidence",
+    "href": "research/index.html#how-can-simulations-become-reproducible-evidence",
+    "title": "Research",
+    "section": "",
+    "text": "Complex simulations are useful only when their assumptions, inputs, sampling, and analysis are traceable. The lab develops and documents workflows that connect electronic structure with molecular simulation.\nWorkflows page"
+  },
+  {
+    "objectID": "research/index.html#where-do-molecules-prefer-to-associate",
+    "href": "research/index.html#where-do-molecules-prefer-to-associate",
+    "title": "Research",
+    "section": "",
+    "text": "The lab investigates where molecules prefer to associate, how environment changes those interactions, and how interaction patterns can guide molecular or materials design.\nInteraction mapping page"
+  },
+  {
     "objectID": "research/index.html#how-to-read-the-research-program",
     "href": "research/index.html#how-to-read-the-research-program",
     "title": "Research",

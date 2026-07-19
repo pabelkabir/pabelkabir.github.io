@@ -11,7 +11,7 @@ The Kabir Lab studies how molecular environment controls electronic structure, p
 ::: {.card}
 <div class="pillar-visual photophysics-visual" role="img" aria-label="Diagram of chromophore energy levels surrounded by electrostatic field contours."></div>
 
-### How do environments tune molecular light?
+## How do environments tune molecular light?
 
 Molecules do not absorb, emit, or react in isolation. Their behavior changes with electrostatics, hydrogen bonding, solvation, conformation, redox state, protonation, and the surrounding protein or material.
 
@@ -21,7 +21,7 @@ Molecules do not absorb, emit, or react in isolation. Their behavior changes wit
 ::: {.card}
 <div class="pillar-visual workflow-visual" role="img" aria-label="Diagram connecting quantum chemistry, molecular dynamics, QM/MM, and analysis steps."></div>
 
-### How can simulations become reproducible evidence?
+## How can simulations become reproducible evidence?
 
 Complex simulations are useful only when their assumptions, inputs, sampling, and analysis are traceable. The lab develops and documents workflows that connect electronic structure with molecular simulation.
 
@@ -31,7 +31,7 @@ Complex simulations are useful only when their assumptions, inputs, sampling, an
 ::: {.card}
 <div class="pillar-visual interaction-visual" role="img" aria-label="Diagram of three-dimensional interaction regions around a molecular surface."></div>
 
-### Where do molecules prefer to associate?
+## Where do molecules prefer to associate?
 
 The lab investigates where molecules prefer to associate, how environment changes those interactions, and how interaction patterns can guide molecular or materials design.
 
