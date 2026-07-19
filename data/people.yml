@@ -2,8 +2,8 @@ people:
   - name: "Dr. Mohammad Pabel Kabir"
     role: "Assistant Professor"
     status: "principal-investigator"
-    photo: ""
-    alt: ""
+    photo: "assets/people/mohammad-pabel-kabir.jpg"
+    alt: "Portrait of Dr. Mohammad Pabel Kabir"
     bio: "Mohammad Pabel Kabir is an assistant professor at Savannah State University whose research combines electronic-structure theory, molecular simulation, and automated computational workflows."
     project: "Computational molecular science"
     email: "kabirm@savannahstate.edu"
@@ -15,4 +15,4 @@ people:
     end_year: ""
     next_position: ""
     display_order: 1
-    verification_notes: "Email confirmed by PI. ORCID, Scholar, LinkedIn, office, and CV require PI confirmation before rendering as public links."
+    verification_notes: "Email and portrait confirmed by PI. ORCID, Scholar, LinkedIn, office, and CV require PI confirmation before rendering as public links."

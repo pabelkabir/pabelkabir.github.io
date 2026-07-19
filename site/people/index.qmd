@@ -6,6 +6,11 @@ description: "People in the Kabir Computational Molecular Science Lab."
 # People
 
 ::: {.person-card}
+::: {.person-photo-wrap}
+<img src="../assets/people/mohammad-pabel-kabir.jpg" alt="Portrait of Dr. Mohammad Pabel Kabir" class="person-photo">
+:::
+
+::: {.person-copy}
 ## Dr. Mohammad Pabel Kabir
 
 Assistant Professor  
@@ -15,7 +20,9 @@ Savannah State University
 Mohammad Pabel Kabir is an assistant professor at Savannah State University whose research combines electronic-structure theory, molecular simulation, and automated computational workflows. His work has examined flavin spectroscopy and photophysics, QM/MM modeling of flavoproteins, molecular interaction mapping, and functional molecular materials. He emphasizes reproducible computation and research training for undergraduate scientists.
 
 ::: {.profile-links}
+[Email](mailto:kabirm@savannahstate.edu)
 [GitHub](https://github.com/pabelkabir)
+:::
 :::
 :::
 

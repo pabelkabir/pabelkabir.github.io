@@ -12,7 +12,7 @@ Codex must hide any section whose required information is not supplied. Do not p
 - [ ] Provide office room and, if appropriate, lab/computer-lab location.
 - [ ] Confirm whether a phone number should be public.
 - [ ] Provide a current CV PDF.
-- [ ] Provide a professional portrait and permission to publish it.
+- [x] Provide a professional portrait and permission to publish it.
 
 ## People
 
