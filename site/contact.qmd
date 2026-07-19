@@ -5,11 +5,10 @@ description: "Contact information for Kabir Lab."
 
 # Contact
 
-::: {.warning-note}
-Public email, room, and telephone details will be posted after the lab confirms the preferred contact method.
-:::
-
 ::: {.contact-list}
+Email
+: [kabirm@savannahstate.edu](mailto:kabirm@savannahstate.edu)
+
 Department
 : Department of Chemistry and Forensic Science
 
@@ -23,4 +22,4 @@ Public GitHub
 : [pabelkabir](https://github.com/pabelkabir)
 :::
 
-For collaboration inquiries, student research questions, or computational workflow discussion, use the public GitHub profile or Savannah State departmental channels until a dedicated lab contact method is confirmed.
+For collaboration inquiries, student research questions, or computational workflow discussion, email [kabirm@savannahstate.edu](mailto:kabirm@savannahstate.edu).

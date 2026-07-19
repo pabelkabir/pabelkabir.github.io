@@ -7,7 +7,7 @@ Codex must hide any section whose required information is not supplied. Do not p
 - [ ] Confirm preferred public name: `Dr. Mohammad Pabel Kabir` versus another form.
 - [ ] Confirm the candidate Google Scholar URL: `https://scholar.google.com/citations?user=OZXMHFQAAAAJ&hl=en`.
 - [ ] Confirm ORCID iD and preferred ORCID URL.
-- [ ] Provide official Savannah State email.
+- [x] Provide official Savannah State email: `kabirm@savannahstate.edu`.
 - [ ] Confirm whether `contact@kabirlab.org` is configured and tested for inbound mail.
 - [ ] Provide office room and, if appropriate, lab/computer-lab location.
 - [ ] Confirm whether a phone number should be public.
