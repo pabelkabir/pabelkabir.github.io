@@ -16,6 +16,10 @@ project:
   resources:
     - CNAME
     - .nojekyll
+    - contact.html
+    - research/photophysics.html
+    - research/multiscale-workflows.html
+    - research/interactions-materials.html
     - assets/**
     - generated/publications.json
 
