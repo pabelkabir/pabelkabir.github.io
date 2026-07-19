@@ -10,7 +10,8 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
   <div>
     <p class="eyebrow">Kabir Computational Molecular Science Lab</p>
     <h1>Kabir Lab</h1>
-    <p class="lead-copy">We combine quantum chemistry, molecular dynamics, QM/MM, and automated workflows to study how molecular environments control light, reactivity, and recognition.</p>
+    <p class="tagline">Computing how molecular environments control light, reactivity, and recognition.</p>
+    <p class="lead-copy">We combine quantum chemistry, molecular dynamics, QM/MM, and automated workflows to connect electronic structure with molecular behavior in proteins, solvents, and functional materials.</p>
     <p>Department of Chemistry and Forensic Science<br>Savannah State University</p>
     <div class="hero-actions">
       <a class="btn-lab" href="research/">Explore Research</a>
@@ -25,6 +26,7 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
   </div>
   <figure class="hero-visual">
     <img src="assets/hero-molecular-map.png" alt="Abstract computational molecular visualization with interaction fields, molecular structures, and network traces.">
+    <figcaption>Original molecular-science visual representing electronic structure, interaction maps, and simulation workflows.</figcaption>
   </figure>
 </section>
 
@@ -39,30 +41,33 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
   <h2>Three evidence-backed directions</h2>
   <div class="grid-3">
     <article class="card pillar-card">
-      <div class="pillar-visual" role="img" aria-label="Stylized excited-state map with field contours and chromophore-like nodes."></div>
+      <div class="pillar-visual photophysics-visual" role="img" aria-label="Diagram of chromophore energy levels surrounded by electrostatic field contours."></div>
       <div>
         <span class="mini-label">Photophysics</span>
-        <h3>Molecular photophysics in complex environments</h3>
+        <h3>How do environments tune molecular light?</h3>
         <p>How do local electrostatics, hydrogen bonding, redox and protonation state, protein structure, and molecular architecture control absorption, fluorescence, intersystem crossing, and charge-transfer pathways?</p>
-        <a href="research/photophysics.html">Read about photophysics</a>
+        <p class="evidence-links"><a href="https://doi.org/10.1021/acs.jpcb.4c03748">2024 methods paper</a> | <a href="https://doi.org/10.1021/acs.jpcb.2c06475">2023 iLOV paper</a></p>
+        <a href="research/photophysics/">Learn more</a>
       </div>
     </article>
     <article class="card pillar-card">
-      <div class="pillar-visual" role="img" aria-label="Stylized multiscale simulation workflow with linked boxes and molecular traces."></div>
+      <div class="pillar-visual workflow-visual" role="img" aria-label="Diagram connecting quantum chemistry, molecular dynamics, QM/MM, and analysis steps."></div>
       <div>
         <span class="mini-label">Workflows</span>
-        <h3>Multiscale simulation and reliable workflows</h3>
+        <h3>How can simulations become reproducible evidence?</h3>
         <p>How can electronic structure, molecular dynamics, QM/MM, conformational sampling, explicit solvent, and analysis become reproducible enough for systematic comparison?</p>
-        <a href="research/multiscale-workflows.html">Read about workflows</a>
+        <p class="evidence-links"><a href="https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins">QM/MM protocol</a> | <a href="https://github.com/pabelkabir/Electrostatic-Spectral-Tuning-Maps">ESTM workflow</a></p>
+        <a href="research/multiscale-workflows/">Learn more</a>
       </div>
     </article>
     <article class="card pillar-card">
-      <div class="pillar-visual" role="img" aria-label="Stylized interaction map with surface regions and association pathways."></div>
+      <div class="pillar-visual interaction-visual" role="img" aria-label="Diagram of three-dimensional interaction regions around a molecular surface."></div>
       <div>
         <span class="mini-label">Interactions</span>
-        <h3>Interaction mapping and functional molecular design</h3>
+        <h3>Where do molecules prefer to associate?</h3>
         <p>Where do molecules preferentially interact, how strong are those associations in a given environment, and how can that information guide molecular or materials design?</p>
-        <a href="research/interactions-materials.html">Read about interactions</a>
+        <p class="evidence-links"><a href="https://github.com/pabelkabir/Ab-Initio-Interaction-Map">AIIM repository</a> | <a href="https://doi.org/10.1007/s10904-017-0561-5">2017 binding paper</a></p>
+        <a href="research/interactions-materials/">Learn more</a>
       </div>
     </article>
   </div>
@@ -75,22 +80,25 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
     <article class="publication-card">
       <span class="mini-label">2025</span>
       <h3>Stimulus-driven multipathway emission in 9-fluorenone derivatives</h3>
-      <p class="pub-meta">ACS Applied Energy Materials</p>
-      <p>Explains how molecular structure and environment redistribute fluorescence, charge-transfer emission, phosphorescence, and delayed fluorescence pathways.</p>
+      <p class="pub-meta">Datta, Saptarshi; <strong>Kabir, Mohammad Pabel</strong>; Maliha, Sunjida Reza; Liu, Fang; Xu, Jinjia</p>
+      <p class="pub-meta">ACS Applied Energy Materials, 2025</p>
+      <p>Combines molecular design, spectroscopy, and excited-state calculations to explain how structure and environment redistribute fluorescence, charge-transfer emission, phosphorescence, and delayed fluorescence pathways.</p>
       <a href="https://doi.org/10.1021/acsaem.5c00577">DOI</a>
     </article>
     <article class="publication-card">
       <span class="mini-label">2024</span>
       <h3>Electronic-structure methods for flavin spectroscopy and photophysics</h3>
-      <p class="pub-meta">The Journal of Physical Chemistry B</p>
-      <p>Benchmarks multiple electronic-structure methods for flavin excited states and spectroscopic properties.</p>
+      <p class="pub-meta"><strong>Kabir, Mohammad Pabel</strong>; Ghosh, Paulami; Gozem, Samer</p>
+      <p class="pub-meta">The Journal of Physical Chemistry B, 2024</p>
+      <p>Benchmarks multireference, TD-DFT, coupled-cluster-related, and other methods to clarify which computational choices are reliable for flavin excited states.</p>
       <a href="https://doi.org/10.1021/acs.jpcb.4c03748">DOI</a>
     </article>
     <article class="publication-card">
       <span class="mini-label">2023</span>
       <h3>Alternative strategy for spectral tuning of flavin-binding fluorescent proteins</h3>
-      <p class="pub-meta">The Journal of Physical Chemistry B</p>
-      <p>Combines maps, simulations, QM/MM calculations, mutagenesis, and spectroscopy to test rational color tuning.</p>
+      <p class="pub-meta"><strong>Kabir, Mohammad Pabel</strong>; Ouedraogo, Daniel; Orozco-Gonzalez, Yoelvis; Gadda, Giovanni; Gozem, Samer</p>
+      <p class="pub-meta">The Journal of Physical Chemistry B, 2023</p>
+      <p>Uses electrostatic maps, simulations, QM/MM calculations, mutagenesis, and spectroscopy to test a rational strategy for shifting flavoprotein fluorescence.</p>
       <a href="https://doi.org/10.1021/acs.jpcb.2c06475">DOI</a>
     </article>
   </div>
@@ -104,21 +112,25 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
   <h2>Reusable workflows and public resources</h2>
   <div class="software-grid">
     <article class="software-card">
+      <span class="tag">research workflow</span>
       <h3>Ab-Initio Interaction Map</h3>
       <p>Workflow for generating three-dimensional interaction maps between molecular partners from structural inputs.</p>
       <a href="https://github.com/pabelkabir/Ab-Initio-Interaction-Map">Repository</a>
     </article>
     <article class="software-card">
+      <span class="tag">legacy protocol</span>
       <h3>Electrostatic Spectral Tuning Maps</h3>
       <p>Protocol for mapping how electrostatic environments tune molecular spectral features.</p>
       <a href="https://github.com/pabelkabir/Electrostatic-Spectral-Tuning-Maps">Repository</a>
     </article>
     <article class="software-card">
+      <span class="tag">research workflow</span>
       <h3>QM/MM Protocol for Flavoproteins</h3>
       <p>Research workflow for APEC-style QM/MM modeling of flavoprotein environments.</p>
       <a href="https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins">Repository</a>
     </article>
     <article class="software-card">
+      <span class="tag">collaborative contribution</span>
       <h3>AutoSolvate contribution</h3>
       <p>Fork of a Liu Group project for explicit-solvent quantum chemistry setup, shown here as a related contribution rather than a sole Kabir Lab product.</p>
       <a href="https://github.com/pabelkabir/AutoSolvate">Repository</a>
@@ -129,7 +141,7 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
 <section class="band alt">
   <p class="section-kicker">Students</p>
   <h2>Research training through computation and evidence.</h2>
-  <p class="lead-copy">The lab welcomes Savannah State students interested in computational chemistry, molecular modeling, scientific programming, and data analysis. Additional project availability and application details will be posted as they are confirmed.</p>
+  <p class="lead-copy">The lab welcomes structured inquiries from Savannah State students interested in computational chemistry, molecular modeling, scientific programming, and data analysis. Project placement depends on preparation, time availability, and current mentoring capacity.</p>
   <div class="button-row">
     <a class="btn-lab" href="join/">Read the Join page</a>
     <a class="btn-lab secondary" href="people/">Meet the PI</a>

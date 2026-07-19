@@ -7,34 +7,40 @@ description: "Research pillars for the Kabir Computational Molecular Science Lab
 
 The Kabir Lab studies how molecular environment controls electronic structure, photophysics, and intermolecular association. We combine quantum chemistry, molecular dynamics, QM/MM, sampling, and automated analysis to connect microscopic interactions with measurable molecular behavior.
 
-## Current Pillars
+## Evidence-Backed Pillars
 
 ::: {.grid-3}
 ::: {.card}
-### Molecular photophysics in complex environments
+<div class="pillar-visual photophysics-visual" role="img" aria-label="Diagram of chromophore energy levels surrounded by electrostatic field contours."></div>
+
+### How do environments tune molecular light?
 
 Molecules do not absorb, emit, or react in isolation. Their behavior changes with electrostatics, hydrogen bonding, solvation, conformation, redox state, protonation, and the surrounding protein or material.
 
-[Photophysics page](photophysics.qmd)
+[Photophysics page](photophysics/)
 :::
 
 ::: {.card}
-### Multiscale simulation and reliable computational workflows
+<div class="pillar-visual workflow-visual" role="img" aria-label="Diagram connecting quantum chemistry, molecular dynamics, QM/MM, and analysis steps."></div>
+
+### How can simulations become reproducible evidence?
 
 Complex simulations are useful only when their assumptions, inputs, sampling, and analysis are traceable. The lab develops and documents workflows that connect electronic structure with molecular simulation.
 
-[Workflows page](multiscale-workflows.qmd)
+[Workflows page](multiscale-workflows/)
 :::
 
 ::: {.card}
-### Interaction mapping and functional molecular design
+<div class="pillar-visual interaction-visual" role="img" aria-label="Diagram of three-dimensional interaction regions around a molecular surface."></div>
+
+### Where do molecules prefer to associate?
 
 The lab investigates where molecules prefer to associate, how environment changes those interactions, and how interaction patterns can guide molecular or materials design.
 
-[Interaction mapping page](interactions-materials.qmd)
+[Interaction mapping page](interactions-materials/)
 :::
 :::
 
-::: {.warning-note}
-Emerging directions such as PFAS, environmental contaminant projects, machine-learning-assisted molecular prioritization, and data-driven photoredox screening can be added when public project details, collaborators, datasets, and current status are ready.
-:::
+## How To Read The Research Program
+
+These three areas are intentionally narrower than a broad list of computational chemistry methods. Each page connects a scientific question to representative publications or public workflows, while unverified future directions remain hidden until concrete public evidence is supplied.

@@ -1,15 +1,15 @@
 # Kabir Lab Website
 
-This repository hosts the live Kabir Lab site at `kabirlab.org`.
+This repository hosts the Kabir Lab website for `kabirlab.org`.
 
-## Production Status
+## Review Branch Status
 
-Version 2 is live for `kabirlab.org`. The Quarto source lives in `site/`, renders to `docs/`, and the rendered output is also mirrored at the repository root so the GitHub Pages user-site repo serves the same V2 site regardless of whether Pages reads `/root` or `/docs`.
+This branch stages a Quarto review build in `docs/` and intentionally preserves the current root-level production files. Do not deploy, merge, mirror `docs/` to root, change GitHub Pages settings, or modify DNS from this branch.
 
-## Version 2 Source
+## Source Layout
 
 - `site/_quarto.yml` configures the Quarto website and renders to root-level `docs/`.
-- `site/index.qmd`, `site/research/`, `site/publications/`, `site/people/`, `site/software/`, `site/join/`, and `site/contact.qmd` are the public pages.
+- `site/index.qmd`, `site/research/`, `site/publications/`, `site/people/`, `site/software/`, `site/join/`, and `site/contact/` are the public pages.
 - `data/publications.bib` and `data/publications.yml` are the canonical publication seed and curation layer.
 - `scripts/build_publications.py` generates `site/generated/publications.qmd` and `site/generated/publications.json`.
 - `scripts/validate_content.py` checks rendered public files for placeholders, unverified contact content, missing image alt text, duplicate DOI values, and deployment safety.
@@ -26,13 +26,11 @@ cd site
 quarto render
 cd ..
 python scripts/validate_content.py
+python scripts/check_rendered_links.py
+python scripts/check_accessibility_static.py
 ```
 
-Open `docs/index.html` to preview the rendered site. To deploy in this user-site repository, mirror the rendered output to the repository root:
-
-```bash
-rsync -a docs/ ./
-```
+Open `docs/index.html` or serve `docs/` with a local static server to preview the staged site.
 
 ## Publication Updates
 
@@ -40,4 +38,4 @@ See `PUBLICATIONS_WORKFLOW.md`. The safe update path is to export corrected Goog
 
 ## Deployment
 
-See `DEPLOYMENT_MIGRATION.md`. Current production uses the rendered V2 output, mirrored in both `docs/` and the repository root.
+See `DEPLOYMENT_MIGRATION.md`. Deployment is a separate human approval step and is not part of this review branch.

@@ -2,30 +2,34 @@
 
 Date: 2026-07-19  
 Repository: `pabelkabir/pabelkabir.github.io`  
-Base branch: `master` at `46535a221119e2a2199ac4a77416c740ee777ff7`
+Base branch: `master` at `953966f40526940cb283d6e32bfac4b491e343c9`
 
 ## Current State
 
-- The production root is a polished one-page static prototype served by GitHub Pages.
+- The repository currently contains a live Kabir Lab site at the root and a Quarto-rendered site in `docs/`.
+- Root production files are intentionally preserved by this review branch.
 - The root `CNAME` contains exactly `kabirlab.org`.
-- The root site includes `index.html`, `styles.css`, `script.js`, `404.html`, `robots.txt`, `sitemap.xml`, `.nojekyll`, and `assets/hero-molecular-map.png`.
-- The visual direction is strong, but the information architecture is broad and includes sections that need verified content before a durable academic launch.
+- The Quarto source lives in `site/`, with publication data in `data/` and validation helpers in `scripts/`.
+- The newest supplied specification asks for a staged review branch and no deployment, merge, GitHub Pages settings change, or DNS change.
 
-## Main Content Risks
+## Main Gaps Against The New Brief
 
-- Research areas are currently too broad for the evidence supplied in the V2 brief.
-- People, publications, resources, contact details, and opportunities include generic or placeholder-style copy.
-- `contact@kabirlab.org` appears in the prototype, but the supplied content checklist says this mailbox must be confirmed before public use.
-- News and project language can imply active programs before public evidence has been supplied.
+- Several research-topic pages used `.html` output paths rather than stable directory URLs.
+- Research explanations needed more Gozem-style scientific prose: question, overview, methods, systems, evidence, and related workflows.
+- The homepage needed stronger evidence links under the three research pillars and complete author metadata for featured publications.
+- The People page needed a clearer principal-investigator profile, recruitment focus, and no empty student/alumni/collaborator placeholders.
+- The Join page needed explicit categories for Savannah State undergraduates, external collaborators, graduate/postdoc paths, and research collaborators.
+- The deployment notes needed to distinguish this review branch from actual production deployment.
 
-## V2 Strategy
+## Reference Comparison
 
-- Preserve the root production site during review.
-- Add Quarto source and a rendered preview in `docs/`.
-- Build research around three supported pillars: photophysics, multiscale workflows, and interaction mapping.
-- Hide News, Teaching, Alumni, Funding, Outreach, student cards, and unverified contact details until content is supplied.
-- Generate a real publications page from curated BibTeX and metadata.
+| Reference site | Useful pattern adopted | Pattern intentionally not copied | Kabir Lab implementation |
+| --- | --- | --- | --- |
+| Acharya Lab | Compact academic homepage, visible research topics, team/resources/openings structure | Google Sites layout, wording, images, gallery, colors, and news-first emphasis | Original Kabir Lab homepage with research before news, PI profile, resources page, and explicit recruitment guidance |
+| Gozem Group | Conventional multi-page academic architecture and substantive research explanations | Source code, text, images, logos, publication styling, and visual identity | Original Quarto structure with dedicated research pages, generated publications, and restrained Kabir Lab visual system |
+
+No source code, wording, images, logos, colors, or distinctive visual styling from either reference site is copied.
 
 ## Production Preservation Check
 
-This V2 branch intentionally leaves the current root `index.html`, `styles.css`, `script.js`, `assets/hero-molecular-map.png`, and root `CNAME` in place. The deployment switch to `/docs` is documented separately and should happen only after human review.
+This review branch stages changes in Quarto source and `docs/`. It does not mirror the rendered output to the repository root, does not push to `master`, and does not change GitHub Pages, DNS, CNAME, or HTTPS settings.

@@ -1,13 +1,13 @@
 ---
-title: "Software & Data"
-description: "Public computational workflows and data resources connected to Kabir Lab research."
+title: "Software & Resources"
+description: "Public computational workflows and resources connected to Kabir Lab research."
 ---
 
-# Software & Data
+# Software & Resources
 
 These resources are public research workflows or related contributions. Repository maturity labels are conservative until the PI confirms current maintenance status.
 
-## Public Repositories
+## Kabir Lab Software And Workflows
 
 ::: {.software-grid}
 ::: {.software-card}
@@ -45,6 +45,11 @@ These resources are public research workflows or related contributions. Reposito
 
 [Repository](https://github.com/pabelkabir/QM-MM-Protocol-for-Flavoproteins)
 :::
+:::
+
+## Collaborative Software Contributions
+
+::: {.software-grid}
 
 ::: {.software-card}
 ### Workflow For Umbrella Sampling
@@ -71,3 +76,7 @@ These resources are public research workflows or related contributions. Reposito
 [Liu Group project](https://github.com/Liu-group/AutoSolvate)
 :::
 :::
+
+## Student Onboarding Resources
+
+Students joining computational projects typically begin with Linux command-line work, Python scripting, molecular visualization, version control, and careful research notebooks. Public training materials will be added here after they are approved for reuse.
