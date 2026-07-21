@@ -113,7 +113,7 @@ Public documentation, tutorials, lectures, and short books useful for computatio
 :::
 :::
 
-Source list adapted from the public [Acharya Lab resources page](https://www.acharyalab.com/resources). Syracuse-specific computing links are omitted because they are not generally usable by Savannah State University students.
+Source list adapted from the public [Acharya Lab resources page](https://www.acharyalab.com/resources).
 
 ## Student Onboarding Resources
 
