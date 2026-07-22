@@ -32,7 +32,7 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
       <span class="home-section-number">1</span>
       <h2>Molecular Photophysics in Complex Environments</h2>
     </div>
-    <img class="home-card-figure" src="assets/home/photophysics-redshift.png" alt="Charge redistribution and protein environment diagram for flavin photophysics.">
+    <img class="home-card-figure" src="assets/home/photophysics-redshift-transparent.png" alt="Charge redistribution and protein environment diagram for flavin photophysics.">
     <p>We investigate electronically excited states, charge redistribution, and environment-induced shifts in flavin and related chromophores within proteins and solvents.</p>
     <a href="research/photophysics/">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </article>
@@ -41,7 +41,7 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
       <span class="home-section-number">2</span>
       <h2>Multiscale Simulation and Reproducible Workflows</h2>
     </div>
-    <img class="home-card-figure" src="assets/home/workflow-replicas.png" alt="Workflow diagram for molecular preparation, solvated replicas, MD sampling, and QM/MM branching.">
+    <img class="home-card-figure" src="assets/home/workflow-replicas-transparent.png" alt="Workflow diagram for molecular preparation, solvated replicas, MD sampling, and QM/MM branching.">
     <p>We integrate molecular dynamics, QM/MM, and automated workflows to enable reproducible, high-throughput studies of complex systems with open, transparent methods.</p>
     <a href="research/multiscale-workflows/">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </article>
@@ -50,7 +50,7 @@ description: "Kabir Computational Molecular Science Lab at Savannah State Univer
       <span class="home-section-number">3</span>
       <h2>Molecular Interactions and Functional Design</h2>
     </div>
-    <img class="home-card-figure" src="assets/home/polar-map.png" alt="Polar interaction density map for pyridine and methylammonium.">
+    <img class="home-card-figure" src="assets/home/polar-map-transparent.png" alt="Polar interaction density map for pyridine and methylammonium.">
     <p>We quantify noncovalent interactions and design ligands and cofactors through polar maps, hotspot analysis, and structure-function relationships.</p>
     <a href="research/interactions-materials/">Learn more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
   </article>
