@@ -180,6 +180,7 @@ ul.task-list li input[type="checkbox"] {
         <span>Style</span>
         <select id="moleculeRepresentation">
           <option value="default">Default</option>
+          <option value="cartoon">Cartoon</option>
           <option value="stick">Ball and stick</option>
           <option value="sphere">Space filling</option>
           <option value="line">Wireframe</option>
@@ -264,6 +265,8 @@ H      2.1567      1.2451      0.0000`;
     BR: 1.2,
     I: 1.39
   };
+
+  const chainColors = ["#0d6770", "#d66b2f", "#2f6bb2", "#6b8d3f", "#7b4fb2", "#b23f63"];
 
   const canvas = document.getElementById("moleculeCanvas");
   const viewerElement = document.getElementById("moleculeViewer");
@@ -384,10 +387,12 @@ H      2.1567      1.2451      0.0000`;
         const atom = {
           index,
           serial: Number.isFinite(serial) ? serial : index + 1,
+          record: line.slice(0, 6).trim(),
           name,
           element,
           chain: line.slice(21, 22).trim(),
           residue: line.slice(17, 20).trim(),
+          resSeq: Number.parseInt(line.slice(22, 26), 10),
           x: parseNumber(line.slice(30, 38)),
           y: parseNumber(line.slice(38, 46)),
           z: parseNumber(line.slice(46, 54))
@@ -618,30 +623,160 @@ H      2.1567      1.2451      0.0000`;
     ctx.stroke();
   }
 
-  function drawBackbone(projected) {
-    const traceAtoms = projected
-      .filter(point => point.atom.name === "CA" || point.atom.name === "P")
-      .sort((a, b) => a.atom.index - b.atom.index);
+  function isTraceAtom(atom) {
+    return currentFormat === "pdb" && atom.record === "ATOM" && (atom.name === "CA" || atom.name === "P");
+  }
 
-    if (traceAtoms.length < 2) {
+  function isLigandAtom(atom) {
+    const solventNames = new Set(["HOH", "WAT", "SOL"]);
+    return currentFormat === "pdb" && atom.record === "HETATM" && !solventNames.has(atom.residue);
+  }
+
+  function traceChains(projected) {
+    const chains = new Map();
+
+    projected.forEach(point => {
+      if (!isTraceAtom(point.atom)) {
+        return;
+      }
+
+      const key = point.atom.chain || "A";
+      if (!chains.has(key)) {
+        chains.set(key, []);
+      }
+      chains.get(key).push(point);
+    });
+
+    return Array.from(chains.entries()).map(([chain, points]) => ({
+      chain,
+      points: points.sort((a, b) => {
+        const aSeq = Number.isFinite(a.atom.resSeq) ? a.atom.resSeq : a.atom.index;
+        const bSeq = Number.isFinite(b.atom.resSeq) ? b.atom.resSeq : b.atom.index;
+        return aSeq === bSeq ? a.atom.index - b.atom.index : aSeq - bSeq;
+      })
+    })).filter(group => group.points.length > 1);
+  }
+
+  function drawSmoothPath(points) {
+    ctx.beginPath();
+    ctx.moveTo(points[0].x, points[0].y);
+
+    if (points.length === 2) {
+      ctx.lineTo(points[1].x, points[1].y);
+      return;
+    }
+
+    for (let index = 1; index < points.length - 1; index += 1) {
+      const current = points[index];
+      const next = points[index + 1];
+      const midX = (current.x + next.x) / 2;
+      const midY = (current.y + next.y) / 2;
+      ctx.quadraticCurveTo(current.x, current.y, midX, midY);
+    }
+
+    const last = points[points.length - 1];
+    ctx.lineTo(last.x, last.y);
+  }
+
+  function drawRibbon(points, color) {
+    ctx.save();
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.shadowColor = "rgba(12, 33, 38, 0.18)";
+    ctx.shadowBlur = 8;
+    ctx.shadowOffsetY = 4;
+    ctx.strokeStyle = "rgba(10, 31, 37, 0.22)";
+    ctx.lineWidth = 18;
+    drawSmoothPath(points);
+    ctx.stroke();
+    ctx.restore();
+
+    ctx.save();
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 13;
+    drawSmoothPath(points);
+    ctx.stroke();
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.48)";
+    ctx.lineWidth = 4;
+    drawSmoothPath(points);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function drawTraceTermini(points, color) {
+    [points[0], points[points.length - 1]].forEach(point => {
+      ctx.fillStyle = color;
+      ctx.strokeStyle = "#ffffff";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(point.x, point.y, 5.5, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+    });
+  }
+
+  function drawLigands(projected, styleName) {
+    const visible = new Set(projected.filter(point => isLigandAtom(point.atom)).map(point => point.atom.index));
+    if (!visible.size) {
+      return;
+    }
+
+    const ligandBonds = bonds.map(([from, to]) => ({
+      from,
+      to,
+      z: ((projected[from] && projected[from].z) || 0) + ((projected[to] && projected[to].z) || 0)
+    })).filter(bond => visible.has(bond.from) && visible.has(bond.to)).sort((a, b) => a.z - b.z);
+
+    ligandBonds.forEach(bond => {
+      const from = projected[bond.from];
+      const to = projected[bond.to];
+      if (from && to) {
+        drawBond(from, to, styleName);
+      }
+    });
+
+    projected.filter(point => visible.has(point.atom.index)).sort((a, b) => a.z - b.z).forEach(point => drawAtom(point, styleName));
+  }
+
+  function drawCartoon(projected) {
+    const chains = traceChains(projected);
+
+    if (!chains.length) {
+      return false;
+    }
+
+    chains.sort((a, b) => {
+      const aDepth = a.points.reduce((sum, point) => sum + point.z, 0) / a.points.length;
+      const bDepth = b.points.reduce((sum, point) => sum + point.z, 0) / b.points.length;
+      return aDepth - bDepth;
+    }).forEach((group, index) => {
+      const color = chainColors[index % chainColors.length];
+      drawRibbon(group.points, color);
+      drawTraceTermini(group.points, color);
+    });
+
+    drawLigands(projected, "stick");
+    return true;
+  }
+
+  function drawBackbone(projected) {
+    const chains = traceChains(projected);
+
+    if (!chains.length) {
       return false;
     }
 
     ctx.lineWidth = 5;
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
-    ctx.strokeStyle = "#0d6770";
-    ctx.beginPath();
-    traceAtoms.forEach((point, index) => {
-      if (index === 0) {
-        ctx.moveTo(point.x, point.y);
-      } else {
-        ctx.lineTo(point.x, point.y);
-      }
+    chains.forEach((group, index) => {
+      ctx.strokeStyle = chainColors[index % chainColors.length];
+      drawSmoothPath(group.points);
+      ctx.stroke();
+      group.points.forEach(point => drawAtom(point, "line"));
     });
-    ctx.stroke();
-
-    traceAtoms.forEach(point => drawAtom(point, "line"));
     return true;
   }
 
@@ -667,6 +802,10 @@ H      2.1567      1.2451      0.0000`;
       to,
       z: ((projected[from] && projected[from].z) || 0) + ((projected[to] && projected[to].z) || 0)
     })).sort((a, b) => a.z - b.z);
+
+    if ((styleName === "cartoon" || styleName === "default") && currentFormat === "pdb" && drawCartoon(projected)) {
+      return;
+    }
 
     if (styleName === "backbone" && drawBackbone(projected)) {
       return;
