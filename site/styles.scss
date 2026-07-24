@@ -801,8 +801,17 @@ body .molecule-viewer-layout.page-columns > .molecule-viewer-side {
   background: var(--paper);
 }
 
-#moleculeViewer canvas {
+#moleculeViewer canvas,
+#moleculeCanvas {
   display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
+#moleculeCanvas.is-dragging {
+  cursor: grabbing;
 }
 
 .molecule-viewer-side {
