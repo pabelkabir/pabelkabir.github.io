@@ -194,7 +194,8 @@ main {
 }
 
 main.content:has(.hero-v2),
-main.content:has(.home-hero-panel) {
+main.content:has(.home-hero-panel),
+main.content:has(.viewer-page) {
   grid-column: screen-start-inset / screen-end-inset;
   width: min(100%, 1360px);
   max-width: 1360px;
@@ -650,6 +651,169 @@ a {
   left: 0;
   color: var(--orange);
   font-weight: 900;
+}
+
+.viewer-page {
+  padding: clamp(1.5rem, 3.6vw, 3rem) 0 clamp(2rem, 4vw, 3.75rem);
+}
+
+.viewer-intro {
+  max-width: 850px;
+  margin-bottom: 1.25rem;
+}
+
+.viewer-intro h1 {
+  margin: 0.45rem 0 0.75rem;
+  color: #0b2b5c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.35rem, 4.1vw, 4.2rem);
+  line-height: 0.98;
+}
+
+.molecule-viewer-shell {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(238, 245, 242, 0.72), rgba(255, 255, 255, 0.92)),
+    var(--surface);
+  box-shadow: 0 18px 46px rgba(16, 37, 43, 0.1);
+}
+
+.molecule-viewer-toolbar {
+  display: grid;
+  grid-template-columns: minmax(220px, 1.25fr) minmax(112px, 0.6fr) auto auto minmax(140px, 0.78fr) auto auto auto;
+  gap: 0.7rem;
+  align-items: end;
+  padding: 1rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.viewer-field {
+  display: grid;
+  gap: 0.32rem;
+  min-width: 0;
+}
+
+.viewer-field span,
+.viewer-status-label {
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.viewer-field input,
+.viewer-field select {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid rgba(19, 35, 38, 0.18);
+  border-radius: 4px;
+  background: #ffffff;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 650;
+}
+
+.viewer-field input[type="file"] {
+  padding: 0.46rem 0.6rem;
+}
+
+.viewer-field input[type="text"],
+.viewer-field select {
+  padding: 0.52rem 0.65rem;
+}
+
+.viewer-pdb-field input {
+  text-transform: uppercase;
+}
+
+.viewer-button {
+  min-height: 42px;
+  border: 1px solid rgba(19, 35, 38, 0.18);
+  border-radius: 4px;
+  padding: 0.55rem 0.8rem;
+  background: #ffffff;
+  color: #0b2b5c;
+  font-weight: 850;
+}
+
+.viewer-button:hover,
+.viewer-button:focus {
+  border-color: rgba(216, 111, 50, 0.55);
+  color: var(--orange);
+}
+
+.viewer-button.primary {
+  border-color: var(--navy);
+  background: var(--navy);
+  color: #ffffff;
+}
+
+.molecule-viewer-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(245px, 0.26fr);
+  min-height: 640px;
+}
+
+.molecule-viewer-stage {
+  min-width: 0;
+  padding: 1rem;
+}
+
+#moleculeViewer {
+  width: 100%;
+  height: min(66vh, 690px);
+  min-height: 560px;
+  border: 1px solid rgba(19, 35, 38, 0.14);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.molecule-viewer-side {
+  display: grid;
+  align-content: start;
+  gap: 1.2rem;
+  min-width: 0;
+  padding: 1rem;
+  border-left: 1px solid var(--line);
+  background: rgba(238, 245, 242, 0.55);
+}
+
+.molecule-viewer-side p {
+  margin: 0.35rem 0 0;
+}
+
+#moleculeStatus.is-error {
+  color: #a3371c;
+  font-weight: 750;
+}
+
+.viewer-meta-grid {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.55rem 0.8rem;
+  align-items: baseline;
+}
+
+.viewer-meta-grid span {
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+}
+
+.viewer-meta-grid strong {
+  min-width: 0;
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.viewer-note {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 .band {
@@ -1190,6 +1354,7 @@ h3.publication-year {
   .home-hero-panel,
   .home-research-cards,
   .home-info-grid,
+  .molecule-viewer-layout,
   .grid-2,
   .grid-3,
   .publication-grid,
@@ -1220,6 +1385,20 @@ h3.publication-year {
 
   .home-hero-figure img {
     max-height: 420px;
+  }
+
+  .molecule-viewer-toolbar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .molecule-viewer-side {
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  #moleculeViewer {
+    height: 520px;
+    min-height: 520px;
   }
 
   .home-research-card + .home-research-card,
@@ -1359,6 +1538,19 @@ h3.publication-year {
 
   .home-card-figure {
     aspect-ratio: 1.32 / 1;
+  }
+
+  .molecule-viewer-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .viewer-button {
+    width: 100%;
+  }
+
+  #moleculeViewer {
+    height: 420px;
+    min-height: 420px;
   }
 
   .hero-visual img {

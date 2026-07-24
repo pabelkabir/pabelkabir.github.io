@@ -1,0 +1,288 @@
+---
+title: "Molecule Viewer"
+description: "Browser-based molecular structure viewer for PDB, XYZ, SDF, and MOL2 files."
+---
+
+```{=html}
+<section class="viewer-page" aria-labelledby="viewer-title">
+  <div class="viewer-intro">
+    <p class="eyebrow">Kabir Lab Molecular Tools</p>
+    <h1 id="viewer-title">Molecule Viewer</h1>
+    <p class="lead-copy">Inspect molecular structures directly in the browser with local file loading, PDB lookup, and common molecular representations.</p>
+  </div>
+
+  <section class="molecule-viewer-shell" aria-label="Molecular structure viewer">
+    <div class="molecule-viewer-toolbar" aria-label="Viewer controls">
+      <label class="viewer-field">
+        <span>Structure file</span>
+        <input id="moleculeFileInput" type="file" accept=".pdb,.xyz,.sdf,.mol2">
+      </label>
+
+      <label class="viewer-field viewer-pdb-field">
+        <span>PDB ID</span>
+        <input id="moleculePdbInput" type="text" maxlength="4" placeholder="1CRN" autocomplete="off" inputmode="text">
+      </label>
+
+      <button class="viewer-button primary" id="moleculeLoadPdbButton" type="button">Load PDB</button>
+      <button class="viewer-button" id="moleculeSampleButton" type="button">Sample</button>
+
+      <label class="viewer-field">
+        <span>Style</span>
+        <select id="moleculeRepresentation">
+          <option value="default">Default</option>
+          <option value="cartoon">Cartoon</option>
+          <option value="stick">Stick</option>
+          <option value="sphere">Sphere</option>
+          <option value="line">Line</option>
+        </select>
+      </label>
+
+      <button class="viewer-button" id="moleculeResetButton" type="button">Reset</button>
+      <button class="viewer-button" id="moleculeSpinButton" type="button" aria-pressed="false">Spin</button>
+      <button class="viewer-button" id="moleculeDownloadButton" type="button">Image</button>
+    </div>
+
+    <div class="molecule-viewer-layout">
+      <div class="molecule-viewer-stage">
+        <div id="moleculeViewer" aria-label="Interactive 3D molecular viewer"></div>
+      </div>
+
+      <aside class="molecule-viewer-side" aria-label="Structure information">
+        <div>
+          <span class="viewer-status-label">Status</span>
+          <p id="moleculeStatus">Loading sample molecule...</p>
+        </div>
+
+        <div class="viewer-meta-grid">
+          <span>Format</span>
+          <strong id="moleculeFormat">XYZ</strong>
+          <span>Source</span>
+          <strong id="moleculeSource">Sample</strong>
+          <span>Atoms</span>
+          <strong id="moleculeAtomCount">-</strong>
+        </div>
+
+        <p class="viewer-note">Local files remain in the browser. PDB ID loading fetches public structure files from RCSB.</p>
+      </aside>
+    </div>
+  </section>
+</section>
+
+<script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+<script>
+(function () {
+  const sampleXyz = `14
+Benzene sample
+C      0.0000      1.4027      0.0000
+H      0.0000      2.4903      0.0000
+C     -1.2148      0.7014      0.0000
+H     -2.1567      1.2451      0.0000
+C     -1.2148     -0.7014      0.0000
+H     -2.1567     -1.2451      0.0000
+C      0.0000     -1.4027      0.0000
+H      0.0000     -2.4903      0.0000
+C      1.2148     -0.7014      0.0000
+H      2.1567     -1.2451      0.0000
+C      1.2148      0.7014      0.0000
+H      2.1567      1.2451      0.0000`;
+
+  const viewerElement = document.getElementById("moleculeViewer");
+  const statusElement = document.getElementById("moleculeStatus");
+  const formatElement = document.getElementById("moleculeFormat");
+  const sourceElement = document.getElementById("moleculeSource");
+  const atomCountElement = document.getElementById("moleculeAtomCount");
+  const representationElement = document.getElementById("moleculeRepresentation");
+  const spinButton = document.getElementById("moleculeSpinButton");
+
+  if (!viewerElement || typeof window.$3Dmol === "undefined") {
+    showStatus("The molecular viewer could not load. Refresh the page and try again.", true);
+    return;
+  }
+
+  const viewer = window.$3Dmol.createViewer(viewerElement, {
+    backgroundColor: "#fbfaf7",
+    antialias: true
+  });
+
+  let currentFormat = "xyz";
+  let currentSource = "Sample";
+  let isSpinning = false;
+
+  function showStatus(message, isError) {
+    if (!statusElement) {
+      return;
+    }
+    statusElement.textContent = message;
+    statusElement.classList.toggle("is-error", Boolean(isError));
+  }
+
+  function setMeta(format, source, atomCount) {
+    formatElement.textContent = format.toUpperCase();
+    sourceElement.textContent = source;
+    atomCountElement.textContent = atomCount ? String(atomCount) : "-";
+  }
+
+  function detectFormat(filename) {
+    const extension = filename.split(".").pop().toLowerCase();
+    const formats = {
+      pdb: "pdb",
+      xyz: "xyz",
+      sdf: "sdf",
+      mol2: "mol2"
+    };
+
+    if (!formats[extension]) {
+      throw new Error("Use a PDB, XYZ, SDF, or MOL2 file.");
+    }
+
+    return formats[extension];
+  }
+
+  function estimateAtomCount(data, format) {
+    const lines = data.split(/\r?\n/);
+
+    if (format === "xyz") {
+      const count = Number.parseInt(lines[0], 10);
+      return Number.isFinite(count) ? count : null;
+    }
+
+    if (format === "pdb") {
+      return lines.filter(line => line.startsWith("ATOM") || line.startsWith("HETATM")).length;
+    }
+
+    if (format === "sdf" || format === "mol2") {
+      return lines.filter(line => /^\s*[A-Z][a-z]?\s+[-0-9.]+\s+[-0-9.]+\s+[-0-9.]+/.test(line)).length || null;
+    }
+
+    return null;
+  }
+
+  function clearSurface() {
+    if (typeof viewer.removeAllSurfaces === "function") {
+      viewer.removeAllSurfaces();
+    }
+  }
+
+  function applyStyle() {
+    const styleName = representationElement.value;
+    viewer.setStyle({}, {});
+    clearSurface();
+
+    if ((styleName === "default" || styleName === "cartoon") && currentFormat === "pdb") {
+      viewer.setStyle({ polymer: true }, {
+        cartoon: { color: "spectrum" }
+      });
+      viewer.setStyle({ hetflag: true, water: false }, {
+        stick: { radius: 0.22, colorscheme: "Jmol" }
+      });
+      viewer.setStyle({ water: true }, {
+        sphere: { scale: 0.18, color: "#7fb7d8" }
+      });
+    } else if (styleName === "stick" || styleName === "default") {
+      viewer.setStyle({}, {
+        stick: { radius: 0.2, colorscheme: "Jmol" }
+      });
+    } else if (styleName === "sphere") {
+      viewer.setStyle({}, {
+        sphere: { scale: 0.33, colorscheme: "Jmol" }
+      });
+    } else if (styleName === "line") {
+      viewer.setStyle({}, {
+        line: { colorscheme: "Jmol" }
+      });
+    } else if (styleName === "cartoon") {
+      viewer.setStyle({}, {
+        stick: { radius: 0.2, colorscheme: "Jmol" }
+      });
+    }
+
+    viewer.zoomTo();
+    viewer.render();
+  }
+
+  function loadStructure(data, format, source) {
+    viewer.clear();
+    currentFormat = format;
+    currentSource = source;
+    viewer.addModel(data, format);
+    setMeta(format, source, estimateAtomCount(data, format));
+    applyStyle();
+    showStatus("Loaded " + source + ".");
+  }
+
+  document.getElementById("moleculeFileInput").addEventListener("change", async event => {
+    const file = event.target.files[0];
+    if (!file) {
+      return;
+    }
+
+    try {
+      const format = detectFormat(file.name);
+      const data = await file.text();
+      loadStructure(data, format, file.name);
+    } catch (error) {
+      console.error(error);
+      showStatus(error.message, true);
+    }
+  });
+
+  document.getElementById("moleculeLoadPdbButton").addEventListener("click", async () => {
+    const pdbId = document.getElementById("moleculePdbInput").value.trim().toUpperCase();
+
+    if (!/^[A-Z0-9]{4}$/.test(pdbId)) {
+      showStatus("Enter a valid four-character PDB ID.", true);
+      return;
+    }
+
+    try {
+      showStatus("Loading PDB " + pdbId + "...");
+      const response = await fetch("https://files.rcsb.org/download/" + pdbId + ".pdb");
+      if (!response.ok) {
+        throw new Error("PDB " + pdbId + " could not be loaded.");
+      }
+      const pdbText = await response.text();
+      loadStructure(pdbText, "pdb", "PDB " + pdbId);
+    } catch (error) {
+      console.error(error);
+      showStatus(error.message, true);
+    }
+  });
+
+  document.getElementById("moleculeSampleButton").addEventListener("click", () => {
+    loadStructure(sampleXyz, "xyz", "Sample");
+  });
+
+  representationElement.addEventListener("change", applyStyle);
+
+  document.getElementById("moleculeResetButton").addEventListener("click", () => {
+    viewer.zoomTo();
+    viewer.render();
+  });
+
+  spinButton.addEventListener("click", () => {
+    isSpinning = !isSpinning;
+    viewer.spin(isSpinning);
+    spinButton.textContent = isSpinning ? "Stop" : "Spin";
+    spinButton.setAttribute("aria-pressed", String(isSpinning));
+  });
+
+  document.getElementById("moleculeDownloadButton").addEventListener("click", () => {
+    if (typeof viewer.pngURI !== "function") {
+      showStatus("Image export is unavailable in this browser.", true);
+      return;
+    }
+
+    const link = document.createElement("a");
+    link.href = viewer.pngURI();
+    link.download = "kabir-lab-molecule.png";
+    link.click();
+  });
+
+  window.addEventListener("resize", () => {
+    viewer.resize();
+  });
+
+  loadStructure(sampleXyz, "xyz", "Sample");
+})();
+</script>
+```

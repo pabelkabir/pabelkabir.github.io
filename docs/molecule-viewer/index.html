@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Student research opportunities and expectations in the Kabir Lab.">
+<meta name="description" content="Browser-based molecular structure viewer for PDB, XYZ, SDF, and MOL2 files.">
 
-<title>Join – Kabir Lab</title>
+<title>Molecule Viewer – Kabir Lab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -104,11 +104,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../molecule-viewer/index.html"> 
+    <a class="nav-link active" href="../molecule-viewer/index.html" aria-current="page"> 
 <span class="menu-text">Molecule Viewer</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../join/index.html" aria-current="page"> 
+    <a class="nav-link" href="../join/index.html"> 
 <span class="menu-text">Join</span></a>
   </li>  
   <li class="nav-item">
@@ -128,16 +128,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Join</h1>
+<h1 class="title">Molecule Viewer</h1>
 </div>
 
 <div>
   <div class="description">
-    Student research opportunities and expectations in the Kabir Lab.
+    Browser-based molecular structure viewer for PDB, XYZ, SDF, and MOL2 files.
   </div>
 </div>
 
@@ -154,57 +154,289 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="join-the-lab" class="level1">
-<h1>Join The Lab</h1>
-<p>Kabir Lab welcomes structured inquiries from Savannah State students interested in computational chemistry, molecular modeling, scientific programming, and data analysis. Project placement depends on preparation, time availability, and current mentoring capacity.</p>
-<section id="savannah-state-undergraduate-students" class="level2">
-<h2 class="anchored" data-anchor-id="savannah-state-undergraduate-students">Savannah State Undergraduate Students</h2>
-<p><strong>Status:</strong> inquiries are welcome. A project is confirmed only after a conversation about background, schedule, training needs, and available mentoring capacity.</p>
-<p><strong>Expected background:</strong> curiosity about molecular science, willingness to document work carefully, and interest in chemistry, mathematics, programming, physics, or data analysis.</p>
-<p><strong>Likely training outcomes:</strong> Linux command-line work, Python scripting, molecular visualization, electronic-structure and molecular-simulation concepts, version control, research notebooks, and scientific communication.</p>
-<p><strong>Application subject line:</strong> <code>Kabir Lab undergraduate research inquiry</code></p>
+<section class="viewer-page page-columns page-full" aria-labelledby="viewer-title">
+  <div class="viewer-intro">
+    <p class="eyebrow">Kabir Lab Molecular Tools</p>
+    <h1 id="viewer-title">Molecule Viewer</h1>
+    <p class="lead-copy">Inspect molecular structures directly in the browser with local file loading, PDB lookup, and common molecular representations.</p>
+  </div>
+
+  <section class="molecule-viewer-shell page-columns page-full" aria-label="Molecular structure viewer">
+    <div class="molecule-viewer-toolbar" aria-label="Viewer controls">
+      <label class="viewer-field">
+        <span>Structure file</span>
+        <input id="moleculeFileInput" type="file" accept=".pdb,.xyz,.sdf,.mol2">
+      </label>
+
+      <label class="viewer-field viewer-pdb-field">
+        <span>PDB ID</span>
+        <input id="moleculePdbInput" type="text" maxlength="4" placeholder="1CRN" autocomplete="off" inputmode="text">
+      </label>
+
+      <button class="viewer-button primary" id="moleculeLoadPdbButton" type="button">Load PDB</button>
+      <button class="viewer-button" id="moleculeSampleButton" type="button">Sample</button>
+
+      <label class="viewer-field">
+        <span>Style</span>
+        <select id="moleculeRepresentation">
+          <option value="default">Default</option>
+          <option value="cartoon">Cartoon</option>
+          <option value="stick">Stick</option>
+          <option value="sphere">Sphere</option>
+          <option value="line">Line</option>
+        </select>
+      </label>
+
+      <button class="viewer-button" id="moleculeResetButton" type="button">Reset</button>
+      <button class="viewer-button" id="moleculeSpinButton" type="button" aria-pressed="false">Spin</button>
+      <button class="viewer-button" id="moleculeDownloadButton" type="button">Image</button>
+    </div>
+
+    <div class="molecule-viewer-layout page-columns page-full">
+      <div class="molecule-viewer-stage">
+        <div id="moleculeViewer" aria-label="Interactive 3D molecular viewer"></div>
+      </div>
+
+      <aside class="molecule-viewer-side" aria-label="Structure information">
+        <div>
+          <span class="viewer-status-label">Status</span>
+          <p id="moleculeStatus">Loading sample molecule...</p>
+        </div>
+
+        <div class="viewer-meta-grid">
+          <span>Format</span>
+          <strong id="moleculeFormat">XYZ</strong>
+          <span>Source</span>
+          <strong id="moleculeSource">Sample</strong>
+          <span>Atoms</span>
+          <strong id="moleculeAtomCount">-</strong>
+        </div>
+
+        <p class="viewer-note">Local files remain in the browser. PDB ID loading fetches public structure files from RCSB.</p>
+      </aside>
+    </div>
+  </section>
 </section>
-<section id="example-project-types" class="level2">
-<h2 class="anchored" data-anchor-id="example-project-types">Example Project Types</h2>
-<ul>
-<li>Literature-guided computational chemistry projects.</li>
-<li>Molecular modeling and visualization.</li>
-<li>Python or shell workflow development.</li>
-<li>Publication-data and repository curation.</li>
-<li>Simulation analysis and reproducibility checks.</li>
-</ul>
-</section>
-<section id="external-undergraduate-collaborators" class="level2">
-<h2 class="anchored" data-anchor-id="external-undergraduate-collaborators">External Undergraduate Collaborators</h2>
-<p>External undergraduate collaborations are considered only when a clear mentoring arrangement, project scope, and communication plan are in place.</p>
-</section>
-<section id="graduate-students-and-postdoctoral-candidates" class="level2">
-<h2 class="anchored" data-anchor-id="graduate-students-and-postdoctoral-candidates">Graduate Students And Postdoctoral Candidates</h2>
-<p>No public graduate-student or postdoctoral openings are advertised at this time. Any future opening will be posted with eligibility, funding status, expected background, and application instructions.</p>
-</section>
-<section id="research-collaborators" class="level2">
-<h2 class="anchored" data-anchor-id="research-collaborators">Research Collaborators</h2>
-<p>Researchers interested in computational photophysics, flavoprotein modeling, interaction maps, or reproducible molecular simulation workflows may contact the lab with a concise project description and relevant public links.</p>
-</section>
-<section id="application-materials" class="level2">
-<h2 class="anchored" data-anchor-id="application-materials">Application Materials</h2>
-<p>Prepare one concise email to <a href="mailto:kabirm@savannahstate.edu">kabirm@savannahstate.edu</a> with:</p>
-<ol type="1">
-<li>Name, major, and year.</li>
-<li>Short statement of research interest.</li>
-<li>Relevant chemistry, mathematics, programming, or physics courses.</li>
-<li>Weekly availability.</li>
-<li>CV or resume.</li>
-</ol>
-<p>Weekly time commitment, minimum semester commitment, compensation or course-credit status, and transcript requirements are discussed before a project is confirmed.</p>
-</section>
-<section id="research-expectations" class="level2">
-<h2 class="anchored" data-anchor-id="research-expectations">Research Expectations</h2>
-<p>Students are expected to keep careful records, communicate progress regularly, respect data integrity, and distinguish tested results from hypotheses or exploratory notes.</p>
+
+<script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+<script>
+(function () {
+  const sampleXyz = `14
+Benzene sample
+C      0.0000      1.4027      0.0000
+H      0.0000      2.4903      0.0000
+C     -1.2148      0.7014      0.0000
+H     -2.1567      1.2451      0.0000
+C     -1.2148     -0.7014      0.0000
+H     -2.1567     -1.2451      0.0000
+C      0.0000     -1.4027      0.0000
+H      0.0000     -2.4903      0.0000
+C      1.2148     -0.7014      0.0000
+H      2.1567     -1.2451      0.0000
+C      1.2148      0.7014      0.0000
+H      2.1567      1.2451      0.0000`;
+
+  const viewerElement = document.getElementById("moleculeViewer");
+  const statusElement = document.getElementById("moleculeStatus");
+  const formatElement = document.getElementById("moleculeFormat");
+  const sourceElement = document.getElementById("moleculeSource");
+  const atomCountElement = document.getElementById("moleculeAtomCount");
+  const representationElement = document.getElementById("moleculeRepresentation");
+  const spinButton = document.getElementById("moleculeSpinButton");
+
+  if (!viewerElement || typeof window.$3Dmol === "undefined") {
+    showStatus("The molecular viewer could not load. Refresh the page and try again.", true);
+    return;
+  }
+
+  const viewer = window.$3Dmol.createViewer(viewerElement, {
+    backgroundColor: "#fbfaf7",
+    antialias: true
+  });
+
+  let currentFormat = "xyz";
+  let currentSource = "Sample";
+  let isSpinning = false;
+
+  function showStatus(message, isError) {
+    if (!statusElement) {
+      return;
+    }
+    statusElement.textContent = message;
+    statusElement.classList.toggle("is-error", Boolean(isError));
+  }
+
+  function setMeta(format, source, atomCount) {
+    formatElement.textContent = format.toUpperCase();
+    sourceElement.textContent = source;
+    atomCountElement.textContent = atomCount ? String(atomCount) : "-";
+  }
+
+  function detectFormat(filename) {
+    const extension = filename.split(".").pop().toLowerCase();
+    const formats = {
+      pdb: "pdb",
+      xyz: "xyz",
+      sdf: "sdf",
+      mol2: "mol2"
+    };
+
+    if (!formats[extension]) {
+      throw new Error("Use a PDB, XYZ, SDF, or MOL2 file.");
+    }
+
+    return formats[extension];
+  }
+
+  function estimateAtomCount(data, format) {
+    const lines = data.split(/\r?\n/);
+
+    if (format === "xyz") {
+      const count = Number.parseInt(lines[0], 10);
+      return Number.isFinite(count) ? count : null;
+    }
+
+    if (format === "pdb") {
+      return lines.filter(line => line.startsWith("ATOM") || line.startsWith("HETATM")).length;
+    }
+
+    if (format === "sdf" || format === "mol2") {
+      return lines.filter(line => /^\s*[A-Z][a-z]?\s+[-0-9.]+\s+[-0-9.]+\s+[-0-9.]+/.test(line)).length || null;
+    }
+
+    return null;
+  }
+
+  function clearSurface() {
+    if (typeof viewer.removeAllSurfaces === "function") {
+      viewer.removeAllSurfaces();
+    }
+  }
+
+  function applyStyle() {
+    const styleName = representationElement.value;
+    viewer.setStyle({}, {});
+    clearSurface();
+
+    if ((styleName === "default" || styleName === "cartoon") && currentFormat === "pdb") {
+      viewer.setStyle({ polymer: true }, {
+        cartoon: { color: "spectrum" }
+      });
+      viewer.setStyle({ hetflag: true, water: false }, {
+        stick: { radius: 0.22, colorscheme: "Jmol" }
+      });
+      viewer.setStyle({ water: true }, {
+        sphere: { scale: 0.18, color: "#7fb7d8" }
+      });
+    } else if (styleName === "stick" || styleName === "default") {
+      viewer.setStyle({}, {
+        stick: { radius: 0.2, colorscheme: "Jmol" }
+      });
+    } else if (styleName === "sphere") {
+      viewer.setStyle({}, {
+        sphere: { scale: 0.33, colorscheme: "Jmol" }
+      });
+    } else if (styleName === "line") {
+      viewer.setStyle({}, {
+        line: { colorscheme: "Jmol" }
+      });
+    } else if (styleName === "cartoon") {
+      viewer.setStyle({}, {
+        stick: { radius: 0.2, colorscheme: "Jmol" }
+      });
+    }
+
+    viewer.zoomTo();
+    viewer.render();
+  }
+
+  function loadStructure(data, format, source) {
+    viewer.clear();
+    currentFormat = format;
+    currentSource = source;
+    viewer.addModel(data, format);
+    setMeta(format, source, estimateAtomCount(data, format));
+    applyStyle();
+    showStatus("Loaded " + source + ".");
+  }
+
+  document.getElementById("moleculeFileInput").addEventListener("change", async event => {
+    const file = event.target.files[0];
+    if (!file) {
+      return;
+    }
+
+    try {
+      const format = detectFormat(file.name);
+      const data = await file.text();
+      loadStructure(data, format, file.name);
+    } catch (error) {
+      console.error(error);
+      showStatus(error.message, true);
+    }
+  });
+
+  document.getElementById("moleculeLoadPdbButton").addEventListener("click", async () => {
+    const pdbId = document.getElementById("moleculePdbInput").value.trim().toUpperCase();
+
+    if (!/^[A-Z0-9]{4}$/.test(pdbId)) {
+      showStatus("Enter a valid four-character PDB ID.", true);
+      return;
+    }
+
+    try {
+      showStatus("Loading PDB " + pdbId + "...");
+      const response = await fetch("https://files.rcsb.org/download/" + pdbId + ".pdb");
+      if (!response.ok) {
+        throw new Error("PDB " + pdbId + " could not be loaded.");
+      }
+      const pdbText = await response.text();
+      loadStructure(pdbText, "pdb", "PDB " + pdbId);
+    } catch (error) {
+      console.error(error);
+      showStatus(error.message, true);
+    }
+  });
+
+  document.getElementById("moleculeSampleButton").addEventListener("click", () => {
+    loadStructure(sampleXyz, "xyz", "Sample");
+  });
+
+  representationElement.addEventListener("change", applyStyle);
+
+  document.getElementById("moleculeResetButton").addEventListener("click", () => {
+    viewer.zoomTo();
+    viewer.render();
+  });
+
+  spinButton.addEventListener("click", () => {
+    isSpinning = !isSpinning;
+    viewer.spin(isSpinning);
+    spinButton.textContent = isSpinning ? "Stop" : "Spin";
+    spinButton.setAttribute("aria-pressed", String(isSpinning));
+  });
+
+  document.getElementById("moleculeDownloadButton").addEventListener("click", () => {
+    if (typeof viewer.pngURI !== "function") {
+      showStatus("Image export is unavailable in this browser.", true);
+      return;
+    }
+
+    const link = document.createElement("a");
+    link.href = viewer.pngURI();
+    link.download = "kabir-lab-molecule.png";
+    link.click();
+  });
+
+  window.addEventListener("resize", () => {
+    viewer.resize();
+  });
+
+  loadStructure(sampleXyz, "xyz", "Sample");
+})();
+</script>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

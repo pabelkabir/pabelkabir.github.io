@@ -10,6 +10,7 @@ project:
     - publications/index.qmd
     - people/index.qmd
     - software/index.qmd
+    - molecule-viewer/index.qmd
     - join/index.qmd
     - contact/index.qmd
     - 404.qmd
@@ -44,6 +45,8 @@ website:
         href: people/index.qmd
       - text: Resources
         href: software/index.qmd
+      - text: Molecule Viewer
+        href: molecule-viewer/index.qmd
       - text: Join
         href: join/index.qmd
       - text: Contact
