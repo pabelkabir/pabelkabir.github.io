@@ -9,7 +9,7 @@ The design-reference V2 review build is live for `kabirlab.org` as of 2026-07-19
 ## Source Layout
 
 - `site/_quarto.yml` configures the Quarto website and renders to root-level `docs/`.
-- `site/index.qmd`, `site/research/`, `site/publications/`, `site/people/`, `site/software/`, `site/join/`, and `site/contact/` are the public pages.
+- `site/index.qmd`, `site/research/`, `site/publications/`, `site/people/`, `site/software/`, `site/molecule-viewer/`, `site/qmmm-platform/`, `site/join/`, and `site/contact/` are the public pages.
 - `data/publications.bib` and `data/publications.yml` are the canonical publication seed and curation layer.
 - `scripts/build_publications.py` generates `site/generated/publications.qmd` and `site/generated/publications.json`.
 - `scripts/validate_content.py` checks rendered public files for placeholders, unverified contact content, missing image alt text, duplicate DOI values, and deployment safety.

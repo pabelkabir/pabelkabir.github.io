@@ -11,6 +11,18 @@ These resources are public research workflows or related contributions. Reposito
 
 ::: {.software-grid}
 ::: {.software-card}
+### Agent-Assisted QM/MM Platform
+
+**Purpose:** Interactive flavoprotein study design with FMN/FAD detection, user-defined redox state, property-aware QM-region proposals, and portable GPU run planning.
+
+**Maturity:** public study designer / Expanse submission gateway in development<br>
+**Constraints:** PDB structural input; QM-region and run-plan approval remain user decisions<br>
+**Execution:** browser planning with no public job submission
+
+[Open QM/MM Platform](/qmmm-platform/)
+:::
+
+::: {.software-card}
 ### Ab-Initio Interaction Map
 
 **Purpose:** Automated protocol for generating three-dimensional interaction maps between molecular partners from structural inputs.

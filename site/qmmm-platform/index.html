@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Agent-assisted QM/MM study design for flavoproteins, with property-aware QM-region review and portable GPU run planning.">
+  <link rel="icon" href="/assets/brand/favicon.png">
+  <title>Kabir Lab QM/MM Platform</title>
+  <link rel="stylesheet" href="/qmmm-platform/assets/app.css">
+</head>
+<body>
+  <header class="app-header">
+    <a class="brand-lockup" href="/" aria-label="Kabir Lab home">
+      <div class="brand-mark" aria-hidden="true"><span>K</span></div>
+      <div>
+        <strong>Kabir Lab</strong>
+        <span>QM/MM Platform</span>
+      </div>
+    </a>
+    <div class="header-status">
+      <a class="header-link" href="/molecule-viewer/">Molecule viewer</a>
+      <span class="environment-badge" id="environmentBadge">Browser designer</span>
+      <span class="connection-status" id="connectionStatus">
+        <span class="status-dot"></span>
+        Starting
+      </span>
+    </div>
+  </header>
+
+  <nav class="workflow-nav" aria-label="Study workflow">
+    <ol>
+      <li class="is-current" data-stage="structure">
+        <span>1</span>
+        Structure
+      </li>
+      <li data-stage="science">
+        <span>2</span>
+        Scientific setup
+      </li>
+      <li data-stage="qm-region">
+        <span>3</span>
+        QM region
+      </li>
+      <li data-stage="run-plan">
+        <span>4</span>
+        Run plan
+      </li>
+      <li data-stage="results">
+        <span>5</span>
+        Results
+      </li>
+    </ol>
+  </nav>
+
+  <main class="app-shell">
+    <div class="workspace-column">
+      <section class="structure-workspace" aria-labelledby="structureHeading">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Structure</p>
+            <h1 id="structureHeading">Molecular workspace</h1>
+          </div>
+          <div class="structure-meta" id="structureMeta" aria-live="polite">
+            No structure loaded
+          </div>
+        </div>
+
+        <div class="viewer-toolbar" aria-label="Structure controls">
+          <label class="button secondary file-button" for="structureFile">
+            <i data-lucide="upload" aria-hidden="true"></i>
+            Open PDB
+          </label>
+          <input id="structureFile" type="file" accept=".pdb,chemical/x-pdb" hidden>
+
+          <div class="pdb-loader">
+            <label class="sr-only" for="pdbId">PDB ID</label>
+            <input id="pdbId" type="text" maxlength="4" placeholder="PDB ID" value="4EES">
+            <button class="button secondary" id="loadPdbButton" type="button">
+              <i data-lucide="cloud-download" aria-hidden="true"></i>
+              Load
+            </button>
+          </div>
+
+          <label class="sr-only" for="representation">Representation</label>
+          <select id="representation" title="Molecular representation">
+            <option value="cartoon">Cartoon</option>
+            <option value="surface">Surface</option>
+            <option value="backbone">Backbone</option>
+            <option value="ball+stick">Ball and stick</option>
+          </select>
+
+          <div class="toolbar-spacer"></div>
+          <button class="icon-button" id="focusButton" type="button" title="Fit structure" aria-label="Fit structure">
+            <i data-lucide="scan" aria-hidden="true"></i>
+          </button>
+          <button class="icon-button" id="spinButton" type="button" title="Toggle rotation" aria-label="Toggle rotation" aria-pressed="false">
+            <i data-lucide="rotate-3d" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="viewer-frame">
+          <div id="moleculeViewport" aria-label="Interactive molecular structure"></div>
+          <div class="viewer-empty" id="viewerEmpty">
+            <i data-lucide="atom" aria-hidden="true"></i>
+            <strong>Load a prepared PDB structure</strong>
+            <span>Local files remain in this browser.</span>
+          </div>
+          <div class="viewer-loading" id="viewerLoading" hidden>
+            <span class="spinner" aria-hidden="true"></span>
+            Loading structure
+          </div>
+        </div>
+
+        <div class="structure-summary" id="structureSummary" hidden>
+          <dl>
+            <div><dt>Atoms</dt><dd id="atomCount">0</dd></div>
+            <div><dt>Residues</dt><dd id="residueCount">0</dd></div>
+            <div><dt>Chains</dt><dd id="chainCount">0</dd></div>
+            <div><dt>Format</dt><dd>PDB</dd></div>
+          </dl>
+        </div>
+
+        <div class="detection-banner" id="detectionBanner" hidden>
+          <div class="detection-icon" aria-hidden="true">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <div class="detection-copy">
+            <strong id="detectionTitle">Cofactor detected</strong>
+            <span id="detectionDetail"></span>
+          </div>
+          <div class="detection-select">
+            <label for="chromophoreSelect">Chromophore</label>
+            <select id="chromophoreSelect"></select>
+          </div>
+          <button class="button primary" id="confirmChromophoreButton" type="button">
+            Confirm
+          </button>
+        </div>
+      </section>
+
+      <section class="setup-workspace" id="setupWorkspace" aria-labelledby="setupHeading">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">Scientific setup</p>
+            <h2 id="setupHeading">Define the study</h2>
+          </div>
+          <span class="section-state" id="setupState">Waiting for structure</span>
+        </div>
+
+        <form id="studyForm">
+          <div class="form-grid">
+            <label>
+              <span>Study name</span>
+              <input id="studyName" name="studyName" type="text" placeholder="4ees-absorption" required>
+            </label>
+
+            <label>
+              <span>Property</span>
+              <select id="propertyTarget" name="propertyTarget" required>
+                <option value="absorption">Absorption</option>
+                <option value="fluorescence">Fluorescence</option>
+                <option value="mechanism">Reaction mechanism</option>
+                <option value="redox">Redox potential</option>
+                <option value="electron-transfer">Electron transfer</option>
+                <option value="pcet">Proton-coupled electron transfer</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Redox state <b>User decision</b></span>
+              <select id="redoxState" name="redoxState" required>
+                <option value="">Select redox state</option>
+              </select>
+            </label>
+
+            <label id="customRedoxField" hidden>
+              <span>Custom redox state</span>
+              <input id="customRedoxState" name="customRedoxState" type="text" placeholder="State and protonation">
+            </label>
+
+            <label>
+              <span>Deployment</span>
+              <select id="profile" name="profile" required></select>
+            </label>
+
+            <div class="protocol-field wide-field">
+              <div class="protocol-icon" aria-hidden="true">
+                <i data-lucide="settings-2"></i>
+              </div>
+              <div>
+                <span>Calculation protocol</span>
+                <strong id="protocolName">Universal QM/MM protocol</strong>
+                <small id="protocolVersion">Property-aware study overlay</small>
+              </div>
+              <i class="protocol-lock" data-lucide="lock-keyhole" aria-hidden="true"></i>
+            </div>
+
+            <label id="reactionField" class="wide-field" hidden>
+              <span>Reacting residues</span>
+              <input id="reactingResidues" name="reactingResidues" type="text" placeholder="A:489, A:430">
+            </label>
+
+            <fieldset class="cutoff-field">
+              <legend>Residue search shells</legend>
+              <label>
+                <span>Inner</span>
+                <div class="number-unit">
+                  <input id="innerCutoff" type="number" value="3" min="1" max="8" step="0.5" aria-label="Inner cutoff in angstroms">
+                  <span>&Aring;</span>
+                </div>
+              </label>
+              <label>
+                <span>Outer</span>
+                <div class="number-unit">
+                  <input id="outerCutoff" type="number" value="5" min="2" max="12" step="0.5" aria-label="Outer cutoff in angstroms">
+                  <span>&Aring;</span>
+                </div>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="form-actions">
+            <span id="protocolStatus">Exact settings will be recorded with the study.</span>
+            <button class="button primary" id="createStudyButton" type="submit" disabled>
+              <i data-lucide="flask-conical" aria-hidden="true"></i>
+              Create study
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="region-workspace" id="regionWorkspace" aria-labelledby="regionHeading" hidden>
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">QM region</p>
+            <h2 id="regionHeading">Review the proposed region</h2>
+          </div>
+          <span class="section-state needs-review">User approval required</span>
+        </div>
+
+        <div class="reaction-definition" id="reactionDefinition" hidden>
+          <label>
+            <span>Reacting residues</span>
+            <input id="reactionUpdateInput" type="text" placeholder="A:489, A:430">
+          </label>
+          <button class="button primary" id="setReactionButton" type="button">
+            Set reaction
+          </button>
+        </div>
+
+        <div id="regionReview" hidden>
+          <div class="region-controls">
+            <label class="switch-control">
+              <input id="baselineOnly" type="checkbox">
+              <span class="switch-track" aria-hidden="true"></span>
+              <span>Chromophore-only QM region</span>
+            </label>
+            <span class="region-total" id="regionTotal">0 additional heavy atoms</span>
+          </div>
+
+          <div class="candidate-table-wrap">
+            <table class="candidate-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="sr-only">Include</span></th>
+                  <th scope="col">Residue</th>
+                  <th scope="col">Distance</th>
+                  <th scope="col">Score</th>
+                  <th scope="col">Evidence</th>
+                  <th scope="col">Atoms</th>
+                </tr>
+              </thead>
+              <tbody id="candidateTableBody"></tbody>
+            </table>
+          </div>
+
+          <div class="approval-band">
+            <label>
+              <span>QM charge</span>
+              <input id="qmCharge" type="number" value="-2" step="1">
+            </label>
+            <label>
+              <span>Multiplicity</span>
+              <input id="spinMultiplicity" type="number" value="1" min="1" step="1">
+            </label>
+            <label>
+              <span>Boundary representation</span>
+              <select id="boundaryRepresentation">
+                <option value="sidechain-fragment">Side-chain fragments</option>
+                <option value="full-residue">Full residues</option>
+              </select>
+            </label>
+            <button class="button primary" id="approveRegionButton" type="button">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+              Approve QM region
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="plan-workspace" id="planWorkspace" aria-labelledby="planHeading" hidden>
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">Run plan</p>
+            <h2 id="planHeading">Scientific and resource plan</h2>
+          </div>
+          <span class="section-state needs-review">User approval required</span>
+        </div>
+        <div class="plan-summary" id="planSummary"></div>
+          <div class="form-actions">
+            <span>Approval is bound to the exact plan hash.</span>
+            <div class="plan-actions">
+              <button class="button secondary" id="downloadPlanButton" type="button" hidden>
+                <i data-lucide="download" aria-hidden="true"></i>
+                Export study
+              </button>
+              <button class="button primary" id="approvePlanButton" type="button">
+                <i data-lucide="check-check" aria-hidden="true"></i>
+                Approve plan
+              </button>
+            </div>
+          </div>
+      </section>
+    </div>
+
+    <aside class="lead-panel" aria-labelledby="leadHeading">
+      <div class="lead-heading">
+        <div class="agent-avatar" aria-hidden="true">
+          <i data-lucide="messages-square"></i>
+        </div>
+        <div>
+          <p class="section-kicker">User-facing agent</p>
+          <h2 id="leadHeading">Lead agent</h2>
+        </div>
+      </div>
+
+      <div class="lead-message" id="leadMessage" aria-live="polite">
+        <p>Load a prepared structure. I will identify FMN or FAD candidates and ask you to confirm the scientific decisions.</p>
+      </div>
+
+      <div class="lead-questions" id="leadQuestions" hidden>
+        <h3>Questions requiring your input</h3>
+        <ul id="leadQuestionList"></ul>
+      </div>
+
+      <div class="protected-decisions">
+        <h3>Protected decisions</h3>
+        <dl>
+          <div>
+            <dt>Chromophore</dt>
+            <dd id="decisionChromophore">Not selected</dd>
+          </div>
+          <div>
+            <dt>Redox state</dt>
+            <dd id="decisionRedox">User input required</dd>
+          </div>
+          <div>
+            <dt>QM region</dt>
+            <dd id="decisionRegion">Not proposed</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="specialist-status" id="specialistStatus" hidden>
+        <h3>Specialists consulted</h3>
+        <ul id="specialistList"></ul>
+      </div>
+
+      <div class="study-record" id="studyRecord" hidden>
+        <h3>Study record</h3>
+        <code id="studyPath"></code>
+      </div>
+
+      <div class="launch-policy">
+        <i data-lucide="lock-keyhole" aria-hidden="true"></i>
+        <span>GPU submission requires an authenticated compute gateway. No browser job submission.</span>
+      </div>
+    </aside>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="/qmmm-platform/assets/vendor/ngl-2.4.0.js"></script>
+  <script src="/qmmm-platform/assets/vendor/lucide-1.26.0.js"></script>
+  <script src="/qmmm-platform/assets/client-runtime.js"></script>
+  <script src="/qmmm-platform/assets/app.js"></script>
+</body>
+</html>
