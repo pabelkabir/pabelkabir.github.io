@@ -107,21 +107,11 @@ input[type="file"] {
   outline-offset: 4px;
 }
 
-.brand-mark {
+.brand-logo {
   width: 42px;
-  height: 42px;
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  display: grid;
-  place-items: center;
+  height: 46px;
+  object-fit: contain;
   flex: 0 0 auto;
-  color: #ffffff;
-  font: 700 27px/1 Georgia, "Times New Roman", serif;
-  transform: rotate(45deg);
-}
-
-.brand-mark span {
-  display: block;
-  transform: rotate(-45deg);
 }
 
 .brand-lockup strong,
@@ -1337,10 +1327,9 @@ select:focus {
     padding: 9px 14px;
   }
 
-  .brand-mark {
-    width: 36px;
-    height: 36px;
-    font-size: 23px;
+  .brand-logo {
+    width: 35px;
+    height: 39px;
   }
 
   .brand-lockup strong {
