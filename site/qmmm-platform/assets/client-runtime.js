@@ -451,7 +451,7 @@
         max_steps: "50"
       },
       resources: {
-        account: inputs.profile === "expanse" ? "pabel" : "",
+        account: inputs.profile === "expanse" ? "gsu123" : "",
         partition: inputs.profile === "expanse" ? "gpu-shared" : "",
         qos: "",
         walltime: "20:00:00",
@@ -460,7 +460,7 @@
         gpus: "1"
       },
       run_dir: inputs.profile === "expanse"
-        ? "/expanse/lustre/scratch/pabel/temp_project/qmmm-runs/" + slug
+        ? "/expanse/lustre/scratch/<authenticated-user>/temp_project/qm-mm-runs/" + slug
         : "runs/" + slug,
       driver: "flavin_gpu4pyscf_protocol/scripts/run_until_converged.sh",
       valid: true,
@@ -735,7 +735,7 @@
   }
 
   var bootstrap = {
-    platform_version: "0.3.1",
+    platform_version: "0.4.0",
     profiles: [
       {
         name: "expanse",

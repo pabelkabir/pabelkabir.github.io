@@ -392,9 +392,13 @@
 
   function updateRedoxFields() {
     var isCustom = byId("redoxState").value === "custom";
+    var redox = selectedRedoxState();
+    if (["1", "2", "3", "4", "5", "6"].includes(redox)) {
+      byId("spinMultiplicity").value = ["2", "5"].includes(redox) ? "2" : "1";
+    }
     setHidden("customRedoxField", !isCustom);
-    byId("decisionRedox").textContent = selectedRedoxState()
-      ? selectedRedoxState() + " \u00b7 user supplied"
+    byId("decisionRedox").textContent = redox
+      ? redox + " \u00b7 user supplied"
       : "User input required";
     updateProtocolStatus();
     updateStudyButton();
@@ -700,32 +704,58 @@
     byId("downloadPlanButton").hidden = !approved;
   }
 
-  function downloadStudyPlan() {
+  async function sha256Hex(value) {
+    if (!window.crypto || !window.crypto.subtle) {
+      throw new Error("This browser cannot create the required SHA-256 study digest.");
+    }
+    var digest = await window.crypto.subtle.digest(
+      "SHA-256",
+      new TextEncoder().encode(value)
+    );
+    return Array.from(new Uint8Array(digest)).map(function (byte) {
+      return byte.toString(16).padStart(2, "0");
+    }).join("");
+  }
+
+  async function downloadStudyPlan() {
     if (!appState.study) {
       showToast("Create and approve a study before exporting it.", true);
       return;
     }
-    var state = appState.study.state;
-    var payload = {
-      exported_at: new Date().toISOString(),
-      platform: "Kabir Lab QM/MM Platform",
-      platform_version: appState.bootstrap.platform_version,
-      browser_submission_enabled: false,
-      state: state
-    };
-    var blob = new Blob(
-      [JSON.stringify(payload, null, 2) + "\n"],
-      { type: "application/json" }
-    );
-    var url = URL.createObjectURL(blob);
-    var link = document.createElement("a");
-    link.href = url;
-    link.download = state.name.replace(/[^a-z0-9._-]+/gi, "-") + "-study.json";
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    URL.revokeObjectURL(url);
-    showToast("Study JSON exported. No job was submitted.");
+    try {
+      var state = appState.study.state;
+      var payload = {
+        bundle_type: "qmmm-platform-study",
+        schema_version: 1,
+        exported_at: new Date().toISOString(),
+        platform: "Kabir Lab QM/MM Platform",
+        platform_version: appState.bootstrap.platform_version,
+        browser_submission_enabled: false,
+        structure: {
+          filename: appState.filename,
+          sha256: await sha256Hex(appState.structure),
+          pdb: appState.structure
+        },
+        state: state
+      };
+      var rendered = JSON.stringify(payload, null, 2) + "\n";
+      var usesObjectUrl = typeof URL.createObjectURL === "function";
+      var url = usesObjectUrl
+        ? URL.createObjectURL(new Blob([rendered], { type: "application/json" }))
+        : "data:application/json;charset=utf-8," + encodeURIComponent(rendered);
+      var link = document.createElement("a");
+      link.href = url;
+      link.download = state.name.replace(/[^a-z0-9._-]+/gi, "-") + "-study.json";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      if (usesObjectUrl) {
+        URL.revokeObjectURL(url);
+      }
+      showToast("Study bundle exported. No job was submitted.");
+    } catch (error) {
+      showToast(error.message, true);
+    }
   }
 
   function renderStudy(response) {
