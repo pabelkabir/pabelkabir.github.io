@@ -76,7 +76,7 @@ body {
 .navbar-brand .navbar-title {
   color: #ffffff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 2.8vw, 3rem);
+  font-size: clamp(1.85rem, 2.45vw, 2.65rem);
   font-weight: 700;
   line-height: 0.98;
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.22);
@@ -88,7 +88,7 @@ body {
   margin-top: 0.28rem;
   color: rgba(255, 255, 255, 0.76);
   font-family: $font-family-sans-serif;
-  font-size: clamp(0.8rem, 1vw, 1.02rem);
+  font-size: clamp(0.74rem, 0.9vw, 0.94rem);
   font-weight: 700;
   letter-spacing: 0.015em;
   text-shadow: none;
@@ -113,7 +113,7 @@ body {
 .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.94);
 //  font-size: clamp(0.86rem, 1vw, 1.04rem);
-  font-size: clamp(1rem, 1.15vw, 1.2rem);
+  font-size: clamp(0.88rem, 0.98vw, 1.04rem);
   font-weight: 850;
   letter-spacing: 0.055em;
   text-transform: uppercase;
@@ -149,11 +149,11 @@ body {
   }
 
   .navbar-brand .navbar-title {
-    font-size: 1.85rem;
+    font-size: 1.68rem;
   }
 
   .navbar-brand .navbar-title::after {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
   }
 
   .navbar-collapse {
@@ -177,11 +177,11 @@ body {
   }
 
   .navbar-brand .navbar-title {
-    font-size: 1.45rem;
+    font-size: 1.34rem;
   }
 
   .navbar-brand .navbar-title::after {
-    font-size: 0.68rem;
+    font-size: 0.64rem;
   }
 }
 
